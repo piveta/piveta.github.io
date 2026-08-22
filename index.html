@@ -3,17 +3,63 @@ layout: home
 ---
 <html>
 <style>
+  .book {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.book-cover-container {
+  flex: 0 0 auto;
+}
+
 .book-cover {
-  width: 220px;
-  max-width: 70vw;
+  width: 200px;
+  max-width: 30vw;
   height: auto;
+  display: block;
+}
+
+.book-description {
+  flex: 1;
+}
+
+@media (max-width: 600px) {
+  .book {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .book-description {
+    text-align: center;
+  }
 }
 </style>
 <head>
   <title>OO com Java</title>
 </head>
 <body>
-    <img src="capaOO.jpg" class="book-cover" alt="Livro OO com Java" width="300" height="200">
+  <div class="book">
+  <div class="book-cover-container">
+    <img
+      class="book-cover"
+      src="capaOO.jpg"
+      alt="Capa do livro Orientação a Objetos com Java">
+  </div>
+  <div class="book-description">
+    <h2>Orientação a Objetos com Java</h2>
+    <p>
+      Um livro sobre programação orientada a objetos em Java,
+      explorando os principais conceitos da linguagem de forma
+      detalhada e progressiva.
+    </p>
+    <p>
+      Java 25 · 215 páginas
+    </p>
+  </div>
+</div>
     <ul>
         <li>2025 - Orienta&ccedil;&atilde;o a Objetos com Java
             <ul>

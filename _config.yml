@@ -3,6 +3,9 @@ description: Orientação a Objetos com Java
 markdown: kramdown
 theme: minima
 
+author:
+  name: Eduardo Kessler Piveta
+
 minima:
   social_links:
     - { url: "https://github.com/piveta", title: "GitHub", icon: "github" }

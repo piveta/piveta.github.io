@@ -32,5 +32,11 @@
         </a>
     </li>
 </ul>
+<h2>Últimos artigos</h2>
+    {% for post in site.posts limit:5 %}
+        <h3>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+        </h3>
+    {% endfor %}
 </body>
 </html>

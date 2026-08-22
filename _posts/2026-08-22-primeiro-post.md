@@ -15,4 +15,5 @@ void main() {
     IO.println("Olá, mundo!");
 }
 ```
+**Trecho do livro**: <a href="https://www.amazon.com.br/dp/B0FWZ6HYVP">Orientação a Objetos com Java</a> de <a href="http://www-usr.inf.ufsm.br/~piveta/">Eduardo Kessler Piveta</a>.
 

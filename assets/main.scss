@@ -3,6 +3,13 @@
 
 @import "minima";
 
+.social-media-list {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
 .social-links {
   display: flex;
   flex-direction: row;

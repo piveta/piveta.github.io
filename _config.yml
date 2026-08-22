@@ -2,3 +2,10 @@ title: OO com Java
 description: Orientação a Objetos com Java
 markdown: kramdown
 theme: minima
+
+minima:
+  social_links:
+    - { url: "https://github.com/piveta", title: "GitHub", icon: "github" }
+    - { url: "https://www.linkedin.com/in/eduardo-kessler-piveta-903430250/", title: "LinkedIn", icon: "linkedin" }
+    - { url: "https://x.com/ekpiveta", title: "X", icon: "x-twitter" }
+    - { url: "https://www.youtube.com/ekpiveta" title: "YouTube" :icon: "youtube"}

@@ -11,3 +11,24 @@
   padding: 0;
 }
 
+.book-buttons {
+  display: flex;
+  gap: 12px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.book-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #87ceeb;
+  color: white !important;
+  text-decoration: none !important;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.book-button:hover {
+  background-color: #5fb8dc;
+}
+

@@ -44,3 +44,23 @@
   color: white !important;
 }
 
+.academic-links {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.academic-links a {
+  color: #828282;
+  text-decoration: none;
+}
+
+.academic-links a:hover {
+  color: #111;
+  text-decoration: none;
+}
+
+.academic-links i {
+  font-size: 18px;
+}

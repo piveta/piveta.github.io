@@ -11,6 +11,7 @@
   padding: 0;
 }
 
+
 .book-buttons {
   display: flex;
   gap: 12px;
@@ -30,5 +31,16 @@
 
 .book-button:hover {
   background-color: #5fb8dc;
+}
+
+.book-button.secondary {
+  background-color: white;
+  color: #5fb8dc !important;
+  border: 1px solid #87ceeb;
+}
+
+.book-button.secondary:hover {
+  background-color: #87ceeb;
+  color: white !important;
 }
 

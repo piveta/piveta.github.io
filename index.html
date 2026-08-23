@@ -3,6 +3,11 @@ layout: home
 ---
 <html>
 <style>
+  .home-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
   .book {
   display: flex;
   align-items: flex-start;
@@ -47,6 +52,7 @@ layout: home
   <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
+  <div class="home-content">
   <div class="book">
   <div class="book-cover-container">
     <img
@@ -79,6 +85,7 @@ layout: home
     </p>
     {% include book_buttons.html %}
   </div>
+</div>
 </div>
 <h2>Últimos artigos</h2>
     {% for post in site.posts limit:5 %}

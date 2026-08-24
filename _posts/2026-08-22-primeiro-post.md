@@ -4,7 +4,7 @@ title: "Hello World"
 date: 2026-08-22
 ---
 
-## Hello World
+## Hello World - Versão Tradicional vs. Versão Simplificada
 
 É de praxe iniciarmos o estudo de uma linguagem de programação com a escrita de um programa chamado **Hello World**, que mostra o texto `Hello World!` na saída padrão do dispositivo, usualmente a tela. Em Java, podemos escrever esse programa da seguinte forma:
 
@@ -25,6 +25,8 @@ O método `main` é estático, o que significa que é um método de classe, e n�
 Dentro do método `main` existe uma chamada ao método `println`. Esse método pertence à classe `PrintStream` e imprime na tela o que for passado como parâmetro, seguido de um término de linha.
 
 O método `println` é chamado a partir do atributo `out` da classe `System`. Esse atributo é do tipo `PrintStream` e fornece acesso à saída padrão do sistema.
+
+
 
 ## Compilação e execução
 
@@ -64,7 +66,7 @@ Hello World!
 
 O processo realizado pelas IDEs é essencialmente semelhante. Além da compilação e execução, elas fornecem recursos para depuração, testes, refatoração, criação e gerenciamento de projetos, criação de bibliotecas e gerenciamento de versões, entre diversas outras funcionalidades.
 
-## Uma forma mais simples com Java 26
+## Uma forma mais simples com Java 25+
 
 A partir do Java 25, uma funcionalidade que vinha sendo desenvolvida como *preview* desde o Java 21 tornou-se permanente: **Compact Source Files and Instance Main Methods**. Ela permite escrever pequenos programas com menos código de infraestrutura, omitindo a declaração explícita da classe e simplificando o método `main`.
 

@@ -20,7 +20,7 @@ A classe `Throwable` possui duas subclasses diretas: `Exception` e `Error`.
 
 <img src="/images/descendentesThrowable.png"
      alt="Hierarquia de Throwable"
-     style="max-width: 450px; width: 100%; height: auto; display: block; margin: 20px auto;">
+     style="max-width: 250px; width: 100%; height: auto; display: block; margin: 20px auto;">
 
 ## `Error`
 

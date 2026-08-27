@@ -18,11 +18,7 @@ Entre os principais métodos de `Throwable` estão `getMessage()`, que permite o
 
 A classe `Throwable` possui duas subclasses diretas: `Exception` e `Error`.
 
-<embed
-  src="/images/descendentesThrowable.pdf"
-  type="application/pdf"
-  width="100%"
-  height="600px">
+![Hierarquia de Throwable](/images/descendentesThrowable.png)
 
 ## `Error`
 
@@ -32,11 +28,7 @@ Algumas subclasses importantes de `Error` são `AssertionError`, `IOError` e `Vi
 
 Erros podem ser lançados pela própria JVM, muitas vezes em consequência de condições detectadas pelo sistema operacional ou pelo ambiente de execução. Também podem ser produzidos explicitamente pelo programador, por exemplo, por meio de `assert` ou `throw`.
 
-<embed
-  src="/images/exceptionsError.pdf"
-  type="application/pdf"
-  width="100%"
-  height="600px">
+![Error e suas subclasses](/images/exceptionsError.png)
 
 ## `Exception`
 
@@ -46,11 +38,7 @@ Entre suas subclasses estão `IOException`, `SQLException`, `ReflectiveOperation
 
 As exceções de `Exception` que não são subclasses de `RuntimeException` são chamadas de **exceções verificadas** (*checked exceptions*). O compilador exige que elas sejam consideradas explicitamente pelo programa. Isso pode ser feito capturando a exceção com uma cláusula `catch` ou declarando, por meio de `throws`, que o método pode lançá-la.
 
-<embed
-  src="/images/descendentesException.pdf"
-  type="application/pdf"
-  width="100%"
-  height="600px">
+![Exception e suas descendentes](/images/descendentesException.png)
 
 ## `RuntimeException`
 
@@ -69,11 +57,7 @@ Um método que pode lançar uma `RuntimeException` não precisa declarar essa po
 
 Na prática, muitas `RuntimeException` indicam problemas que poderiam ser evitados pelo próprio programa. Quando uma delas ocorre, normalmente é importante investigar sua causa e corrigir o problema em vez de simplesmente capturar a exceção.
 
-<embed
-  src="/images/descendentesRuntimeException.pdf"
-  type="application/pdf"
-  width="100%"
-  height="600px">
+![RuntimeException e suas descendentes](/images/descendentesRuntimeException.png)
 
 ## Exceções verificadas e não verificadas
 
@@ -90,3 +74,12 @@ Throwable
 ├── Error
 └── Exception
     └── RuntimeException
+```
+
+Essa organização permite que o tratamento seja feito em diferentes níveis da hierarquia. Uma cláusula `catch` pode, por exemplo, capturar uma exceção específica ou uma de suas superclasses, dependendo do comportamento desejado.
+
+Conhecer essa hierarquia é fundamental para compreender o mecanismo de tratamento de exceções em Java e para decidir quais exceções devem ser tratadas, quais devem ser propagadas e quais representam erros que precisam ser corrigidos no próprio programa.
+
+---
+
+*Este artigo é uma adaptação de conteúdo do livro <a href="https://www.amazon.com.br/dp/B0FWZ6HYVP">Orientação a Objetos com Java</a>, de <a href="http://www-usr.inf.ufsm.br/~piveta/">Eduardo Kessler Piveta</a>.*

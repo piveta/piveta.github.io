@@ -20,7 +20,7 @@ A classe `Throwable` possui duas subclasses diretas: `Exception` e `Error`.
 
 <img src="/images/descendentesThrowable.png"
      alt="Hierarquia de Throwable"
-     style="max-width: 600px; width: 100%; height: auto; display: block; margin: 20px auto;">
+     style="max-width: 450px; width: 100%; height: auto; display: block; margin: 20px auto;">
 
 ## `Error`
 
@@ -65,7 +65,7 @@ Na prática, muitas `RuntimeException` indicam problemas que poderiam ser evitad
 
 <img src="/images/descendentesRuntimeException.png"
      alt="RuntimeException e suas descendentes"
-     style="max-width: 600px; width: 100%; height: auto; display: block; margin: 20px auto;">
+     style="max-width: 800px; width: 100%; height: auto; display: block; margin: 20px auto;">
 
 ## Exceções verificadas e não verificadas
 
@@ -91,11 +91,3 @@ Conhecer essa hierarquia é fundamental para compreender o mecanismo de tratamen
 ---
 
 *Este artigo é uma adaptação de conteúdo do livro <a href="https://www.amazon.com.br/dp/B0FWZ6HYVP">Orientação a Objetos com Java</a>, de <a href="http://www-usr.inf.ufsm.br/~piveta/">Eduardo Kessler Piveta</a>.*
-
-<style>
-.post-content h2 {
-  font-size: 1.8em;
-  margin-top: 1.5em;
-  margin-bottom: 0.6em;
-}
-</style>

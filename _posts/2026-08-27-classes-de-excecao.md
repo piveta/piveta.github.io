@@ -1,93 +1,92 @@
 ---
 layout: post
-title: "Classes de exceção"
+title: "Classes de exceção em Java"
 date: 2026-08-27
 ---
 
-Esta seção descreve as classes básicas de exceções de Java, iniciando pela classe `Throwable`. A seguir, são descritas, respectivamente, as classes `Error`, `Exception` e `RuntimeException`.
+Durante a execução de programas, podem ocorrer situações que exigem algum tratamento especial. Elas podem representar condições anormais ou errôneas, situações que não foram previstas pelo programador ou mesmo fluxos alternativos de execução. Essas condições são chamadas de **exceções**.
+
+Em Java, as exceções são representadas por objetos pertencentes à classe `Throwable` ou a alguma de suas subclasses. A hierarquia de exceções é importante para entender quais exceções podem ser lançadas, capturadas e tratadas pelos programas.
 
 ## `Throwable`
 
-Em Java, exceções são representadas através de objetos descendentes, direta ou indiretamente, da classe `Throwable`. Tais objetos são usados para armazenar informações acerca de uma determinada exceção e passam dados desde o ponto em que ocorreu a exceção até o seu bloco de tratamento.
+`Throwable` é a classe-base da hierarquia de exceções em Java. Objetos dessa classe armazenam informações sobre uma determinada ocorrência e permitem que essas informações sejam transferidas desde o ponto em que a exceção ocorreu até o código responsável pelo seu tratamento.
 
-Apenas objetos desta classe, ou de suas subclasses, podem ser lançados pela JVM ou pelo programador, via `throw`. Tais objetos também são os únicos que podem ser capturados por uma cláusula `catch`. Os construtores de `Throwable`, além do construtor padrão, permitem que seja informada uma mensagem e, opcionalmente, uma causa da exceção. No caso de exceções encadeadas, a causa é um objeto `Throwable` também.
+Somente objetos pertencentes a `Throwable` ou a uma de suas subclasses podem ser lançados pela JVM ou pelo programador por meio de `throw`. Da mesma forma, uma cláusula `catch` só pode capturar objetos dessa hierarquia.
 
-Dentre os principais métodos de `Throwable` estão `getMessage`, que obtém a mensagem associada à exceção, e `printStackTrace`, que mostra o rastreamento da pilha de execução, que ajuda a entender as chamadas feitas até a ocorrência da exceção.
+Entre os principais métodos de `Throwable` estão `getMessage()`, que permite obter a mensagem associada à exceção, e `printStackTrace()`, que mostra o rastreamento da pilha de execução até o ponto em que a exceção ocorreu.
 
-A classe `Throwable` possui, originalmente, duas subclasses diretas: `Error` e `Exception`.
+A classe `Throwable` possui duas subclasses diretas: `Exception` e `Error`.
 
-A figura a seguir mostra a hierarquia das principais **classes de exceção**, nome dado a `Throwable` e suas descendentes, em Java.
-
-<iframe src="{{ '/images/descendentesThrowable.pdf' | relative_url }}"
-        width="100%"
-        height="600"
-        style="border: none;">
-</iframe>
-
-*Figura 1 — `Throwable` e suas descendentes.*
+<embed
+  src="/images/descendentesThrowable.pdf"
+  type="application/pdf"
+  width="100%"
+  height="600px">
 
 ## `Error`
 
-A classe `Error` é usada para representar objetos de todas as exceções para as quais os programas de usuários possivelmente não são capazes de se recuperar. Tais exceções são tipicamente condições anormais que supostamente não deveriam acontecer. Esta classe e suas subclasses são coletivamente conhecidas como **classes de erro**.
+A classe `Error` representa condições graves das quais, em geral, uma aplicação não consegue se recuperar. São situações anormais que normalmente não deveriam ocorrer durante a execução de um programa.
 
-A figura a seguir mostra a classe `Error` e algumas de suas subclasses, incluindo `AssertionError`, `IOError` e `VirtualMachineError`, que representam, respectivamente, falhas em asserções, falhas graves de entrada e/ou saída, e problemas com a JVM ou com a alocação de recursos.
+Algumas subclasses importantes de `Error` são `AssertionError`, `IOError` e `VirtualMachineError`. Esta última possui, entre outras, subclasses como `InternalError`, `OutOfMemoryError`, `StackOverflowError` e `UnknownError`.
 
-Entre as subclasses de `VirtualMachineError` estão `InternalError`, `OutOfMemoryError`, `StackOverflowError` e `UnknownError`.
+Erros podem ser lançados pela própria JVM, muitas vezes em consequência de condições detectadas pelo sistema operacional ou pelo ambiente de execução. Também podem ser produzidos explicitamente pelo programador, por exemplo, por meio de `assert` ou `throw`.
 
-<iframe src="{{ '/images/exceptionsError.pdf' | relative_url }}"
-        width="100%"
-        height="600"
-        style="border: none;">
-</iframe>
-
-*Figura 2 — `Error` e suas descendentes.*
-
-Quem lança os erros é a JVM, muitas vezes motivada pelo sistema operacional, ou o usuário, via `assert` ou `throw`.
+<embed
+  src="/images/exceptionsError.pdf"
+  type="application/pdf"
+  width="100%"
+  height="600px">
 
 ## `Exception`
 
-Já a classe `Exception` é usada para representar objetos de todas as exceções para as quais os programas de usuários podem querer se recuperar. Dentre as mais utilizadas estão `ApplicationException`, `ClassNotFoundException`, `IOException`, `SQLException` e `RuntimeException`.
+A classe `Exception` representa exceções que, em determinadas situações, podem ser tratadas e das quais a aplicação pode se recuperar.
 
-`Exception` e suas descendentes que não estendem `RuntimeException` são chamadas de **exceções verificadas** e precisam ser gerenciadas explicitamente pelos programas, através de sentenças `try` ou por cláusulas `throws` em métodos, por exemplo.
+Entre suas subclasses estão `IOException`, `SQLException`, `ReflectiveOperationException`, `ClassNotFoundException` e `RuntimeException`.
 
-A figura a seguir mostra algumas das subclasses de `Exception`, bem como a quantidade de classes adicionais.
+As exceções de `Exception` que não são subclasses de `RuntimeException` são chamadas de **exceções verificadas** (*checked exceptions*). O compilador exige que elas sejam consideradas explicitamente pelo programa. Isso pode ser feito capturando a exceção com uma cláusula `catch` ou declarando, por meio de `throws`, que o método pode lançá-la.
 
-<iframe src="{{ '/images/descendentesException.pdf' | relative_url }}"
-        width="100%"
-        height="600"
-        style="border: none;">
-</iframe>
-
-*Figura 3 — `Exception` e algumas de suas descendentes verificadas.*
-
-Há cerca de oitenta exceções listadas na documentação da linguagem como descendentes diretas de `Exception`.
+<embed
+  src="/images/descendentesException.pdf"
+  type="application/pdf"
+  width="100%"
+  height="600px">
 
 ## `RuntimeException`
 
-Dentre as subclasses de `Exception`, destaca-se `RuntimeException`. A classe `RuntimeException` e suas subclasses são denominadas, pela especificação da linguagem, **classes de exceção em tempo de execução**.
+Entre as subclasses de `Exception`, destaca-se `RuntimeException`. Ela e suas subclasses são chamadas de **exceções em tempo de execução**.
 
-Classes de erro e classes de exceção em tempo de execução são consideradas como **exceções não verificadas** pelo compilador e não precisam ser tratadas ou consideradas explicitamente pelos programadores.
+`RuntimeException` e suas subclasses são exceções não verificadas (*unchecked exceptions*). O compilador não exige que sejam tratadas explicitamente com `try`/`catch` nem que sejam declaradas com `throws`.
 
-`RuntimeException` é utilizada para representar exceções não verificadas causadas por erros lógicos ou por uso incorreto de programas, e não por falhas do ambiente de execução. A biblioteca padrão da linguagem fornece mais de cinquenta subclasses de `RuntimeException`. Algumas das mais utilizadas são `ClassCastException`, `IllegalArgumentException`, `IndexOutOfBoundsException` e `NullPointerException`.
+Esse tipo de exceção normalmente representa erros lógicos ou usos incorretos de um programa. Exemplos comuns incluem:
 
-Métodos que podem lançar uma `RuntimeException` não precisam envolver o código em uma sentença `try` ou usar uma sentença `throws` para informar que o método lança a exceção. No entanto, é possível capturar tais exceções e tratá-las usando uma sentença `try` que contenha uma cláusula `catch` que capture tais exceções.
+- `ClassCastException`: ocorre quando uma conversão explícita de tipos não é possível.
+- `IllegalArgumentException`: indica que um método recebeu um argumento considerado inválido ou inadequado.
+- `IndexOutOfBoundsException`: ocorre quando se tenta acessar uma posição inexistente de uma estrutura indexada.
+- `NullPointerException`: ocorre quando uma operação é realizada sobre uma referência `null`.
 
-Tipicamente, exceções do tipo `RuntimeException` são evitáveis programaticamente (normalmente são erros de programação). Logo, comumente, quando ocorrem, deve-se procurar a causa de sua ocorrência e efetuar a correção.
+Um método que pode lançar uma `RuntimeException` não precisa declarar essa possibilidade com `throws`. Naturalmente, ainda é possível capturar e tratar essas exceções com `try` e `catch`.
 
-Dentre as principais subclasses de `RuntimeException` estão:
+Na prática, muitas `RuntimeException` indicam problemas que poderiam ser evitados pelo próprio programa. Quando uma delas ocorre, normalmente é importante investigar sua causa e corrigir o problema em vez de simplesmente capturar a exceção.
 
-- **`ClassCastException`**: lançada quando há um erro de conversão explícita de tipos (os tipos não são compatíveis para que a conversão ocorra). É um caso típico de problemas com o uso de herança ou com o uso de coleções legadas, sem tipos genéricos.
+<embed
+  src="/images/descendentesRuntimeException.pdf"
+  type="application/pdf"
+  width="100%"
+  height="600px">
 
-- **`NullPointerException`**: lançada quando tentamos acessar uma referência nula. Por exemplo, ao chamar `veiculo.ligar()`, quando `veiculo` contém `null`.
+## Exceções verificadas e não verificadas
 
-- **`IllegalArgumentException`**: é usada quando um método recebe um parâmetro considerado ilegal ou inapropriado. Comumente usada para verificar valores fora de uma faixa predeterminada, dentre outras coisas. Por exemplo, tentar informar uma idade negativa ou maior que o esperado (ex.: 150 anos) para uma pessoa. Nesse caso, o programador testa os limites dentro do método e, caso o valor não esteja de acordo, lança uma exceção com uma cláusula `throw`.
+Uma distinção importante na hierarquia de exceções de Java é entre exceções **verificadas** e **não verificadas**.
 
-A figura a seguir mostra a classe `RuntimeException` e algumas de suas descendentes.
+As exceções verificadas são subclasses de `Exception` que não pertencem à hierarquia de `RuntimeException`. Elas precisam ser tratadas ou declaradas explicitamente pelo programa.
 
-<iframe src="{{ '/images/descendentesRuntimeException2.pdf' | relative_url }}"
-        width="100%"
-        height="600"
-        style="border: none;">
-</iframe>
+Já as exceções não verificadas incluem tanto `RuntimeException` e suas subclasses quanto `Error` e suas subclasses. O compilador não exige seu tratamento explícito.
 
-*Figura 4 — `RuntimeException` e suas descendentes.*
+De forma simplificada, podemos visualizar a hierarquia da seguinte maneira:
+
+```text
+Throwable
+├── Error
+└── Exception
+    └── RuntimeException

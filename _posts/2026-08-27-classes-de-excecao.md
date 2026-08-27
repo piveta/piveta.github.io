@@ -66,14 +66,16 @@ Na prática, muitas `RuntimeException` indicam problemas que poderiam ser evitad
 <img src="/images/descendentesRuntimeException.png"
      alt="RuntimeException e suas descendentes"
      style="max-width: 800px; width: 100%; height: auto; display: block; margin: 20px auto;">
-
+     
 ## Exceções verificadas e não verificadas
 
 Uma distinção importante na hierarquia de exceções de Java é entre exceções **verificadas** e **não verificadas**.
 
-As exceções verificadas são subclasses de `Exception` que não pertencem à hierarquia de `RuntimeException`. Elas precisam ser tratadas ou declaradas explicitamente pelo programa.
+`Throwable` e todas as suas subclasses que não são subclasses de `RuntimeException` ou `Error` são chamadas de **exceções verificadas**. Já `RuntimeException` e suas subclasses, bem como `Error` e suas subclasses, são chamadas de **exceções não verificadas**.
 
-Já as exceções não verificadas incluem tanto `RuntimeException` e suas subclasses quanto `Error` e suas subclasses. O compilador não exige seu tratamento explícito.
+As exceções verificadas precisam ser tratadas ou declaradas explicitamente pelo programa. Isso significa que, quando um método pode lançar uma exceção verificada, ela deve ser tratada por uma cláusula `catch` ou declarada na cláusula `throws` do método.
+
+Já as exceções não verificadas não precisam ser tratadas ou declaradas explicitamente. O compilador não exige que `RuntimeException`, `Error` ou suas subclasses sejam capturadas ou declaradas.
 
 De forma simplificada, podemos visualizar a hierarquia da seguinte maneira:
 

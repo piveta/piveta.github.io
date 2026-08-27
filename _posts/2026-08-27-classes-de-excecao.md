@@ -18,7 +18,9 @@ Entre os principais métodos de `Throwable` estão `getMessage()`, que permite o
 
 A classe `Throwable` possui duas subclasses diretas: `Exception` e `Error`.
 
-![Hierarquia de Throwable](/images/descendentesThrowable.png)
+<img src="/images/descendentesThrowable.png"
+     alt="Hierarquia de Throwable"
+     style="max-width: 600px; width: 100%; height: auto; display: block; margin: 20px auto;">
 
 ## `Error`
 
@@ -28,7 +30,9 @@ Algumas subclasses importantes de `Error` são `AssertionError`, `IOError` e `Vi
 
 Erros podem ser lançados pela própria JVM, muitas vezes em consequência de condições detectadas pelo sistema operacional ou pelo ambiente de execução. Também podem ser produzidos explicitamente pelo programador, por exemplo, por meio de `assert` ou `throw`.
 
-![Error e suas subclasses](/images/exceptionsError.png)
+<img src="/images/exceptionsError.png"
+     alt="Error e suas subclasses"
+     style="max-width: 600px; width: 100%; height: auto; display: block; margin: 20px auto;">
 
 ## `Exception`
 
@@ -38,7 +42,9 @@ Entre suas subclasses estão `IOException`, `SQLException`, `ReflectiveOperation
 
 As exceções de `Exception` que não são subclasses de `RuntimeException` são chamadas de **exceções verificadas** (*checked exceptions*). O compilador exige que elas sejam consideradas explicitamente pelo programa. Isso pode ser feito capturando a exceção com uma cláusula `catch` ou declarando, por meio de `throws`, que o método pode lançá-la.
 
-![Exception e suas descendentes](/images/descendentesException.png)
+<img src="/images/descendentesException.png"
+     alt="Exception e suas descendentes"
+     style="max-width: 600px; width: 100%; height: auto; display: block; margin: 20px auto;">
 
 ## `RuntimeException`
 
@@ -57,7 +63,9 @@ Um método que pode lançar uma `RuntimeException` não precisa declarar essa po
 
 Na prática, muitas `RuntimeException` indicam problemas que poderiam ser evitados pelo próprio programa. Quando uma delas ocorre, normalmente é importante investigar sua causa e corrigir o problema em vez de simplesmente capturar a exceção.
 
-![RuntimeException e suas descendentes](/images/descendentesRuntimeException.png)
+<img src="/images/descendentesRuntimeException.png"
+     alt="RuntimeException e suas descendentes"
+     style="max-width: 600px; width: 100%; height: auto; display: block; margin: 20px auto;">
 
 ## Exceções verificadas e não verificadas
 
@@ -83,3 +91,11 @@ Conhecer essa hierarquia é fundamental para compreender o mecanismo de tratamen
 ---
 
 *Este artigo é uma adaptação de conteúdo do livro <a href="https://www.amazon.com.br/dp/B0FWZ6HYVP">Orientação a Objetos com Java</a>, de <a href="http://www-usr.inf.ufsm.br/~piveta/">Eduardo Kessler Piveta</a>.*
+
+<style>
+.post-content h2 {
+  font-size: 1.8em;
+  margin-top: 1.5em;
+  margin-bottom: 0.6em;
+}
+</style>

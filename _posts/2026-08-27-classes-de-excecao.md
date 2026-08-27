@@ -8,7 +8,7 @@ Durante a execução de programas, podem ocorrer situações que exigem algum tr
 
 Em Java, as exceções são representadas por objetos pertencentes à classe `Throwable` ou a alguma de suas subclasses. A hierarquia de exceções é importante para entender quais exceções podem ser lançadas, capturadas e tratadas pelos programas.
 
-## `Throwable`
+## Throwable
 
 `Throwable` é a classe-base da hierarquia de exceções em Java. Objetos dessa classe armazenam informações sobre uma determinada ocorrência e permitem que essas informações sejam transferidas desde o ponto em que a exceção ocorreu até o código responsável pelo seu tratamento.
 
@@ -22,7 +22,7 @@ A classe `Throwable` possui duas subclasses diretas: `Exception` e `Error`.
      alt="Hierarquia de Throwable"
      style="max-width: 250px; width: 100%; height: auto; display: block; margin: 20px auto;">
 
-## `Error`
+## Error
 
 A classe `Error` representa condições graves das quais, em geral, uma aplicação não consegue se recuperar. São situações anormais que normalmente não deveriam ocorrer durante a execução de um programa.
 
@@ -34,7 +34,7 @@ Erros podem ser lançados pela própria JVM, muitas vezes em consequência de co
      alt="Error e suas subclasses"
      style="max-width: 600px; width: 100%; height: auto; display: block; margin: 20px auto;">
 
-## `Exception`
+## Exception
 
 A classe `Exception` representa exceções que, em determinadas situações, podem ser tratadas e das quais a aplicação pode se recuperar.
 
@@ -46,7 +46,7 @@ As exceções de `Exception` que não são subclasses de `RuntimeException` são
      alt="Exception e suas descendentes"
      style="max-width: 600px; width: 100%; height: auto; display: block; margin: 20px auto;">
 
-## `RuntimeException`
+## RuntimeException
 
 Entre as subclasses de `Exception`, destaca-se `RuntimeException`. Ela e suas subclasses são chamadas de **exceções em tempo de execução**.
 

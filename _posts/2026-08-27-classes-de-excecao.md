@@ -3,7 +3,6 @@ layout: post
 title: "Classes de exceção em Java"
 date: 2026-08-27
 ---
-
 **Por Eduardo Piveta**  
 *Professor Titular - UFSM*
 

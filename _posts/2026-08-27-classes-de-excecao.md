@@ -4,6 +4,9 @@ title: "Classes de exceção em Java"
 date: 2026-08-27
 ---
 
+**Por Eduardo Piveta**  
+*Professor Titular - UFSM*
+
 Durante a execução de programas, podem ocorrer situações que exigem algum tratamento especial. Elas podem representar condições anormais ou errôneas, situações que não foram previstas pelo programador ou mesmo fluxos alternativos de execução. Essas condições são chamadas de **exceções**.
 
 Em Java, as exceções são representadas por objetos pertencentes à classe `Throwable` ou a alguma de suas subclasses. A hierarquia de exceções é importante para entender quais exceções podem ser lançadas, capturadas e tratadas pelos programas.

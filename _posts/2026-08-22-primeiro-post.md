@@ -6,6 +6,9 @@ date: 2026-08-22
 
 ## Hello World - Versão Tradicional vs. Versão Simplificada
 
+**Por Eduardo Piveta**  
+*Professor Titular - UFSM*
+
 É de praxe iniciarmos o estudo de uma linguagem de programação com a escrita de um programa chamado **Hello World**, que mostra o texto `Hello World!` na saída padrão do dispositivo, usualmente a tela. Em Java, podemos escrever esse programa da seguinte forma:
 
 ```java

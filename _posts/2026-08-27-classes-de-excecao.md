@@ -2,6 +2,8 @@
 layout: post
 title: "Classes de exceção em Java"
 date: 2026-08-27
+lang: pt
+translation_id: 2026-08-27-classes-de-excecao
 ---
 **Por Eduardo Piveta**  
 *Professor Titular - UFSM*

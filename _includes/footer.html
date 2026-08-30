@@ -23,7 +23,12 @@
       {%- include social.html -%}
     </div>
     <p class="copyright">
-      © 2026 Eduardo Kessler Piveta. Todos os direitos reservados.
-    </p>
+{% if page.lang == "en" %}
+  © {{ site.time | date: "%Y" }} Eduardo Kessler Piveta. All rights reserved.
+{% elsif page.lang == "es" %}
+  © {{ site.time | date: "%Y" }} Eduardo Kessler Piveta. Todos los derechos reservados.
+{% else %}
+  © {{ site.time | date: "%Y" }} Eduardo Kessler Piveta. Todos os direitos reservados.
+{% endif %}    </p>
   </div>
 </footer>

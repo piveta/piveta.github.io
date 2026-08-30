@@ -1,0 +1,19 @@
+{% if page.translation_id %}
+
+  {% assign translations = site.posts | where: "translation_id", page.translation_id %}
+
+  {% if translations.size > 1 %}
+    <div class="language-switcher">
+      {% for post in translations %}
+        {% if post.lang == "pt" %}
+          <a href="{{ post.url | relative_url }}">🇧🇷 Português</a>
+        {% elsif post.lang == "en" %}
+          <a href="{{ post.url | relative_url }}">🇺🇸 English</a>
+        {% elsif post.lang == "es" %}
+          <a href="{{ post.url | relative_url }}">🇪🇸 Español</a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endif %}
+
+{% endif %}

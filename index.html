@@ -86,12 +86,44 @@ layout: home
   </div>
 </div>
 </div>
+```html
 <h2>Últimos artigos</h2>
-    {% for post in site.posts limit:5 %}
-        <h3>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-        </h3>
-    {% endfor %}
+
+{% assign shown_translations = "" %}
+{% assign article_count = 0 %}
+
+{% for post in site.posts %}
+    {% unless shown_translations contains post.translation_id %}
+        {% assign pt_post = site.posts | where: "translation_id", post.translation_id | where: "lang", "pt" | first %}
+        {% if pt_post %}
+            <h3>
+                <a href="{{ pt_post.url }}">{{ pt_post.title }}</a>
+            </h3>
+
+            <div class="article-languages">
+                <a href="{{ pt_post.url }}">PT</a>
+
+                {% assign en_post = site.posts | where: "translation_id", post.translation_id | where: "lang", "en" | first %}
+                {% if en_post %}
+                    · <a href="{{ en_post.url }}">EN</a>
+                {% endif %}
+
+                {% assign es_post = site.posts | where: "translation_id", post.translation_id | where: "lang", "es" | first %}
+                {% if es_post %}
+                    · <a href="{{ es_post.url }}">ES</a>
+                {% endif %}
+            </div>
+
+            {% assign article_count = article_count | plus: 1 %}
+        {% endif %}
+
+        {% assign shown_translations = shown_translations | append: post.translation_id | append: "," %}
+    {% endunless %}
+
+    {% if article_count == 5 %}
+        {% break %}
+    {% endif %}
+{% endfor %}
 <h2>Sobre o Autor</h2>
 <p>
   <strong>Eduardo Kessler Piveta</strong> é professor titular do Departamento de

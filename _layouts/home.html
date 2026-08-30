@@ -1,0 +1,81 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  {%- if site.posts.size > 0 -%}
+    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+
+    <ul class="post-list">
+      {%- assign shown_translations = "" -%}
+      {%- assign article_count = 0 -%}
+
+      {%- for post in site.posts -%}
+        {%- unless shown_translations contains post.translation_id -%}
+
+          {%- assign pt_post = site.posts
+              | where: "translation_id", post.translation_id
+              | where: "lang", "pt"
+              | first -%}
+
+          {%- if pt_post -%}
+            <li>
+              {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+              <span class="post-meta">{{ pt_post.date | date: date_format }}</span>
+
+              <h3>
+                <a class="post-link" href="{{ pt_post.url | relative_url }}">
+                  {{ pt_post.title | escape }}
+                </a>
+              </h3>
+
+              <div class="article-languages">
+                <a href="{{ pt_post.url | relative_url }}">PT</a>
+
+                {%- assign en_post = site.posts
+                    | where: "translation_id", post.translation_id
+                    | where: "lang", "en"
+                    | first -%}
+                {%- if en_post -%}
+                  · <a href="{{ en_post.url | relative_url }}">EN</a>
+                {%- endif -%}
+
+                {%- assign es_post = site.posts
+                    | where: "translation_id", post.translation_id
+                    | where: "lang", "es"
+                    | first -%}
+                {%- if es_post -%}
+                  · <a href="{{ es_post.url | relative_url }}">ES</a>
+                {%- endif -%}
+              </div>
+
+              {%- if site.show_excerpts -%}
+                {{ pt_post.excerpt }}
+              {%- endif -%}
+            </li>
+
+            {%- assign article_count = article_count | plus: 1 -%}
+          {%- endif -%}
+
+          {%- assign shown_translations = shown_translations
+              | append: post.translation_id
+              | append: "," -%}
+
+        {%- endunless -%}
+
+        {%- if article_count == 5 -%}
+          {%- break -%}
+        {%- endif -%}
+      {%- endfor -%}
+    </ul>
+
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  {%- endif -%}
+
+</div>

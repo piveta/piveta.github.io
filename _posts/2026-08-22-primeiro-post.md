@@ -1,11 +1,8 @@
 ---
 layout: post
-title: "Hello World"
+title: "Hello World - Versão Tradicional vs. Versão Simplificada"
 date: 2026-08-22
 ---
-
-## Hello World - Versão Tradicional vs. Versão Simplificada
-
 **Por Eduardo Piveta**  
 *Professor Titular - UFSM*
 

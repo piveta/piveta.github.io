@@ -41,6 +41,11 @@ layout: home
     text-align: center;
   }
 }
+
+.article-languages {
+  margin-top: -15px;
+  margin-bottom: 25px;
+}
   
 </style>
 <head>
@@ -86,7 +91,6 @@ layout: home
   </div>
 </div>
 </div>
-```html
 <h2>Últimos artigos</h2>
 
 {% assign shown_translations = "" %}
@@ -99,7 +103,6 @@ layout: home
             <h3>
                 <a href="{{ pt_post.url }}">{{ pt_post.title }}</a>
             </h3>
-
             <div class="article-languages">
                 <a href="{{ pt_post.url }}">PT</a>
 
@@ -113,7 +116,6 @@ layout: home
                     · <a href="{{ es_post.url }}">ES</a>
                 {% endif %}
             </div>
-
             {% assign article_count = article_count | plus: 1 %}
         {% endif %}
 

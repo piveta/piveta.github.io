@@ -16,15 +16,14 @@
       {% else %}
         <a href="{{ translation.url | relative_url }}">
           {% if translation.lang == "pt" %}
-            Português
+          Português
           {% elsif translation.lang == "en" %}
-            English
+          English
           {% elsif translation.lang == "es" %}
-            Español
+          Español
           {% else %}
-            {{ translation.lang }}
-          {% endif %}
-        </a>
+          {{ translation.lang }}
+          {% endif %}</a>
       {% endif %}
 
       {% unless forloop.last %} | {% endunless %}

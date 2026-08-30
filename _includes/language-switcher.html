@@ -14,18 +14,8 @@
           {{ translation.lang }}
         {% endif %}
       {% else %}
-        <a href="{{ translation.url | relative_url }}">
-          {% if translation.lang == "pt" %}
-          Português
-          {% elsif translation.lang == "en" %}
-          English
-          {% elsif translation.lang == "es" %}
-          Español
-          {% else %}
-          {{ translation.lang }}
-          {% endif %}</a>
+        <a href="{{ translation.url | relative_url }}">{% if translation.lang == "pt" %}Português{% elsif translation.lang == "en" %}English{% elsif translation.lang == "es" %}Español{% else %}{{ translation.lang }}{% endif %}</a>
       {% endif %}
-
       {% unless forloop.last %} | {% endunless %}
     {% endfor %}
   </div>

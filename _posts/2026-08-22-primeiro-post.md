@@ -26,6 +26,42 @@ Dentro do método `main` existe uma chamada ao método `println`. Esse método p
 
 O método `println` é chamado a partir do atributo `out` da classe `System`. Esse atributo é do tipo `PrintStream` e fornece acesso à saída padrão do sistema.
 
+## Compilação e execução
+
+Os programas em Java são primeiro compilados para uma representação intermediária, denominada **bytecode**, de forma a garantir sua portabilidade. Posteriormente, esses bytecodes são executados em uma Máquina Virtual Java (JVM), que os converte em código de máquina adequado à plataforma subjacente.
+
+Para compilar o programa, ele deve estar armazenado em um arquivo chamado `Hello.java`. Em Java, arquivos que contêm tipos públicos normalmente possuem o mesmo nome do tipo.
+
+Podemos utilizar um ambiente integrado de desenvolvimento (**IDE**, *Integrated Development Environment*) ou executar o compilador diretamente pela linha de comando, desde que um JDK esteja instalado.
+
+Normalmente, os programas Java são escritos em uma IDE, que oferece recursos para aumentar a produtividade durante o desenvolvimento, como navegação pelo código-fonte, refatoração, análise estática, compilação, testes e depuração.
+
+Algumas das IDEs mais populares para Java são:
+
+- [IntelliJ IDEA](https://www.jetbrains.com/pt-br/idea/)
+- [Eclipse](https://www.eclipse.org/)
+- [VS Code](https://code.visualstudio.com/)
+
+Também podemos compilar o programa diretamente pela linha de comando usando o compilador `javac`:
+
+```text
+javac Hello.java
+```
+
+O comando recebe `Hello.java` como entrada e produz o arquivo `Hello.class`, que contém a versão compilada do programa.
+
+Depois da compilação, podemos executar o programa utilizando o comando `java`:
+
+```text
+java Hello
+```
+
+A saída será:
+
+```text
+Hello World!
+```
+
 ## Uma forma mais simples com Java 25+
 
 A partir do Java 25, uma funcionalidade que vinha sendo desenvolvida como *preview* desde o Java 21 tornou-se permanente: **Compact Source Files and Instance Main Methods**. Ela permite escrever pequenos programas com menos código de infraestrutura, omitindo a declaração explícita da classe e simplificando o método `main`.
@@ -64,41 +100,7 @@ Nesse caso, o código-fonte é compilado em memória pelo próprio lançador ant
 
 O uso de arquivos compactos de código-fonte é especialmente interessante para exemplos pequenos, programas de aprendizado, scripts e experimentos. À medida que o programa cresce e passa a exigir uma estrutura mais elaborada, podemos retornar naturalmente à forma tradicional, com declarações explícitas de classes e métodos.
 
-## Compilação e execução
 
-Os programas em Java são primeiro compilados para uma representação intermediária, denominada **bytecode**, de forma a garantir sua portabilidade. Posteriormente, esses bytecodes são executados em uma Máquina Virtual Java (JVM), que os converte em código de máquina adequado à plataforma subjacente.
-
-Para compilar o programa, ele deve estar armazenado em um arquivo chamado `Hello.java`. Em Java, arquivos que contêm tipos públicos normalmente possuem o mesmo nome do tipo.
-
-Podemos utilizar um ambiente integrado de desenvolvimento (**IDE**, *Integrated Development Environment*) ou executar o compilador diretamente pela linha de comando, desde que um JDK esteja instalado.
-
-Normalmente, os programas Java são escritos em uma IDE, que oferece recursos para aumentar a produtividade durante o desenvolvimento, como navegação pelo código-fonte, refatoração, análise estática, compilação, testes e depuração.
-
-Algumas das IDEs mais populares para Java são:
-
-- [IntelliJ IDEA](https://www.jetbrains.com/pt-br/idea/)
-- [Eclipse](https://www.eclipse.org/)
-- [VS Code](https://code.visualstudio.com/)
-
-Também podemos compilar o programa diretamente pela linha de comando usando o compilador `javac`:
-
-```text
-javac Hello.java
-```
-
-O comando recebe `Hello.java` como entrada e produz o arquivo `Hello.class`, que contém a versão compilada do programa.
-
-Depois da compilação, podemos executar o programa utilizando o comando `java`:
-
-```text
-java Hello
-```
-
-A saída será:
-
-```text
-Hello World!
-```
 
 O processo realizado pelas IDEs é essencialmente semelhante. Além da compilação e execução, elas fornecem recursos para depuração, testes, refatoração, criação e gerenciamento de projetos, criação de bibliotecas e gerenciamento de versões, entre diversas outras funcionalidades.
 

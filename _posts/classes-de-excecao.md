@@ -2,7 +2,7 @@
 layout: post
 title: "Classes de exceção em Java"
 date: 2026-08-27
-lang: pt
+lang: pt-BR
 translation_id: classes-de-excecao
 permalink: /classes-de-excecao/
 ---

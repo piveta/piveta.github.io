@@ -102,7 +102,7 @@ layout: home
 
 {% for post in site.posts %}
     {% unless shown_translations contains post.translation_id %}
-        {% assign pt_post = site.posts | where: "translation_id", post.translation_id | where: "lang", "pt" | first %}
+        {% assign pt_post = site.posts | where: "translation_id", post.translation_id | where: "lang", "pt-BR" | first %}
         {% if pt_post %}
             <h3>
                 <a href="{{ pt_post.url }}">{{ pt_post.title }}</a>

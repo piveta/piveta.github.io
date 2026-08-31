@@ -2,8 +2,9 @@
 layout: post
 title: "Hello World - Versão Tradicional vs. Versão Simplificada"
 date: 2026-08-22
-lang: pt
+lang: pt-BR
 translation_id: hello-world
+permalink: /ola-mundo/
 ---
 
 É de praxe iniciarmos o estudo de uma linguagem de programação com a escrita de um programa chamado **Hello World**, que mostra o texto `Hello World!` na saída padrão do dispositivo, usualmente a tela. Em Java, podemos escrever esse programa da seguinte forma:

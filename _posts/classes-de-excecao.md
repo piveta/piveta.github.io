@@ -4,6 +4,7 @@ title: "Classes de exceção em Java"
 date: 2026-08-27
 lang: pt
 translation_id: 2026-08-27-classes-de-excecao
+permalink: /classes-de-excecao/
 ---
 Durante a execução de programas, podem ocorrer situações que exigem algum tratamento especial. Elas podem representar condições anormais ou errôneas, situações que não foram previstas pelo programador ou mesmo fluxos alternativos de execução. Essas condições são chamadas de **exceções**.
 

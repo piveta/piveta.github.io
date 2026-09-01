@@ -5,6 +5,7 @@ date: 2026-08-27
 lang: en
 translation_id: classes-de-excecao
 permalink: /exception-classes/ 
+image: /images/descendentesThrowable.png
 ---
 During program execution, situations may arise that require special handling. They may represent abnormal or erroneous conditions, situations that were not anticipated by the programmer, or even alternative execution flows. These conditions are called **exceptions**.
 

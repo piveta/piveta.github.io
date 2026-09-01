@@ -8,6 +8,8 @@ author:
   name: Eduardo Kessler Piveta
   url: "https://www-usr.inf.ufsm.br/~piveta/"
 
+google_analytics: G-BBQ1ZBPY2S
+
 plugins:
   - jekyll-sitemap
 

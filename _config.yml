@@ -7,6 +7,9 @@ theme: minima
 author:
   name: Eduardo Kessler Piveta
 
+plugins:
+  - jekyll-sitemap
+
 minima:
   social_links:
     - { url: "https://github.com/piveta", title: "GitHub", icon: "github" }

@@ -6,6 +6,7 @@ theme: minima
 
 author:
   name: Eduardo Kessler Piveta
+  url: "https://www-usr.inf.ufsm.br/~piveta/"
 
 plugins:
   - jekyll-sitemap

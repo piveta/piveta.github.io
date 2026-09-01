@@ -5,6 +5,7 @@ date: 2026-08-27
 lang: es
 translation_id: classes-de-excecao
 permalink: /es/clases-de-excepcion/
+image: /images/descendentesThrowable.png
 ---
 Durante la ejecución de programas, pueden ocurrir situaciones que requieren algún tratamiento especial. Estas pueden representar condiciones anormales o erróneas, situaciones que no fueron previstas por el programador o incluso flujos alternativos de ejecución. Estas condiciones se denominan **excepciones**.
 

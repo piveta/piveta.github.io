@@ -21,7 +21,7 @@ layout: default
 
           {%- assign pt_post = site.posts
               | where: "translation_id", post.translation_id
-              | where: "lang", "pt"
+              | where: "lang", "pt-BR"
               | first -%}
 
           {%- if pt_post -%}

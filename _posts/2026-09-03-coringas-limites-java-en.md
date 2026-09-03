@@ -39,13 +39,13 @@ void main(){
 Unbounded types are commonly used when we only want to read data, without modifying it. For example, we could have a method that receives a list and prints its elements without specifying the type of the list's elements:
 
 ```java
-public void imprimir(List<?> lista) {
-    for (Object obj : lista)
+public void print(List<?> list) {
+    for (Object obj : list)
         IO.println(obj);
 }
 void main(){
-    imprimir(List.of(1, 2, 3));
-    imprimir(List.of("A", "B", "C"));
+    print(List.of(1, 2, 3));
+    print(List.of("A", "B", "C"));
 }
 ```
 

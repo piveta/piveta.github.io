@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "Coringas e limites em tipos genéricos no Java"
+title: "Parametros limitados ou restritos (em tipos genéricos)"
 date: 2026-09-03
 lang: pt-BR
 translation_id: wildcards-limites-java
 permalink: /coringas-limites-tipos-genericos-java/
 ---
+
+Além de tipos genéricos específicos, podemos usar **coringas** (\textit{wildcards}) para expressar tipos desconhecidos (`<?>`), para restringir o tipo informado para incluir subtipos de determinado tipo (`<? extends Tipo>`) ou para incluir supertipos (usando `<? super Tipo>`). As seções a seguir descrevem os coringas sem restrição, com limite superior e com limite inferior, respectivamente. A seguir, mostramos como podemos definir múltiplos limites para tipos genéricos.
 
 ## Coringas sem restrição
 

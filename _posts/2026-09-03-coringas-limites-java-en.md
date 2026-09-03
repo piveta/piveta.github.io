@@ -116,7 +116,7 @@ If we created the `ArrayList` with `Object` as its type parameter, the third add
 
 ## Multiple Bounds
 
-In Java, a generic type can have **multiple bounds**, meaning that the type parameter can be restricted to accept only types that extend (or are) a specific class and that implement one or more interfaces. The syntax follows the form `\<T extends Class & Interface1 & Interface2>`. If a class is used as a bound, it must be specified first, followed by the interfaces. If there is no class, only interfaces can be listed.
+In Java, a generic type can have **multiple bounds**, meaning that the type parameter can be restricted to accept only types that extend (or are) a specific class and that implement one or more interfaces. The syntax follows the form `<T extends Class & Interface1 & Interface2>`. If a class is used as a bound, it must be specified first, followed by the interfaces. If there is no class, only interfaces can be listed.
 
 For example, the class `MultiplosLimites` has a generic type `T` that extends the `Number` class and implements the `Comparable<T>` and `Serializable` interfaces:
 

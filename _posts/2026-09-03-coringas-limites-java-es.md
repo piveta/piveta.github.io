@@ -116,7 +116,7 @@ Si creáramos el `ArrayList` con `Object` como parámetro de tipo, aun así la t
 
 ## Múltiples límites
 
-En Java, un tipo genérico puede tener **múltiples límites** (*multiple bounds*), es decir, el parámetro de tipo puede restringirse para aceptar únicamente tipos que extiendan (o sean de) una clase específica y que implementen una o más interfaces. La sintaxis sigue la forma `\<T extends Clase & Interface1 & Interface2>`. Si existe una clase como límite, debe especificarse primero, seguida de las interfaces. Si no existe una clase, solo pueden enumerarse interfaces.
+En Java, un tipo genérico puede tener **múltiples límites** (*multiple bounds*), es decir, el parámetro de tipo puede restringirse para aceptar únicamente tipos que extiendan (o sean de) una clase específica y que implementen una o más interfaces. La sintaxis sigue la forma `<T extends Clase & Interfaz1 & Interfaz2>`. Si existe una clase como límite, debe especificarse primero, seguida de las interfaces. Si no existe una clase, solo pueden enumerarse interfaces.
 
 Por ejemplo, la clase `MultiplosLimites` posee un tipo genérico `T` que extiende la clase `Number` e implementa las interfaces `Comparable<T>` y `Serializable`:
 

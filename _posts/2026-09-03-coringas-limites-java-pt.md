@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Parametros limitados ou restritos (em tipos genéricos)"
+title: "Parametros limitados ou restritos em tipos genéricos em Java"
 date: 2026-09-03
 lang: pt-BR
 translation_id: wildcards-limites-java

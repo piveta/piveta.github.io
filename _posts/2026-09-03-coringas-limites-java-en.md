@@ -130,3 +130,7 @@ public class MultiplosLimites<T extends Number
 ```
 
 In this example, `T` can only be `Number` or a type that inherits from `Number` and also implements `Comparable<T>` and `Serializable`. This is useful when we need multiple guarantees, such as access to superclass methods and contracts defined by several interfaces. This combination allows the code to be more flexible while remaining strongly typed, avoiding compile-time errors and ensuring that all required methods will be available for the generic type being used.
+
+---
+
+*This article is adapted from content in the book <a href="https://www.amazon.com.br/dp/B0FWZ6HYVP">Orientação a Objetos com Java</a>, by <a href="http://www-usr.inf.ufsm.br/~piveta/">Eduardo Kessler Piveta</a>.*

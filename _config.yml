@@ -9,6 +9,7 @@ locale: pt_BR
 author:
   name: Eduardo Kessler Piveta
   url: "https://www-usr.inf.ufsm.br/~piveta/"
+  twitter: ekpiveta
 
 twitter:
   username: ekpiveta
@@ -17,6 +18,7 @@ google_analytics: G-BBQ1ZBPY2S
 
 plugins:
   - jekyll-sitemap
+  - jekyll-seo-tag
 
 minima:
   social_links:

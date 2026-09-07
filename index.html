@@ -5,90 +5,40 @@ description: "O melhor e mais atualizado livro de Java nacional. Publicado em 31
 image: /capaOO.jpg
 author: Eduardo Kessler Piveta
 ---
-<html>
+
 <style>
-  .wrapper {
-     max-width: 1000px;
-  }
-  
+  .wrapper { max-width: 1000px; }
   .book {
-  display: flex;
-  align-items: flex-start;
-  gap: 30px;
-  max-width: 1000px;
-  margin: 30px auto;
-}
-
-.book-cover-container {
-  flex: 0 0 auto;
-}
-
-.book-cover {
-  width: 300px;
-  max-width: 80vw;
-  height: auto;
-  display: block;
-  border: 1px solid #ddd;
-}
-
-.book-description {
-  flex: 1;
-}
-
-@media (max-width: 600px) {
-  .book {
-    flex-direction: column;
-    align-items: center;
+    display: flex; align-items: flex-start; gap: 30px;
+    max-width: 1000px; margin: 30px auto;
   }
-
-  .book-description {
-    text-align: center;
+  .book-cover-container { flex: 0 0 auto; }
+  .book-cover {
+    width: 300px; max-width: 80vw; height: auto;
+    display: block; border: 1px solid #ddd;
   }
-}
-
-.article-languages {
-  margin-top: -15px;
-  margin-bottom: 25px;
-}
-
-.post-list .post-link {
-    font-size: inherit;
-}
-  
+  .book-description { flex: 1; }
+  @media (max-width: 600px) {
+    .book { flex-direction: column; align-items: center; }
+    .book-description { text-align: center; }
+  }
+  .article-languages { margin-top: -15px; margin-bottom: 25px; }
+  .post-list .post-link { font-size: inherit; }
 </style>
-<head>
-  <title>OO com Java</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-</head>
-<body>
-  <div class="home-content">
+
+<div class="home-content">
   <div class="book">
-  <div class="book-cover-container">
-    <img
-      class="book-cover"
-      src="capaOO.jpg"
-      alt="Capa do livro Orientação a Objetos com Java">
-  </div>
-  <div class="book-description">
-    <h2>Orientação a Objetos com Java</h2>
-    <p>por <strong>Eduardo Kessler Piveta (prof. Titular - UFSM)</strong></p>
-    <p>
-      Um livro sobre programação orientada a objetos em Java,
-      explorando os principais conceitos da linguagem de forma
-      detalhada e progressiva.
-    </p>
-    <p style="color: #d32f2f;">
-      Cobre Java 25 - A LTS mais atual da linguagem! 
-    </p>
-    <p>
-      Este é o livro de Java nacional mais atualizado em 2026. Publicado em 31 de outubro de 2025, cobre os recursos da linguagem até o Java 25 LTS (setembro de 2025).
-    </p>
-    <p>
-    <h3>Sumário</h3>
-    <ol>
+    <div class="book-cover-container">
+      <img class="book-cover" src="capaOO.jpg" alt="Capa do livro Orientação a Objetos com Java">
+    </div>
+    <div class="book-description">
+      <h2>Orientação a Objetos com Java</h2>
+      <p>por <strong>Eduardo Kessler Piveta (prof. Titular - UFSM)</strong></p>
+      <p>Um livro sobre programação orientada a objetos em Java, explorando os principais conceitos da linguagem de forma detalhada e progressiva.</p>
+      <p style="color: #d32f2f;">Cobre Java 25 - A LTS mais atual da linguagem!</p>
+      <p>Este é o livro de Java nacional mais atualizado em 2026. Publicado em 31 de outubro de 2025, cobre os recursos da linguagem até o Java 25 LTS (setembro de 2025).</p>
+      <h3>Sumário</h3>
+      <ol>
         <li>Introdução</li>
         <li>Orientação a objetos</li>
         <li>Usando classes: acesso a dados</li>
@@ -96,68 +46,36 @@ author: Eduardo Kessler Piveta
         <li>Tipos genéricos</li>
         <li>Estendendo classes: acesso a dados</li>
         <li>Tratamento de exceções</li>
-    </ol>
-    </p>
-    {% include book_buttons.html %}
+      </ol>
+      {% include book_buttons.html %}
+    </div>
   </div>
 </div>
-</div>
-<h2>Últimos artigos</h2>
 
+<h2>Últimos artigos</h2>
 {% assign shown_translations = "" %}
 {% assign article_count = 0 %}
-
 {% for post in site.posts %}
     {% unless shown_translations contains post.translation_id %}
         {% assign pt_post = site.posts | where: "translation_id", post.translation_id | where: "lang", "pt-BR" | first %}
         {% if pt_post %}
-            <h3>
-                <a href="{{ pt_post.url }}">{{ pt_post.title }}</a>
-            </h3>
+            <h3><a href="{{ pt_post.url }}">{{ pt_post.title }}</a></h3>
             <div class="article-languages">
                 <a href="{{ pt_post.url }}">PT</a>
-
                 {% assign en_post = site.posts | where: "translation_id", post.translation_id | where: "lang", "en" | first %}
-                {% if en_post %}
-                    · <a href="{{ en_post.url }}">EN</a>
-                {% endif %}
-
+                {% if en_post %} · <a href="{{ en_post.url }}">EN</a>{% endif %}
                 {% assign es_post = site.posts | where: "translation_id", post.translation_id | where: "lang", "es" | first %}
-                {% if es_post %}
-                    · <a href="{{ es_post.url }}">ES</a>
-                {% endif %}
+                {% if es_post %} · <a href="{{ es_post.url }}">ES</a>{% endif %}
             </div>
             {% assign article_count = article_count | plus: 1 %}
         {% endif %}
-
         {% assign shown_translations = shown_translations | append: post.translation_id | append: "," %}
     {% endunless %}
-
-    {% if article_count == 5 %}
-        {% break %}
-    {% endif %}
+    {% if article_count == 5 %}{% break %}{% endif %}
 {% endfor %}
+
 <h2>Sobre o Autor</h2>
-<p>
-  <strong>Eduardo Kessler Piveta</strong> é professor titular do Departamento de
-  Linguagens e Sistemas de Computação da Universidade Federal de Santa
-  Maria (UFSM) e Doutor em Ciência da Computação pela Universidade
-  Federal do Rio Grande do Sul (UFRGS).
-</p>
-<p>
-  Seus temas de interesse incluem projeto e evolução de software,
-  paradigmas de programação e projeto e implementação de linguagens de
-  programação. Possui 25 anos de experiência no ensino superior em
-  Computação, tendo atuado em diferentes universidades brasileiras,
-  incluindo CEULP/ULBRA, Unisinos, UFRGS, UNIPAMPA e UFSM.
-</p>
-<p>
-  <strong>Site institucional</strong>
-</p>
-<p>
-  <a href="https://www-usr.inf.ufsm.br/~piveta/">
-    https://www-usr.inf.ufsm.br/~piveta/
-  </a>
-</p>
-</body>
-</html>
+<p><strong>Eduardo Kessler Piveta</strong> é professor titular do Departamento de Linguagens e Sistemas de Computação da Universidade Federal de Santa Maria (UFSM) e Doutor em Ciência da Computação pela UFRGS.</p>
+<p>Seus temas de interesse incluem projeto e evolução de software, paradigmas de programação e projeto e implementação de linguagens de programação. Possui 25 anos de experiência no ensino superior em Computação.</p>
+<p><strong>Site institucional</strong></p>
+<p><a href="https://www-usr.inf.ufsm.br/~piveta/">https://www-usr.inf.ufsm.br/~piveta/</a></p>

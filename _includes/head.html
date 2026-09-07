@@ -43,6 +43,8 @@
     {% endif %}
   {% endfor %}
   {% endif %}
+
+{% if page.url == "/" %}
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -51,7 +53,10 @@
   "isbn":"6501778212",
   "datePublished":"2025-10-31",
   "inLanguage":"pt-BR",
-  "author":{"@type":"Person","name":"Eduardo Kessler Piveta"}
+  "author":{"@type":"Person","name":"Eduardo Kessler Piveta","url":"https://www-usr.inf.ufsm.br/~piveta/"},
+  "image":"https://oocomjava.com.br/capaOO.jpg",
+  "description":"Livro nacional mais atualizado, cobrindo Java 25 LTS de setembro de 2025"
 }
 </script>
+{% endif %}
 </head>

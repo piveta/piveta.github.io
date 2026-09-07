@@ -3,10 +3,15 @@ description: Orientação a Objetos com Java
 url: "https://oocomjava.com.br"
 markdown: kramdown
 theme: minima
+lang: pt-BR
+locale: pt_BR
 
 author:
   name: Eduardo Kessler Piveta
   url: "https://www-usr.inf.ufsm.br/~piveta/"
+
+twitter:
+  username: ekpiveta
 
 google_analytics: G-BBQ1ZBPY2S
 

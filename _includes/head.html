@@ -19,31 +19,29 @@
   {%- endif -%}
 
   {% if page.translation_id %}
-    {% assign translations = site.posts | where: "translation_id", page.translation_id %}
-    {% for translation in translations %}
-      {% if translation.lang == "pt-BR" %}
-        <link rel="alternate"
-              hreflang="pt-BR"
-              href="{{ site.url }}{{ translation.url }}">
-      {% elsif translation.lang == "en" %}
-        <link rel="alternate"
-              hreflang="en"
-              href="{{ site.url }}{{ translation.url }}">
-      {% elsif translation.lang == "es" %}
-        <link rel="alternate"
-              hreflang="es"
-              href="{{ site.url }}{{ translation.url }}">
-      {% endif %}
-    {% endfor %}
+  {% assign translations = site.posts | where: "translation_id", page.translation_id %}
+
   {% for translation in translations %}
     {% if translation.lang == "pt-BR" %}
       <link rel="alternate"
-          hreflang="x-default"
-          href="{{ site.url }}{{ translation.url }}">
+            hreflang="pt-BR"
+            href="{{ site.url }}{{ translation.url }}">
+    {% else %}
+      <link rel="alternate"
+            hreflang="{{ translation.lang }}"
+            href="{{ site.url }}{{ translation.url }}">
     {% endif %}
   {% endfor %}
-  {% endif %}
 
+  {% for translation in translations %}
+    {% if translation.lang == "pt-BR" %}
+      <link rel="alternate"
+            hreflang="x-default"
+            href="{{ site.url }}{{ translation.url }}">
+    {% endif %}
+  {% endfor %}
+{% endif %}
+  
 {% if page.url == "/" %}
 <script type="application/ld+json">
 {

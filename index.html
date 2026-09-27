@@ -92,26 +92,47 @@ author:
     </div>
   </div>
 </div>
-
 <h2>Últimos artigos</h2>
 {% assign shown_translations = "" %}
 {% assign article_count = 0 %}
+
 {% for post in site.posts %}
     {% unless shown_translations contains post.translation_id %}
-        {% assign pt_post = site.posts | where: "translation_id", post.translation_id | where: "lang", "pt-BR" | first %}
+
+        {% assign pt_post = site.posts
+            | where: "translation_id", post.translation_id
+            | where: "lang", "pt-BR"
+            | first %}
+
         {% if pt_post %}
             <h3><a href="{{ pt_post.url }}">{{ pt_post.title }}</a></h3>
+
             <div class="article-languages">
                 <a href="{{ pt_post.url }}">PT</a>
-                {% assign en_post = site.posts | where: "translation_id", post.translation_id | where: "lang", "en" | first %}
-                {% if en_post %} · <a href="{{ en_post.url }}">EN</a>{% endif %}
-                {% assign es_post = site.posts | where: "translation_id", post.translation_id | where: "lang", "es" | first %}
-                {% if es_post %} · <a href="{{ es_post.url }}">ES</a>{% endif %}
+
+                {% assign languages = "en,es,de,fr,it,ja,ko,zh" | split: "," %}
+
+                {% for lang in languages %}
+                    {% assign translated_post = site.posts
+                        | where: "translation_id", pt_post.translation_id
+                        | where: "lang", lang
+                        | first %}
+
+                    {% if translated_post %}
+                        &nbsp;·&nbsp;<a href="{{ translated_post.url }}">{{ lang | upcase }}</a>
+                    {% endif %}
+                {% endfor %}
             </div>
+
             {% assign article_count = article_count | plus: 1 %}
         {% endif %}
-        {% assign shown_translations = shown_translations | append: post.translation_id | append: "," %}
+
+        {% assign shown_translations = shown_translations
+            | append: post.translation_id
+            | append: "," %}
+
     {% endunless %}
+
     {% if article_count == 5 %}{% break %}{% endif %}
 {% endfor %}
 

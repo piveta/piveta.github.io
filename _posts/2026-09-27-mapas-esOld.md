@@ -45,18 +45,18 @@ The following example shows a map of cars whose keys are license plates and whos
 
 ```java
 void main() {
-    Map<String, String> carros = new HashMap<>();
-    carros.put("ABCD2935", "Tesla Model S");
-    carros.put("YJKF9353", "Toyota Corolla");
-    carros.put("WFLO1304", "Honda CRV");
+    Map<String, String> cars = new HashMap<>();
+    cars.put("ABCD2935", "Tesla Model S");
+    cars.put("YJKF9353", "Toyota Corolla");
+    cars.put("WFLO1304", "Honda CRV");
 
     var key = "ABCD2935";
 
-    if (carros.containsKey(key)){
+    if (cars.containsKey(key)){
         IO.println("Vehicle data:");
         IO.println(carros.get(key));
         IO.println("Removing the vehicle...");
-        carros.remove(key);
+        cars.remove(key);
     } else
         IO.println("Vehicle not found!");
 }

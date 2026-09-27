@@ -5,19 +5,45 @@ layout: default
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
 
-    <p class="post-author">
-      {% if page.lang == "en" %}
-        By <strong>Eduardo Piveta</strong><br>
-        <em>Full Professor - UFSM</em>
-      {% elsif page.lang == "es" %}
-        Por <strong>Eduardo Piveta</strong><br>
-        <em>Profesor Titular - UFSM</em>
-      {% else %}
-        Por <strong>Eduardo Piveta</strong><br>
-        <em>Professor Titular - UFSM</em>
-      {% endif %}
-    </p>
+<p class="post-author">
+  {% case page.lang %}
+    {% when "en" %}
+      By <strong>Eduardo Piveta</strong><br>
+      <em>Full Professor - UFSM</em>
 
+    {% when "es" %}
+      Por <strong>Eduardo Piveta</strong><br>
+      <em>Profesor Titular - UFSM</em>
+
+    {% when "fr" %}
+      Par <strong>Eduardo Piveta</strong><br>
+      <em>Professeur titulaire - UFSM</em>
+
+    {% when "it" %}
+      Di <strong>Eduardo Piveta</strong><br>
+      <em>Professore ordinario - UFSM</em>
+
+    {% when "de" %}
+      Von <strong>Eduardo Piveta</strong><br>
+      <em>Ordentlicher Professor - UFSM</em>
+
+    {% when "ja" %}
+      <strong>Eduardo Piveta</strong><br>
+      <em>UFSM 正教授</em>
+
+    {% when "ko" %}
+      <strong>Eduardo Piveta</strong><br>
+      <em>UFSM 정교수</em>
+
+    {% when "zh" %}
+      <strong>Eduardo Piveta</strong><br>
+      <em>UFSM 正教授</em>
+
+    {% else %}
+      Por <strong>Eduardo Piveta</strong><br>
+      <em>Professor Titular - UFSM</em>
+  {% endcase %}
+</p>
     <p class="post-meta">
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}

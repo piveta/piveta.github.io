@@ -53,6 +53,15 @@ layout: default
                 {%- if es_post -%}
                   · <a href="{{ es_post.url | relative_url }}">ES</a>
                 {%- endif -%}
+
+                {%- assign de_post = site.posts
+                    | where: "translation_id", post.translation_id
+                    | where: "lang", "de"
+                    | first -%}
+                {%- if de_post -%}
+                  · <a href="{{ de_post.url | relative_url }}">DE</a>
+                {%- endif -%}
+
               </div>
 
               {%- if site.show_excerpts -%}

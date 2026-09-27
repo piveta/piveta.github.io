@@ -35,23 +35,22 @@ layout: default
                 </a>
               </h3>
 
-<div class="article-languages">
-  <a href="{{ pt_post.url | relative_url }}">PT</a>
+              <div class="article-languages">
+                <a href="{{ pt_post.url | relative_url }}">PT</a>
 
-  {%- assign languages = "en,es,de,fr,it,ja,ko,zh" | split: "," -%}
+                {%- assign languages = "en,es,de,fr,it,ja,ko,zh" | split: "," -%}
 
-  {%- for lang in languages -%}
-    {%- assign translated_post = site.posts
-        | where: "translation_id", post.translation_id
-        | where: "lang", lang
-        | first -%}
+                {%- for lang in languages -%}
+                  {%- assign translated_post = site.posts
+                      | where: "translation_id", post.translation_id
+                      | where: "lang", lang
+                      | first -%}
 
-    {%- if translated_post -%}
-      · <a href="{{ translated_post.url | relative_url }}">{{ lang | upcase }}</a>
-    {%- endif -%}
-  {%- endfor -%}
-</div>              
-              
+                  {%- if translated_post -%}
+                    &nbsp;·&nbsp;<a href="{{ translated_post.url | relative_url }}">{{ lang | upcase }}</a>
+                  {%- endif -%}
+                {%- endfor -%}
+              </div>
 
               {%- if site.show_excerpts -%}
                 {{ pt_post.excerpt }}

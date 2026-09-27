@@ -35,34 +35,23 @@ layout: default
                 </a>
               </h3>
 
-              <div class="article-languages">
-                <a href="{{ pt_post.url | relative_url }}">PT</a>
+<div class="article-languages">
+  <a href="{{ pt_post.url | relative_url }}">PT</a>
 
-                {%- assign en_post = site.posts
-                    | where: "translation_id", post.translation_id
-                    | where: "lang", "en"
-                    | first -%}
-                {%- if en_post -%}
-                  · <a href="{{ en_post.url | relative_url }}">EN</a>
-                {%- endif -%}
+  {%- assign languages = "en,es,de,fr,it,ja,ko,zh" | split: "," -%}
 
-                {%- assign es_post = site.posts
-                    | where: "translation_id", post.translation_id
-                    | where: "lang", "es"
-                    | first -%}
-                {%- if es_post -%}
-                  · <a href="{{ es_post.url | relative_url }}">ES</a>
-                {%- endif -%}
+  {%- for lang in languages -%}
+    {%- assign translated_post = site.posts
+        | where: "translation_id", post.translation_id
+        | where: "lang", lang
+        | first -%}
 
-                {%- assign de_post = site.posts
-                    | where: "translation_id", post.translation_id
-                    | where: "lang", "de"
-                    | first -%}
-                {%- if de_post -%}
-                  · <a href="{{ de_post.url | relative_url }}">DE</a>
-                {%- endif -%}
-
-              </div>
+    {%- if translated_post -%}
+      · <a href="{{ translated_post.url | relative_url }}">{{ lang | upcase }}</a>
+    {%- endif -%}
+  {%- endfor -%}
+</div>              
+              
 
               {%- if site.show_excerpts -%}
                 {{ pt_post.excerpt }}

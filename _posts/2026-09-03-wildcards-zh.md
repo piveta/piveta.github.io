@@ -4,7 +4,7 @@ title: "Java 泛型类型中的通配符与边界"
 date: 2026-09-03
 lang: zh
 translation_id: wildcards-limites-java
-permalink: /java-generics-wildcards-bounds/
+permalink: /java-generics-wildcards-bounds-zh/
 ---
 
 除了具体的泛型类型之外，我们还可以使用**通配符**来表示未知类型（`<?>`），将指定类型限制为某个给定类型的子类型（`<? extends Type>`），或者包含超类型（使用 `<? super Type>`）。下面分别介绍无界通配符、上界通配符和下界通配符。随后，我们将说明如何为泛型类型定义多个边界。

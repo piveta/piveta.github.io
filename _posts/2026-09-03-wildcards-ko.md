@@ -4,7 +4,7 @@ title: "Java 제네릭 타입의 와일드카드와 경계"
 date: 2026-09-03
 lang: ko
 translation_id: wildcards-limites-java
-permalink: /java-generics-wildcards-bounds/
+permalink: /java-generics-wildcards-bounds-ko/
 ---
 
 구체적인 제네릭 타입 외에도 **와일드카드**를 사용하여 알 수 없는 타입(`<?>`)을 표현하거나, 지정된 타입을 특정 타입의 하위 타입으로 제한하거나(`<? extends Type>`), 상위 타입을 포함하도록 할 수 있습니다(`<? super Type>` 사용). 다음 절에서는 순서대로 비한정 와일드카드, 상한 와일드카드, 하한 와일드카드를 설명합니다. 이어서 제네릭 타입에 여러 경계를 정의하는 방법을 살펴봅니다.

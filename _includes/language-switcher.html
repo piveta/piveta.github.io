@@ -23,6 +23,12 @@
           {% assign language_name = "한국어" %}
         {% when "zh" %}
           {% assign language_name = "中文" %}
+        {% when "pl" %}
+          {% assign language_name = "Polski" %}
+        {% when "sv" %}
+          {% assign language_name = "Svenska" %}
+        {% when "id" %}
+          {% assign language_name = "Bahasa Indonesia" %}
         {% else %}
           {% assign language_name = translation.lang %}
       {% endcase %}

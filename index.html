@@ -105,12 +105,24 @@ author:
             | first %}
 
         {% if pt_post %}
-            <h3><a href="{{ pt_post.url }}">{{ pt_post.title }}</a></h3>
+
+            {% assign current_post = site.posts
+                | where: "translation_id", post.translation_id
+                | where: "lang", page.lang
+                | first %}
+
+            {% if current_post == nil %}
+                {% assign current_post = pt_post %}
+            {% endif %}
+
+            <h3>
+                <a href="{{ current_post.url }}">{{ current_post.title }}</a>
+            </h3>
 
             <div class="article-languages">
                 <a href="{{ pt_post.url }}">PT</a>
 
-                {% assign languages = "en,es,de,fr,it,ja,ko,zh" | split: "," %}
+                {% assign languages = "en,es,de,fr,it,ja,ko,zh,pl,sv,id" | split: "," %}
 
                 {% for lang in languages %}
                     {% assign translated_post = site.posts

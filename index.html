@@ -93,59 +93,39 @@ author:
   </div>
 </div>
 <h2>Últimos artigos</h2>
-{% assign shown_translations = "" %}
+
+{% assign pt_posts = site.posts | where: "lang", "pt-BR" %}
 {% assign article_count = 0 %}
 
-{% for post in site.posts %}
-    {% unless shown_translations contains post.translation_id %}
+{% for post in pt_posts %}
 
-        {% assign pt_post = site.posts
-            | where: "translation_id", post.translation_id
-            | where: "lang", "pt-BR"
-            | first %}
+    <h3>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+    </h3>
 
-        {% if pt_post %}
+    <div class="article-languages">
+        <a href="{{ post.url }}">PT</a>
 
-            {% assign current_post = site.posts
+        {% assign languages = "en,es,de,fr,it,ja,ko,zh,pl,sv,id" | split: "," %}
+
+        {% for lang in languages %}
+            {% assign translated_post = site.posts
                 | where: "translation_id", post.translation_id
-                | where: "lang", page.lang
+                | where: "lang", lang
                 | first %}
 
-            {% if current_post == nil %}
-                {% assign current_post = pt_post %}
+            {% if translated_post %}
+                &nbsp;·&nbsp;<a href="{{ translated_post.url }}">{{ lang | upcase }}</a>
             {% endif %}
+        {% endfor %}
+    </div>
 
-            <h3>
-                <a href="{{ current_post.url }}">{{ current_post.title }}</a>
-            </h3>
+    {% assign article_count = article_count | plus: 1 %}
 
-            <div class="article-languages">
-                <a href="{{ pt_post.url }}">PT</a>
+    {% if article_count == 5 %}
+        {% break %}
+    {% endif %}
 
-                {% assign languages = "en,es,de,fr,it,ja,ko,zh,pl,sv,id" | split: "," %}
-
-                {% for lang in languages %}
-                    {% assign translated_post = site.posts
-                        | where: "translation_id", pt_post.translation_id
-                        | where: "lang", lang
-                        | first %}
-
-                    {% if translated_post %}
-                        &nbsp;·&nbsp;<a href="{{ translated_post.url }}">{{ lang | upcase }}</a>
-                    {% endif %}
-                {% endfor %}
-            </div>
-
-            {% assign article_count = article_count | plus: 1 %}
-        {% endif %}
-
-        {% assign shown_translations = shown_translations
-            | append: post.translation_id
-            | append: "," %}
-
-    {% endunless %}
-
-    {% if article_count == 5 %}{% break %}{% endif %}
 {% endfor %}
 
 <h2>Sobre o Autor</h2>

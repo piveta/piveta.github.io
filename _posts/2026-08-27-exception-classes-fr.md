@@ -6,6 +6,8 @@ lang: fr
 translation_id: classes-de-excecao
 permalink: /classes-exceptions-java-fr/
 image: /images/descendentesThrowable.png
+share_text: >-
+  Dans la hiérarchie Java, Throwable se divise notamment en Error et Exception, tandis que RuntimeException relève des exceptions non vérifiées. L’article explique ce qui distingue les exceptions vérifiées des non vérifiées.
 ---
 Pendant l’exécution d’un programme, des situations peuvent survenir et nécessiter un traitement particulier. Elles peuvent représenter des conditions anormales ou erronées, des situations qui n’avaient pas été prévues par le programmeur ou même des flux d’exécution alternatifs. Ces conditions sont appelées **exceptions**.
 

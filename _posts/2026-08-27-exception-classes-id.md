@@ -6,6 +6,8 @@ lang: id
 translation_id: classes-de-excecao
 permalink: /kelas-pengecualian-java-id/
 image: /images/descendentesThrowable.png
+share_text: >-
+  Di Java, Throwable menjadi dasar hierarki yang mencakup Error dan Exception, sedangkan RuntimeException termasuk pengecualian tidak terperiksa. Artikel ini membahas perbedaan antara pengecualian terperiksa dan tidak terperiksa.
 ---
 Selama eksekusi program, dapat muncul situasi yang memerlukan penanganan khusus. Situasi tersebut dapat berupa kondisi yang tidak normal atau salah, situasi yang tidak diperkirakan oleh programmer, atau bahkan alur eksekusi alternatif. Kondisi-kondisi ini disebut **pengecualian**.
 

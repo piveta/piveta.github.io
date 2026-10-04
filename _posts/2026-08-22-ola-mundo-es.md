@@ -5,6 +5,8 @@ date: 2026-08-22
 lang: es
 translation_id: hello-world
 permalink: /es/hola-mundo/
+share_text: >-
+  El ejemplo contrasta la clase Java con main del enfoque tradicional con la forma simplificada de ejecución disponible desde Java 25. Ambas opciones muestran el mismo mensaje Hello World.
 ---
 
 Es habitual iniciar el estudio de un lenguaje de programación escribiendo un programa llamado **Hello World**, que muestra el texto `Hello World!` en la salida estándar del dispositivo, normalmente la pantalla. En Java, podemos escribir este programa de la siguiente manera:

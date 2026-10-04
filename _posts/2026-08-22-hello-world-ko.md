@@ -5,6 +5,8 @@ date: 2026-08-22
 lang: ko
 translation_id: hello-world
 permalink: /hello-world-ko/
+share_text: >-
+  전통적인 Java 클래스와 main 메서드 방식, Java 25부터 사용할 수 있는 간결한 실행 방식을 비교합니다. 두 방식 모두 같은 Hello World 메시지를 출력합니다.
 ---
 
 프로그래밍 언어를 공부할 때 일반적으로 **Hello World**라는 프로그램을 작성하는 것부터 시작합니다. 이 프로그램은 장치의 표준 출력, 일반적으로 화면에 `Hello World!`라는 텍스트를 표시합니다. Java에서는 다음과 같이 작성할 수 있습니다.

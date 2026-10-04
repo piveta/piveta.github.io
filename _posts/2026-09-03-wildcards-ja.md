@@ -5,6 +5,8 @@ date: 2026-09-03
 lang: ja
 translation_id: wildcards-limites-java
 permalink: /java-generics-wildcards-bounds-ja/
+share_text: >-
+  Javaのジェネリクスでは、<?>が不明な型を表し、<? extends T>と<? super T>が上限と下限を指定します。ワイルドカードを使うと、型の範囲を柔軟に表現できます。
 ---
 
 特定のジェネリック型に加えて、**ワイルドカード**を使用して未知の型（`<?>`）を表したり、指定した型をある型のサブタイプに制限したり（`<? extends Type>`）、スーパータイプを含めたり（`<? super Type>`）できます。以下では、それぞれ非境界ワイルドカード、上限付きワイルドカード、下限付きワイルドカードについて説明します。続いて、ジェネリック型に複数の境界を定義する方法を示します。

@@ -6,6 +6,8 @@ lang: it
 translation_id: classes-de-excecao
 permalink: /classi-eccezioni-java-it/
 image: /images/descendentesThrowable.png
+share_text: >-
+  Nella gerarchia Java, Throwable comprende rami come Error ed Exception, mentre RuntimeException appartiene alle eccezioni non controllate. L’articolo chiarisce la distinzione tra eccezioni controllate e non controllate.
 ---
 Durante l’esecuzione di un programma possono verificarsi situazioni che richiedono una gestione particolare. Possono rappresentare condizioni anomale o errate, situazioni non previste dal programmatore o persino flussi di esecuzione alternativi. Queste condizioni sono chiamate **eccezioni**.
 

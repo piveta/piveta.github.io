@@ -5,6 +5,8 @@ date: 2026-08-22
 lang: en
 translation_id: hello-world
 permalink: /en/hello-world/
+share_text: >-
+  Compare the familiar Java class with main to the streamlined launch form available from Java 25. Both approaches print the same Hello World message.
 ---
 
 It is customary to begin studying a programming language by writing a program called **Hello World**, which displays the text `Hello World!` on the standard output of the device, usually the screen. In Java, we can write this program as follows:

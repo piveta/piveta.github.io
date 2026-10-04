@@ -5,6 +5,8 @@ date: 2026-08-22
 lang: ja
 translation_id: hello-world
 permalink: /hello-world-ja/
+share_text: >-
+  従来のJavaクラスとmainメソッドを使う方法を、Java 25以降の簡潔な起動形式と比較します。どちらの書き方でも同じHello Worldを出力します。
 ---
 
 プログラミング言語の学習では、通常、標準出力（一般には画面）に `Hello World!` という文字列を表示する **Hello World** と呼ばれるプログラムを書くことから始めます。Javaでは、次のように書くことができます。

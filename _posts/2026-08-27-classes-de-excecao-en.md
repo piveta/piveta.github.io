@@ -6,6 +6,8 @@ lang: en
 translation_id: classes-de-excecao
 permalink: /exception-classes/ 
 image: /images/descendentesThrowable.png
+share_text: >-
+  Java exceptions branch from Throwable into Error and Exception, and RuntimeException belongs to the unchecked side of the Exception hierarchy. The article explains how this hierarchy distinguishes checked from unchecked exceptions.
 ---
 During program execution, situations may arise that require special handling. They may represent abnormal or erroneous conditions, situations that were not anticipated by the programmer, or even alternative execution flows. These conditions are called **exceptions**.
 

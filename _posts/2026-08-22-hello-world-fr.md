@@ -5,6 +5,8 @@ date: 2026-08-22
 lang: fr
 translation_id: hello-world
 permalink: /hello-world-fr/
+share_text: >-
+  L’exemple compare la structure classique d’une classe Java avec main à la forme de lancement simplifiée disponible depuis Java 25. Dans les deux cas, le programme affiche le même Hello World.
 ---
 
 Il est courant de commencer l’étude d’un langage de programmation en écrivant un programme appelé **Hello World**, qui affiche le texte `Hello World!` sur la sortie standard de l’appareil, généralement l’écran. En Java, nous pouvons écrire ce programme comme suit :

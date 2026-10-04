@@ -5,6 +5,8 @@ date: 2026-08-22
 lang: zh
 translation_id: hello-world
 permalink: /hello-world-zh/
+share_text: >-
+  文章对比了包含main方法的传统Java类与Java 25起提供的简化启动形式。两种写法都会输出相同的Hello World消息。
 ---
 
 学习一门编程语言时，通常会从编写一个名为 **Hello World** 的程序开始。这个程序会将 `Hello World!` 文本显示在设备的标准输出上，通常就是屏幕。在 Java 中，我们可以这样编写这个程序：

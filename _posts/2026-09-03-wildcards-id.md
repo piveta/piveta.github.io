@@ -5,6 +5,8 @@ date: 2026-09-03
 lang: id
 translation_id: wildcards-limites-java
 permalink: /wildcard-batasan-tipe-generik-java/
+share_text: >-
+  Dalam generik Java, <?> menyatakan tipe yang belum diketahui, sedangkan <? extends T> dan <? super T> menetapkan batas atas dan bawah. Wildcard ini membantu menentukan tipe yang dapat digunakan secara fleksibel.
 ---
 
 Selain tipe generik tertentu, kita dapat menggunakan **wildcard** untuk menyatakan tipe yang tidak diketahui (`<?>`), membatasi tipe yang ditentukan agar mencakup subtipe dari tipe tertentu (`<? extends Type>`), atau mencakup supertipe (menggunakan `<? super Type>`). Bagian berikut menjelaskan wildcard tanpa batas, wildcard dengan batas atas, dan wildcard dengan batas bawah. Selanjutnya, kita menunjukkan cara mendefinisikan beberapa batas untuk tipe generik.

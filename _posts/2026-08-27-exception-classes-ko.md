@@ -6,6 +6,8 @@ lang: ko
 translation_id: classes-de-excecao
 permalink: /java-exception-classes-ko/
 image: /images/descendentesThrowable.png
+share_text: >-
+  Java 예외 계층은 Throwable에서 시작해 Error와 Exception으로 나뉘며, RuntimeException은 비검사 예외에 속합니다. 이 글에서는 검사 예외와 비검사 예외의 차이를 살펴봅니다.
 ---
 프로그램을 실행하는 동안 특별한 처리가 필요한 상황이 발생할 수 있습니다. 이러한 상황은 비정상적이거나 오류가 있는 상태, 프로그래머가 예상하지 못한 상황, 또는 다른 실행 흐름을 나타낼 수 있습니다. 이러한 상태를 **예외(exception)**라고 합니다.
 

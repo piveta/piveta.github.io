@@ -5,6 +5,8 @@ date: 2026-09-03
 lang: pl
 translation_id: wildcards-limites-java
 permalink: /wildcardy-ograniczenia-typy-generyczne-java/
+share_text: >-
+  W typach generycznych Javy <?> oznacza nieznany typ, a <? extends T> i <? super T> wyznaczają odpowiednio górne i dolne ograniczenie. Wildcardy pozwalają elastycznie określać typy używane w operacjach generycznych.
 ---
 
 Oprócz konkretnych typów generycznych możemy używać **wildcardów**, aby wyrażać nieznane typy (`<?>`), ograniczać określony typ do podtypów danego typu (`<? extends Type>`) lub uwzględniać supertypy (za pomocą `<? super Type>`). W kolejnych sekcjach opisano odpowiednio wildcardy nieograniczone, z górnym ograniczeniem oraz z dolnym ograniczeniem. Następnie pokazujemy, jak definiować wiele ograniczeń dla typów generycznych.

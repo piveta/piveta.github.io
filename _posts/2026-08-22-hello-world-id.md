@@ -5,6 +5,8 @@ date: 2026-08-22
 lang: id
 translation_id: hello-world
 permalink: /hello-world-id/
+share_text: >-
+  Contoh ini membandingkan kelas Java tradisional dengan metode main dan bentuk peluncuran yang lebih ringkas di Java 25+. Kedua cara menghasilkan keluaran Hello World yang sama.
 ---
 
 Sudah umum untuk memulai mempelajari bahasa pemrograman dengan menulis program bernama **Hello World**, yang menampilkan teks `Hello World!` pada keluaran standar perangkat, biasanya layar. Dalam Java, kita dapat menulis program ini sebagai berikut:

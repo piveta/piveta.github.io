@@ -6,6 +6,8 @@ lang: pl
 translation_id: classes-de-excecao
 permalink: /klasy-wyjatkow-java-pl/
 image: /images/descendentesThrowable.png
+share_text: >-
+  W hierarchii Javy Throwable obejmuje między innymi Error i Exception, a RuntimeException należy do wyjątków niesprawdzanych. Artykuł wyjaśnia różnicę między wyjątkami sprawdzanymi i niesprawdzanymi.
 ---
 Podczas wykonywania programu mogą wystąpić sytuacje wymagające specjalnego przetwarzania. Mogą one reprezentować nietypowe lub błędne warunki, sytuacje, których programista nie przewidział, a nawet alternatywne ścieżki wykonania. Warunki te nazywamy **wyjątkami**.
 

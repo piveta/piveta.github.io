@@ -6,6 +6,8 @@ lang: de
 translation_id: classes-de-excecao
 permalink: /exception-classes-de/
 image: /images/descendentesThrowable.png
+share_text: >-
+  Java-Ausnahmen gehen auf Throwable zurück und verzweigen sich unter anderem in Error und Exception; RuntimeException gehört zu den ungeprüften Ausnahmen. Der Beitrag erläutert den Unterschied zwischen geprüften und ungeprüften Ausnahmen.
 ---
 Während der Ausführung eines Programms können Situationen auftreten, die eine besondere Behandlung erfordern. Sie können abnormale oder fehlerhafte Bedingungen, vom Programmierer nicht vorhergesehene Situationen oder sogar alternative Ausführungsabläufe darstellen. Diese Bedingungen werden **Ausnahmen** genannt.
 

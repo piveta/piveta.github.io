@@ -5,65 +5,80 @@
 {% case page.lang %}
   {% when "en" %}
     {% assign share_heading = "Share this article" %}
-    {% assign copy_label = "Copy URL" %}
-    {% assign copied_label = "Link copied" %}
+    {% assign share_prompt = "Check out this article:" %}
+    {% assign copy_label = "Copy message" %}
+    {% assign copied_label = "Message copied" %}
   {% when "es" %}
     {% assign share_heading = "Compartir este artículo" %}
-    {% assign copy_label = "Copiar URL" %}
-    {% assign copied_label = "Enlace copiado" %}
+    {% assign share_prompt = "Mira este artículo:" %}
+    {% assign copy_label = "Copiar mensaje" %}
+    {% assign copied_label = "Mensaje copiado" %}
   {% when "de" %}
     {% assign share_heading = "Diesen Artikel teilen" %}
-    {% assign copy_label = "URL kopieren" %}
-    {% assign copied_label = "Link kopiert" %}
+    {% assign share_prompt = "Schau dir diesen Artikel an:" %}
+    {% assign copy_label = "Nachricht kopieren" %}
+    {% assign copied_label = "Nachricht kopiert" %}
   {% when "fr" %}
     {% assign share_heading = "Partager cet article" %}
-    {% assign copy_label = "Copier l’URL" %}
-    {% assign copied_label = "Lien copié" %}
+    {% assign share_prompt = "Découvrez cet article :" %}
+    {% assign copy_label = "Copier le message" %}
+    {% assign copied_label = "Message copié" %}
   {% when "it" %}
     {% assign share_heading = "Condividi questo articolo" %}
-    {% assign copy_label = "Copia URL" %}
-    {% assign copied_label = "Link copiato" %}
+    {% assign share_prompt = "Dai un’occhiata a questo articolo:" %}
+    {% assign copy_label = "Copia messaggio" %}
+    {% assign copied_label = "Messaggio copiato" %}
   {% when "ja" %}
     {% assign share_heading = "この記事を共有" %}
-    {% assign copy_label = "URLをコピー" %}
-    {% assign copied_label = "リンクをコピーしました" %}
+    {% assign share_prompt = "この記事をご覧ください：" %}
+    {% assign copy_label = "メッセージをコピー" %}
+    {% assign copied_label = "メッセージをコピーしました" %}
   {% when "ko" %}
     {% assign share_heading = "이 글 공유하기" %}
-    {% assign copy_label = "URL 복사" %}
-    {% assign copied_label = "링크를 복사했습니다" %}
+    {% assign share_prompt = "이 글을 확인해 보세요:" %}
+    {% assign copy_label = "메시지 복사" %}
+    {% assign copied_label = "메시지를 복사했습니다" %}
   {% when "zh" %}
     {% assign share_heading = "分享本文" %}
-    {% assign copy_label = "复制网址" %}
-    {% assign copied_label = "链接已复制" %}
+    {% assign share_prompt = "看看这篇文章：" %}
+    {% assign copy_label = "复制分享消息" %}
+    {% assign copied_label = "消息已复制" %}
   {% when "pl" %}
     {% assign share_heading = "Udostępnij artykuł" %}
-    {% assign copy_label = "Kopiuj URL" %}
-    {% assign copied_label = "Link skopiowany" %}
+    {% assign share_prompt = "Zobacz ten artykuł:" %}
+    {% assign copy_label = "Kopiuj wiadomość" %}
+    {% assign copied_label = "Wiadomość skopiowana" %}
   {% when "sv" %}
     {% assign share_heading = "Dela artikeln" %}
-    {% assign copy_label = "Kopiera URL" %}
-    {% assign copied_label = "Länken har kopierats" %}
+    {% assign share_prompt = "Läs den här artikeln:" %}
+    {% assign copy_label = "Kopiera meddelande" %}
+    {% assign copied_label = "Meddelandet har kopierats" %}
   {% when "id" %}
     {% assign share_heading = "Bagikan artikel ini" %}
-    {% assign copy_label = "Salin URL" %}
-    {% assign copied_label = "Tautan disalin" %}
+    {% assign share_prompt = "Lihat artikel ini:" %}
+    {% assign copy_label = "Salin pesan" %}
+    {% assign copied_label = "Pesan disalin" %}
   {% else %}
     {% assign share_heading = "Compartilhar este artigo" %}
-    {% assign copy_label = "Copiar URL" %}
-    {% assign copied_label = "Link copiado" %}
+    {% assign share_prompt = "Confira este artigo:" %}
+    {% assign copy_label = "Copiar mensagem" %}
+    {% assign copied_label = "Mensagem copiada" %}
 {% endcase %}
+
+{% assign share_message = share_prompt | append: " " | append: page.title %}
+{% assign share_message_encoded = share_message | cgi_escape %}
 
 <nav class="share-article" aria-label="{{ share_heading | escape }}">
   <strong>{{ share_heading | escape }}</strong>
   <div class="share-article-buttons">
-    <a href="https://wa.me/?text={{ share_title_encoded }}%20{{ share_url_encoded }}" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-    <a href="https://twitter.com/intent/tweet?text={{ share_title_encoded }}&amp;url={{ share_url_encoded }}" target="_blank" rel="noopener noreferrer">X</a>
-    <a href="https://www.threads.com/intent/post?text={{ share_title_encoded }}%20{{ share_url_encoded }}" target="_blank" rel="noopener noreferrer">Threads</a>
+    <a href="https://wa.me/?text={{ share_message_encoded }}%20{{ share_url_encoded }}" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    <a href="https://twitter.com/intent/tweet?text={{ share_message_encoded }}&amp;url={{ share_url_encoded }}" target="_blank" rel="noopener noreferrer">X</a>
+    <a href="https://www.threads.com/intent/post?text={{ share_message_encoded }}%20{{ share_url_encoded }}" target="_blank" rel="noopener noreferrer">Threads</a>
     <a href="https://www.facebook.com/sharer/sharer.php?u={{ share_url_encoded }}" target="_blank" rel="noopener noreferrer">Facebook</a>
     <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ share_url_encoded }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-    <a href="https://t.me/share/url?url={{ share_url_encoded }}&amp;text={{ share_title_encoded }}" target="_blank" rel="noopener noreferrer">Telegram</a>
-    <a href="mailto:?subject={{ share_title_encoded }}&amp;body={{ share_url_encoded }}">E-mail</a>
-    <button type="button" class="share-copy-button" data-share-url="{{ share_url | escape }}" data-copy-label="{{ copy_label | escape }}" data-copied-label="{{ copied_label | escape }}">{{ copy_label | escape }}</button>
+    <a href="https://t.me/share/url?url={{ share_url_encoded }}&amp;text={{ share_message_encoded }}" target="_blank" rel="noopener noreferrer">Telegram</a>
+    <a href="mailto:?subject={{ share_title_encoded }}&amp;body={{ share_message_encoded }}%0A{{ share_url_encoded }}">E-mail</a>
+    <button type="button" class="share-copy-button" data-share-message="{{ share_message | escape }}" data-share-url="{{ share_url | escape }}" data-copy-label="{{ copy_label | escape }}" data-copied-label="{{ copied_label | escape }}">{{ copy_label | escape }}</button>
     <span class="share-copy-status" aria-live="polite"></span>
   </div>
 </nav>
@@ -72,16 +87,17 @@
   document.querySelectorAll(".share-copy-button").forEach((button) => {
     button.addEventListener("click", async () => {
       const status = button.parentElement.querySelector(".share-copy-status");
+      const shareText = `${button.dataset.shareMessage}\n${button.dataset.shareUrl}`;
       try {
         if (navigator.clipboard && window.isSecureContext) {
-          await navigator.clipboard.writeText(button.dataset.shareUrl);
+          await navigator.clipboard.writeText(shareText);
         } else {
           throw new Error("Clipboard API unavailable");
         }
         status.textContent = button.dataset.copiedLabel;
       } catch (error) {
         const input = document.createElement("textarea");
-        input.value = button.dataset.shareUrl;
+        input.value = shareText;
         input.setAttribute("readonly", "");
         input.style.position = "absolute";
         input.style.left = "-9999px";
@@ -89,7 +105,7 @@
         input.select();
         const copied = document.execCommand("copy");
         input.remove();
-        status.textContent = copied ? button.dataset.copiedLabel : button.dataset.shareUrl;
+        status.textContent = copied ? button.dataset.copiedLabel : shareText;
       }
     });
   });

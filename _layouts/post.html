@@ -72,6 +72,8 @@ layout: default
     {{ content }}
   </div>
 
+  {% include share.html %}
+
   {% case page.lang %}
     {% when "pt-BR" %}
       {% assign other_articles_title = "Outros artigos" %}

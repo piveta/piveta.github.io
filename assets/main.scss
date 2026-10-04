@@ -69,3 +69,44 @@
   margin-top: -15px;
   margin-bottom: 20px;
 }
+
+.share-article {
+  margin: 28px 0;
+}
+
+.share-article > strong {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.share-article-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.share-article-buttons a,
+.share-copy-button {
+  display: inline-block;
+  padding: 7px 11px;
+  border: 1px solid #d0d7de;
+  border-radius: 5px;
+  background: #fff;
+  color: #24292f;
+  font: inherit;
+  line-height: 1.4;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.share-article-buttons a:hover,
+.share-copy-button:hover {
+  background: #f3f4f6;
+  text-decoration: none;
+}
+
+.share-copy-status {
+  color: #57606a;
+  font-size: 0.9em;
+}

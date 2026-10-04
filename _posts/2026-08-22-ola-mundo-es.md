@@ -6,7 +6,7 @@ lang: es
 translation_id: hello-world
 permalink: /es/hola-mundo/
 share_text: >-
-  El ejemplo contrasta la clase Java con main del enfoque tradicional con la forma simplificada de ejecución disponible desde Java 25. Ambas opciones muestran el mismo mensaje Hello World.
+  El artículo recorre un programa Hello World tradicional en Java, desde la clase y el método main hasta la compilación y la ejecución. Después presenta los archivos fuente compactos y los métodos main de instancia disponibles desde Java 25.
 ---
 
 Es habitual iniciar el estudio de un lenguaje de programación escribiendo un programa llamado **Hello World**, que muestra el texto `Hello World!` en la salida estándar del dispositivo, normalmente la pantalla. En Java, podemos escribir este programa de la siguiente manera:

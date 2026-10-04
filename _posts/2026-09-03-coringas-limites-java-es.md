@@ -6,7 +6,7 @@ lang: es
 translation_id: wildcards-limites-java
 permalink: /comodines-limites-tipos-genericos-java/
 share_text: >-
-  En los genéricos de Java, <?> representa un tipo desconocido, mientras que <? extends T> y <? super T> expresan límites superior e inferior. Estos comodines determinan qué tipos pueden intervenir en una operación genérica.
+  En los genéricos de Java, <?> representa un tipo desconocido, mientras que <? extends T> y <? super T> expresan límites superior e inferior. El artículo también muestra cómo un parámetro de tipo puede tener varios límites.
 ---
 
 Además de tipos genéricos específicos, podemos utilizar **comodines** (*wildcards*) para expresar tipos desconocidos (`<?>`), para restringir el tipo especificado de modo que incluya subtipos de un tipo determinado (`<? extends Tipo>`), o para incluir supertipos (utilizando `<? super Tipo>`). Las siguientes secciones describen los comodines sin restricción, con límite superior y con límite inferior, respectivamente. A continuación, mostramos cómo podemos definir múltiples límites para tipos genéricos.

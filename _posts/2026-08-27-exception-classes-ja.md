@@ -7,7 +7,7 @@ translation_id: classes-de-excecao
 permalink: /java-exception-classes-ja/
 image: /images/descendentesThrowable.png
 share_text: >-
-  Javaの例外階層では、Throwableの下にErrorとExceptionがあり、RuntimeExceptionは非検査例外に分類されます。この記事では、検査例外と非検査例外の違いを説明します。
+  Javaの例外階層の基点はThrowableで、その直接のサブクラスがExceptionとErrorです。この記事では、検査例外と非検査例外の違いと、RuntimeExceptionの位置づけを説明します。
 ---
 プログラムの実行中には、特別な処理を必要とする状況が発生することがあります。それらは、異常またはエラーの状態、プログラマが予期していなかった状況、あるいは別の実行フローを表すことがあります。このような状態を**例外**と呼びます。
 

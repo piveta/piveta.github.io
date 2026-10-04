@@ -6,7 +6,7 @@ lang: pt-BR
 translation_id: wildcards-limites-java
 permalink: /coringas-limites-tipos-genericos-java/
 share_text: >-
-  Nos genéricos Java, <?> representa um tipo desconhecido, enquanto <? extends T> e <? super T> expressam limites superior e inferior. Esses coringas ajudam a definir quais tipos podem participar de operações genéricas.
+  Em Java, <?> representa um tipo desconhecido, enquanto <? extends T> e <? super T> especificam limites superiores e inferiores. O artigo também mostra como um parâmetro de tipo pode ter múltiplos limites.
 ---
 
 Além de tipos genéricos específicos, podemos usar **coringas** (*wildcards*) para expressar tipos desconhecidos (`<?>`), para restringir o tipo informado para incluir subtipos de determinado tipo (`<? extends Tipo>`) ou para incluir supertipos (usando `<? super Tipo>`). As seções a seguir descrevem os coringas sem restrição, com limite superior e com limite inferior, respectivamente. A seguir, mostramos como podemos definir múltiplos limites para tipos genéricos.

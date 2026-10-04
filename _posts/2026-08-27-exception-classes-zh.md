@@ -7,7 +7,7 @@ translation_id: classes-de-excecao
 permalink: /java-exception-classes-zh/
 image: /images/descendentesThrowable.png
 share_text: >-
-  Java异常层次以Throwable为基础，包含Error和Exception等分支，而RuntimeException属于非受检异常。本文说明受检异常与非受检异常的区别。
+  Throwable位于Java异常层次结构的根部，Exception和Error是它的直接子类。本文说明受检异常与非受检异常的区别，以及RuntimeException在其中的作用。
 ---
 在程序执行过程中，可能会出现需要特殊处理的情况。这些情况可能表示异常或错误条件、程序员未预料到的情况，甚至可能表示另一种执行流程。这些情况称为**异常**。
 

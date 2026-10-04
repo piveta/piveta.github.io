@@ -7,7 +7,7 @@ translation_id: classes-de-excecao
 permalink: /undantagsklasser-java-sv/
 image: /images/descendentesThrowable.png
 share_text: >-
-  I Javas undantagshierarki ligger Error och Exception under Throwable, medan RuntimeException hör till de okontrollerade undantagen. Artikeln förklarar skillnaden mellan kontrollerade och okontrollerade undantag.
+  Throwable står längst upp i Javas undantagshierarki, med Exception och Error som direkta underklasser. Artikeln förklarar kontrollerade och okontrollerade undantag samt RuntimeExceptions roll i den uppdelningen.
 ---
 Under körningen av ett program kan situationer uppstå som kräver särskild hantering. De kan representera onormala eller felaktiga tillstånd, situationer som programmeraren inte förutsåg eller till och med alternativa körningsflöden. Dessa tillstånd kallas **undantag**.
 

@@ -6,7 +6,7 @@ lang: en
 translation_id: hello-world
 permalink: /en/hello-world/
 share_text: >-
-  Compare the familiar Java class with main to the streamlined launch form available from Java 25. Both approaches print the same Hello World message.
+  The article walks through a traditional Java Hello World program, from its class and main method to compilation and execution. It then shows the compact source-file form and instance main methods available from Java 25.
 ---
 
 It is customary to begin studying a programming language by writing a program called **Hello World**, which displays the text `Hello World!` on the standard output of the device, usually the screen. In Java, we can write this program as follows:

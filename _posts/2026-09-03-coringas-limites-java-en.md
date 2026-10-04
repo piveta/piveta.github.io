@@ -6,7 +6,7 @@ lang: en
 translation_id: wildcards-limites-java
 permalink: /wildcards-bounds-java-generic-types/
 share_text: >-
-  Java generics use <?> for an unknown type, while <? extends T> and <? super T> express upper and lower bounds. These wildcards shape which values a generic method can accept or expose.
+  In Java generics, <?> represents an unknown type, while <? extends T> and <? super T> express upper and lower bounds. The article also shows how a type parameter can have multiple bounds.
 ---
 
 In addition to specific generic types, we can use **wildcards** to express unknown types (`<?>`), to restrict the specified type to include subtypes of a given type (`<? extends Type>`), or to include supertypes (using `<? super Type>`). The following sections describe unbounded, upper-bounded, and lower-bounded wildcards, respectively. Next, we show how we can define multiple bounds for generic types.

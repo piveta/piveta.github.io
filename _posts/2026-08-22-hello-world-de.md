@@ -6,7 +6,7 @@ lang: de
 translation_id: hello-world
 permalink: /hello-world-de/
 share_text: >-
-  Der Beitrag vergleicht die klassische Java-Klasse mit main mit der vereinfachten Startform ab Java 25+. Beide Varianten geben dieselbe Hello-World-Ausgabe aus.
+  Der Beitrag führt durch ein klassisches Java-Hello-World-Programm mit Klasse und main, einschließlich Kompilierung und Ausführung. Anschließend zeigt er kompakte Quelldateien und Instanz-main-Methoden, die ab Java 25 verfügbar sind.
 ---
 
 Beim Erlernen einer Programmiersprache beginnt man üblicherweise mit einem Programm namens **Hello World**, das den Text `Hello World!` auf der Standardausgabe des Geräts, normalerweise dem Bildschirm, ausgibt. In Java können wir dieses Programm wie folgt schreiben:

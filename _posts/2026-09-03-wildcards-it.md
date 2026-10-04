@@ -6,7 +6,7 @@ lang: it
 translation_id: wildcards-limites-java
 permalink: /wildcard-limiti-tipi-generici-java/
 share_text: >-
-  Nei generics Java, <?> indica un tipo sconosciuto, mentre <? extends T> e <? super T> definiscono limiti superiore e inferiore. I wildcard rendono più flessibile il modo in cui i tipi generici accettano sottotipi e supertipi.
+  Nei generics Java, <?> rappresenta un tipo sconosciuto, mentre <? extends T> e <? super T> definiscono limiti superiore e inferiore. L’articolo mostra inoltre come un parametro di tipo possa avere più limiti.
 ---
 
 Oltre ai tipi generici specifici, possiamo usare le **wildcard** per esprimere tipi sconosciuti (`<?>`), limitare il tipo specificato a includere sottotipi di un determinato tipo (`<? extends Type>`) oppure includere supertipi (usando `<? super Type>`). Le sezioni seguenti descrivono rispettivamente wildcard non limitate, con limite superiore e con limite inferiore. Successivamente mostriamo come definire limiti multipli per i tipi generici.

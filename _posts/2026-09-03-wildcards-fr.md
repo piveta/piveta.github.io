@@ -6,7 +6,7 @@ lang: fr
 translation_id: wildcards-limites-java
 permalink: /wildcards-bornes-types-generiques-java/
 share_text: >-
-  En Java, <?> désigne un type inconnu, tandis que <? extends T> et <? super T> posent des bornes supérieure et inférieure. Ces wildcards permettent de préciser les types admis dans les usages génériques.
+  Dans les génériques Java, <?> représente un type inconnu, tandis que <? extends T> et <? super T> définissent des bornes supérieure et inférieure. L’article montre aussi qu’un paramètre de type peut avoir plusieurs bornes.
 ---
 
 En plus des types génériques spécifiques, nous pouvons utiliser des **wildcards** pour exprimer des types inconnus (`<?>`), restreindre le type spécifié aux sous-types d'un type donné (`<? extends Type>`) ou inclure les supertypes (avec `<? super Type>`). Les sections suivantes décrivent respectivement les wildcards non bornées, à borne supérieure et à borne inférieure. Nous montrons ensuite comment définir plusieurs bornes pour les types génériques.

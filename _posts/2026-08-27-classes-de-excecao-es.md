@@ -7,7 +7,7 @@ translation_id: classes-de-excecao
 permalink: /es/clases-de-excepcion/
 image: /images/descendentesThrowable.png
 share_text: >-
-  En Java, las excepciones parten de Throwable y se organizan en ramas como Error y Exception; RuntimeException pertenece a las no verificadas. El artículo explica la diferencia entre excepciones verificadas y no verificadas.
+  En Java, Throwable está en la raíz de la jerarquía de excepciones y tiene a Exception y Error como subclases directas. El artículo explica las excepciones verificadas y no verificadas y el papel de RuntimeException en esa distinción.
 ---
 Durante la ejecución de programas, pueden ocurrir situaciones que requieren algún tratamiento especial. Estas pueden representar condiciones anormales o erróneas, situaciones que no fueron previstas por el programador o incluso flujos alternativos de ejecución. Estas condiciones se denominan **excepciones**.
 

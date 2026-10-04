@@ -6,7 +6,7 @@ lang: sv
 translation_id: hello-world
 permalink: /hello-world-sv/
 share_text: >-
-  Exemplet jämför den traditionella Java-klassen med main med det förenklade körsätt som finns från Java 25. Båda varianterna skriver ut samma Hello World-meddelande.
+  Artikeln går igenom ett traditionellt Hello World-program i Java, från klass och main-metod till kompilering och körning. Därefter presenteras kompakta källkodsfiler och instansmetoderna main som finns från Java 25.
 ---
 
 Det är vanligt att börja studera ett programmeringsspråk genom att skriva ett program som kallas **Hello World** och som visar texten `Hello World!` på enhetens standardutmatning, vanligtvis skärmen. I Java kan vi skriva programmet så här:

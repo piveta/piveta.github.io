@@ -6,7 +6,7 @@ lang: pl
 translation_id: hello-world
 permalink: /hello-world-pl/
 share_text: >-
-  Przykład zestawia tradycyjną klasę Java z metodą main z uproszczonym sposobem uruchamiania dostępnym od Javy 25. Oba warianty wyświetlają ten sam komunikat Hello World.
+  Artykuł omawia tradycyjny program Hello World w Javie: klasę, metodę main, kompilację i uruchomienie. Następnie przedstawia zwarte pliki źródłowe i instancyjne metody main dostępne od Javy 25.
 ---
 
 Naukę języka programowania zwykle rozpoczyna się od napisania programu o nazwie **Hello World**, który wyświetla tekst `Hello World!` na standardowym wyjściu urządzenia, zazwyczaj na ekranie. W Javie możemy napisać ten program następująco:

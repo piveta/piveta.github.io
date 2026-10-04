@@ -6,7 +6,7 @@ lang: sv
 translation_id: wildcards-limites-java
 permalink: /wildcards-begransningar-generiska-typer-java/
 share_text: >-
-  I Javas generics står <?> för en okänd typ, medan <? extends T> och <? super T> anger övre respektive nedre begränsningar. Wildcards låter dig uttrycka vilka undertyper eller supertyper som passar i ett generiskt sammanhang.
+  I Javas generics står <?> för en okänd typ, medan <? extends T> och <? super T> anger övre respektive nedre gränser. Artikeln visar också hur en typparameter kan ha flera begränsningar.
 ---
 
 Utöver specifika generiska typer kan vi använda **wildcards** för att uttrycka okända typer (`<?>`), begränsa den angivna typen till undertyper av en viss typ (`<? extends Type>`) eller inkludera supertyper (med `<? super Type>`). Följande avsnitt beskriver obegränsade wildcards, wildcards med övre begränsning och wildcards med nedre begränsning. Därefter visar vi hur vi kan definiera flera begränsningar för generiska typer.

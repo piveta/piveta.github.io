@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1073" height="824" viewBox="0 0 1073 824" role="img" aria-labelledby="title desc">
+  <title id="title">Multiple inheritance in an animal hierarchy</title><desc id="desc">Bird, Flyer, and Mammal extend Animal. Ostrich and Duck extend Bird; Duck and Bat extend Flyer; Bat, Horse, and Dog extend Mammal.</desc>
+  <defs>
+    <linearGradient id="box" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#ddd"/></linearGradient>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="7" refY="7" orient="auto"><path d="M1 13 7 1 13 13Z" fill="white" stroke="#111" stroke-width="1.8"/></marker>
+  </defs>
+  <g stroke="#111" stroke-width="2.5" fill="none" marker-end="url(#arrow)">
+    <path d="M303 360 447 124"/><path d="M686 360 532 124"/>
+    <path d="M109 709 232 473"/><path d="M268 709 268 473"/>
+    <path d="M301 709 439 473"/><path d="M486 709 478 473"/>
+    <path d="M523 709 677 473"/><path d="M724 709 724 473"/><path d="M926 709 765 473"/>
+  </g>
+  <g fill="url(#box)" stroke="#111" stroke-width="2.5">
+    <rect x="402" y="11" width="184" height="113"/>
+    <rect x="198" y="360" width="141" height="113"/><rect x="387" y="360" width="179" height="113"/><rect x="615" y="360" width="218" height="113"/>
+    <rect x="10" y="709" width="141" height="113"/><rect x="197" y="709" width="142" height="113"/>
+    <rect x="385" y="709" width="205" height="113"/><rect x="636" y="709" width="175" height="113"/><rect x="857" y="709" width="206" height="113"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="28" text-anchor="middle" fill="#111">
+    <text x="494" y="75">Animal</text><text x="268" y="423">Bird</text><text x="476" y="423">Flyer</text><text x="724" y="423">Mammal</text>
+    <text x="80" y="772">Ostrich</text><text x="268" y="772">Duck</text><text x="487" y="772">Bat</text><text x="724" y="772">Horse</text><text x="960" y="772">Dog</text>
+  </g>
+</svg>

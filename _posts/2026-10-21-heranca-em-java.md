@@ -9,14 +9,9 @@ share_text: >-
   O artigo explica a herança em Java, o uso de superclasses e subclasses, sobrescrita de métodos e conversões entre tipos.
 ---
 
-Em relação à **herança**, Java permite a definição de herança simples
-para as classes (há herança múltipla apenas para interfaces) e as
-subclasses de uma determinada classe são subtipos da mesma. A
-especificação da herança é feita na subclasse através da palavra
-reservada `extends`: `Classe extends SuperClasse`. Classes que não
-contenham a definição de uma superclasse são implicitamente definidas
-como sendo subclasses da classe `Object` (a classe raiz da hierarquia de
-classes de Java).
+A **herança** é um mecanismo de composição que permite que as classes reutilizem a interface e o comportamento de classes existentes, estendendo suas funcionalidades. Normalmente, a classe que estende outra é chamada de **subclasse**, e a classe estendida é chamada de **superclasse**.
+
+Em Java, a herança entre classes é simples: uma classe pode estender apenas uma superclasse, enquanto interfaces podem estender múltiplas interfaces. As subclasses são subtipos de suas superclasses. A herança é declarada na subclasse com a palavra reservada `extends`: `Classe extends SuperClasse`. Classes que não declaram uma superclasse são implicitamente subclasses de `Object`, a classe raiz da hierarquia de classes de Java.
 
 Considere, por exemplo, a classe `ContaCorrente` a seguir. Tal classe
 estende a classe `Conta` (linha

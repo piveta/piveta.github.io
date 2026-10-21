@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Conceitos Básicos"
+title: "Conceitos Básicos de Orientação a Objetos"
 date: 2026-10-21
 lang: pt-BR
 translation_id: conceitos-basicos-poo-java

@@ -116,7 +116,7 @@ figura.desenhar();
 
 ## Leia também
 
-- [Conceitos Básicos](/conceitos-basicos-poo-java/)
+- [Conceitos Básicos de Orientação a Objetos](/conceitos-basicos-poo-java/)
 - [Classes em Java](/classes-em-java/)
 - [Herança em Java](/heranca-em-java/)
 - [Interfaces em Java](/interfaces-em-java/)

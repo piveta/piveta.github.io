@@ -216,7 +216,7 @@ sendo referenciados são coletados automaticamente pelo coletor de lixo.
 
 ## Leia também
 
-- [Conceitos Básicos](/conceitos-basicos-poo-java/)
+- [Conceitos Básicos de Orientação a Objetos](/conceitos-basicos-poo-java/)
 - [Herança em Java](/heranca-em-java/)
 - [Polimorfismo em Java](/polimorfismo-em-java/)
 - [Interfaces em Java](/interfaces-em-java/)

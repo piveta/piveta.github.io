@@ -121,4 +121,4 @@ figura.desenhar();
 - [Herança em Java](/heranca-em-java/)
 - [Interfaces em Java](/interfaces-em-java/)
 - [Links POO - Java](/links-poo-java/)
-- [Exercícios](/exercicios-poo-java/)
+- [Exercícios de Orientação a Objetos](/exercicios-poo-java/)

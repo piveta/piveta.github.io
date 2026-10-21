@@ -221,4 +221,4 @@ sendo referenciados são coletados automaticamente pelo coletor de lixo.
 - [Polimorfismo em Java](/polimorfismo-em-java/)
 - [Interfaces em Java](/interfaces-em-java/)
 - [Links POO - Java](/links-poo-java/)
-- [Exercícios](/exercicios-poo-java/)
+- [Exercícios de Orientação a Objetos](/exercicios-poo-java/)

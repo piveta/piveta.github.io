@@ -272,4 +272,4 @@ sem se preocupar em como as classes que a implementam o fazem.
 - [Polimorfismo em Java](/polimorfismo-em-java/)
 - [Interfaces em Java](/interfaces-em-java/)
 - [Links POO - Java](/links-poo-java/)
-- [Exercícios](/exercicios-poo-java/)
+- [Exercícios de Orientação a Objetos](/exercicios-poo-java/)

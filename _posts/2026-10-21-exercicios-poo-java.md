@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Exercícios"
+title: "Exercícios de Orientação a Objetos"
 date: 2026-10-21
 lang: pt-BR
 translation_id: exercicios-poo-java

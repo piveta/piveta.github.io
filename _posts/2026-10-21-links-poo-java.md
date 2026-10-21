@@ -35,4 +35,4 @@ a objetos:
 - [Herança em Java](/heranca-em-java/)
 - [Polimorfismo em Java](/polimorfismo-em-java/)
 - [Interfaces em Java](/interfaces-em-java/)
-- [Exercícios](/exercicios-poo-java/)
+- [Exercícios de Orientação a Objetos](/exercicios-poo-java/)

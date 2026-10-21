@@ -53,7 +53,7 @@ agências, contas, clientes, transações, etc. Desta forma, poderíamos ter
 as classes `Agência`, `Conta`, `Cliente`, `Transação`, dentre outras,
 para representar os conceitos do domínio. A Figura mostra uma representação gráfica destas classes.
 
-<img src="/images/oopClasses.png" alt="Representação gráfica das classes Agência, Conta, Cliente e Transação." style="max-width: 900px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img src="/images/oopClasses.png" alt="Representação gráfica das classes Agência, Conta, Cliente e Transação." style="max-width: 300px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 As classes servem como *templates* para a criação de exemplares
 concretos e manipuláveis desses conceitos. Tais exemplares são chamados
@@ -63,7 +63,7 @@ exemplo, poderíamos criar objetos para representar os clientes *João*,
 *Pedro* e *Maria*, juntamente com suas informações pessoais e as
 funcionalidades possíveis para clientes.
 
-<img src="/images/oopObjetos.png" alt="Representação gráfica dos objetos João, Pedro e Maria, instâncias da classe Cliente." style="max-width: 900px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img src="/images/oopObjetos.png" alt="Representação gráfica dos objetos João, Pedro e Maria, instâncias da classe Cliente." style="max-width: 380px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 Uma classe é definida de forma a representar as propriedades, as
 ca­rac­te­rís­ti­cas e o com­por­ta­men­to de um con­cei­to. Para isso, são usados
@@ -130,7 +130,7 @@ Nessa figura,
 a superclasse é a classe `Figura` e as subclasses são `Retângulo`,
 `Triângulo` e `Círculo`.
 
-<img src="/images/oopHeranca.png" alt="Exemplo de herança." style="max-width: 500px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img src="/images/oopHeranca.png" alt="Exemplo de herança." style="max-width: 400px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 O mecanismo de herança pode variar de acordo com a linguagem de
 programação e tais variações normalmente dizem respeito à visibilidade e
@@ -169,7 +169,7 @@ voadores (não necessariamente animais). Desta forma, usamos o recurso da
 herança múltipla para dizer que tanto objetos da classe `Pato` quanto da
 classe `Morcego` também são objetos voadores (herdam de `Voador`).
 
-<img src="/images/oopHerancaMultipla.png" alt="Exemplo de herança múltipla." style="max-width: 700px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img src="/images/oopHerancaMultipla.png" alt="Exemplo de herança múltipla." style="max-width: 500px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 Algumas classes são ditas **abstratas**. Tais classes representam as
 características e o comportamento de um conjunto de objetos do mundo

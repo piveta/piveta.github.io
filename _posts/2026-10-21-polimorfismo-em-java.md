@@ -9,17 +9,13 @@ share_text: >-
   O artigo apresenta polimorfismo de sobrecarga, paramétrico e de subtipo, com exemplos em Java.
 ---
 
-Em relação ao polimorfismo, vamos ver alguns exemplos. Em Java, o
-**polimorfismo *ad-hoc*** (ou de sobrecarga) é expresso através da
-definição de métodos de um mesmo nome com assinaturas diferentes. No
-exemplo a seguir, a classe `Figura` (linha
-) possui dois métodos
-sobrecarregados (iniciando nas linhas
- e
-). Ambos
-tem o mesmo nome (`redimensionar`), mas possuem parâmetros formais
-diferentes. O primeiro deles requer um `percentual` do tipo `Double`,
-enquanto o segundo requer duas coordenadas `x` e `y` do tipo `Integer`.
+Em orientação a objetos, polimorfismo permite que uma mesma operação tenha comportamentos diferentes conforme a classe do objeto envolvido. Em Java, destacam-se três formas:
+
+- **Polimorfismo *ad-hoc* (ou de sobrecarga)**: métodos de mesmo nome podem ter parâmetros diferentes, e a chamada seleciona a versão compatível com os argumentos;
+- **Polimorfismo paramétrico**: classes e métodos genéricos permitem trabalhar com tipos definidos quando são usados;
+- **Polimorfismo de subtipo**: uma subclasse pode sobrescrever um método, e a implementação executada depende da classe concreta do objeto.
+
+A seguir, veremos exemplos das três formas em Java, começando pela sobrecarga. A classe `Figura` possui dois métodos sobrecarregados chamados `redimensionar`. O primeiro recebe um `percentual` do tipo `Double`; o segundo recebe duas coordenadas `x` e `y` do tipo `Integer`.
 
 ``` java
 public class Figura {
@@ -35,10 +31,8 @@ public class Figura {
 Em relação ao **polimorfismo paramétrico**, podemos criar tipos
 parametrizados, através dos sinais $`<`$ e $`>`$. Por exemplo, a classe
 `ArrayList` possui um parâmetro de tipos `E` que define o tipo dos
-objetos que podem ser armazenados pela lista (linha
-). Este mesmo
-parâmetro de tipos é usado como parâmetro formal do método `add` (linha
-). Desta forma, o
+objetos que podem ser armazenados pela lista. Este mesmo
+parâmetro de tipos é usado como parâmetro formal do método `add`. Desta forma, o
 tipo esperado por `add` é o mesmo usado na instanciação da classe
 `ArrayList`. Note também, que ela estende uma classe chamada
 `AbstractList` e implementa a interface `List`, ambas usando o mesmo
@@ -56,8 +50,7 @@ public class ArrayList<E> extends AbstractList<E>
 ```
 
 Por exemplo, podemos criar uma lista de cadeias de caracteres com o
-parâmetro de tipo `String` (linha
-) e inserir
+parâmetro de tipo `String` e inserir
 elementos através de chamadas ao método `add`[^8].
 
 ``` java
@@ -70,8 +63,7 @@ Neste caso, o compilador espera que o parâmetro recebido por `add` seja
 uma `String`. Caso seja passado um objeto de outro tipo, ocorre um erro
 em tempo de compilação. Caso quiséssemos uma lista de inteiros,
 poderíamos usar esse tipo de polimorfismo passando outro tipo para
-`ArrayList` (no caso o tipo `Integer` - linha
-):
+`ArrayList` (no caso o tipo `Integer`):
 
 ``` java
 var c = new ArrayList<Integer>();
@@ -86,11 +78,8 @@ também que esse método seja sobrescrito nas três classes para
 implementar as especificidades do desenho de cada uma delas. Caso
 tivéssemos o seguinte código, cada chamada ao método desenhar do objeto
 `figura` seria feita para uma classe diferente (de acordo com a classe
-de cada objeto criado). Neste caso, na linha
- o método
-`desenhar` chamado é o de `Círculo`, na linha
- o de `Triângulo` e
-na linha  o de `Retângulo`:
+de cada objeto criado). Neste caso, o método
+`desenhar` chamado é o de `Círculo`, o de `Triângulo` ou o de `Retângulo`:
 
 ``` java
 Figura figura = new Círculo(10);

@@ -14,21 +14,14 @@ A **herança** é um mecanismo de composição que permite que as classes reutil
 Em Java, a herança entre classes é simples: uma classe pode estender apenas uma superclasse, enquanto interfaces podem estender múltiplas interfaces. As subclasses são subtipos de suas superclasses. A herança é declarada na subclasse com a palavra reservada `extends`: `Classe extends SuperClasse`. Classes que não declaram uma superclasse são implicitamente subclasses de `Object`, a classe raiz da hierarquia de classes de Java.
 
 Considere, por exemplo, a classe `ContaCorrente` a seguir. Tal classe
-estende a classe `Conta` (linha
-), podendo fornecer
+estende a classe `Conta`, podendo fornecer
 novos atributos, métodos e construtores à superclasse. No exemplo, ela
-define um atributo chamado `limiteDiarioSaque` (linha
-), bem como seus métodos
-de leitura e escrita (`getLimiteDiarioSaque` e `set­Li­mi­te­Di­a­rio­Sa­que`,
-iniciando nas linhas
- e
-,
-respectivamente). Adicionalmente, é implementado o construtor para a
-classe (linha ), dado que a
+define um atributo chamado `limiteDiarioSaque`, bem como seus métodos
+de leitura e escrita (`getLimiteDiarioSaque` e `set­Li­mi­te­Di­a­rio­Sa­que`). Adicionalmente, é implementado o construtor para a
+classe, dado que a
 classe `Conta` não possui um construtor padrão (sem parâmetros). Neste
 caso, o construtor de `ContaCorrente` apenas chama o construtor da
-superclasse `Conta` através de uma chamada a `super` (linha
-).
+superclasse `Conta` através de uma chamada a `super`.
 
 ``` java
 public class ContaCorrente extends Conta{
@@ -50,14 +43,11 @@ Nas subclasses, é comum termos **métodos sobrescritos**, que são métodos
 definidos em uma superclasse e que são estendidos ou substituídos por
 métodos das subclasses. No exemplo a seguir, a classe `ContaCorrente`
 sobrescreve o método `sacar` de `Conta`, através da definição de um
-método com a mesma assinatura[^6] do método de `Conta` (linha
-). Tal sobrescrita faz
+método com a mesma assinatura[^6] do método de `Conta`. Tal sobrescrita faz
 com que o método original da superclasse seja executado (através de uma
-chamada a `super` - linha
-) e que, posteriormente,
+chamada a `super`  e que, posteriormente,
 seja calculado o valor da tarifa de saque (caso aplicável) através do
-método `descontarTarifa` (linha
-),
+método `descontarTarifa`,
 que abate 1% do valor da transação do saldo a título de tarifa:
 
 ``` java
@@ -95,14 +85,11 @@ contrário nem sempre é verdadeiro (nem toda `Conta` é uma
 casos, é necessário fazer uma conversão explícita (*cast*).
 
 No exemplo a seguir, temos uma variável `cc`, do tipo `ContaCorrente`,
-que recebe uma instância de um objeto da classe `ContaCorrente` (linha
-). A seguir, é
+que recebe uma instância de um objeto da classe `ContaCorrente`. A seguir, é
 declarada uma variável `c`, do tipo `Conta`, que recebe o objeto
-apontado por `cc` (linha
-). Como toda
+apontado por `cc`. Como toda
 `ContaCorrente` é uma `Conta`, essa atribuição é permitida, sem
-conversões. Na linha
-, é feito o
+conversões. No sentido inverso, o
 inverso: o conteúdo da variável `c` é atribuído para `cc`. Nesse caso, é
 necessária uma conversão explícita de `Conta` para `ContaCorrente`.
 
@@ -114,11 +101,9 @@ cc = (ContaCorrente) c;  // Conversão explícita, ok.
 
 Considere, por exemplo, que a classe `ContaPoupança` seja uma subclasse
 de `Conta`. No exemplo a seguir, temos uma variável `c` do tipo `Conta`
-que armazena um objeto do tipo `ContaCorrente` (linha
-). Se tentássemos
+que armazena um objeto do tipo `ContaCorrente`. Se tentássemos
 atribuir a variável `c` a uma variável `cp` do tipo `ContaPoupança`,
-precisaríamos fazer uma conversão explícita (linha
-). Nesse caso, a
+precisaríamos fazer uma conversão explícita. Nesse caso, a
 conversão falharia, pois o objeto referenciado por `c` não é uma
 `ContaPoupança`, e sim uma `ContaCorrente` que não é uma subclasse de
 `ContaPoupança`. Desta forma, seria lançada uma exceção em tempo de
@@ -141,7 +126,7 @@ Dado que a classe `Conta` possui diferentes subtipos, tais como
 `Con­ta­Cor­ren­te` e `Con­ta­Pou­pan­ça`, além de outros em potencial
 (`Con­ta­In­ves­ti­men­to`, por exemplo), podemos fazer com que apenas
 instâncias das subclasses possam ser criadas tornando a classe `Conta`
-abstrata (linha ):
+abstrata:
 
 ``` java
 public abstract class Conta{

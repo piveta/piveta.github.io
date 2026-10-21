@@ -4,14 +4,37 @@ title: Todos os posts
 permalink: /posts/
 ---
 
-<p>Arquivo completo de artigos, em todos os idiomas, do mais recente ao mais antigo.</p>
+<style>
+  .language-selector {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em 1em;
+    margin: 1em 0 2em;
+  }
+  .language-posts { margin-bottom: 2em; }
+</style>
 
-<ul class="post-list">
-  {% for post in site.posts %}
-    <li>
-      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d/%m/%Y" }}</time>
-      <span lang="{{ post.lang | default: site.lang }}">[{{ post.lang | default: site.lang }}]</span>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    </li>
+<p>Escolha um idioma para ver todos os artigos disponíveis nele:</p>
+{% assign post_languages = site.posts | map: "lang" | uniq | sort %}
+<nav class="language-selector" aria-label="Selecionar idioma">
+  {% for language in post_languages %}
+    {% assign language_anchor = language | slugify %}
+    <a href="#idioma-{{ language_anchor }}" lang="{{ language }}">{{ language | upcase }}</a>
   {% endfor %}
-</ul>
+</nav>
+
+{% for language in post_languages %}
+  {% assign language_anchor = language | slugify %}
+  {% assign language_posts = site.posts | where: "lang", language %}
+  <section class="language-posts" id="idioma-{{ language_anchor }}" lang="{{ language }}">
+    <h2>{{ language | upcase }}</h2>
+    <ul class="post-list">
+      {% for post in language_posts %}
+        <li>
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d/%m/%Y" }}</time> —
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endfor %}

@@ -26,6 +26,8 @@ author:
   }
   .article-languages { margin-top: -15px; margin-bottom: 25px; }
   .post-list .post-link { font-size: inherit; }
+  .previous-articles { margin: 1.5em 0; }
+  .previous-articles summary { cursor: pointer; font-weight: bold; }
 </style>
 
 <div class="home-content">
@@ -128,6 +130,23 @@ author:
 
 {% endfor %}
 
+{% if pt_posts.size > 5 %}
+<details class="previous-articles">
+  <summary>Ver artigos anteriores</summary>
+  <ul class="post-list">
+    {% assign archive_count = 0 %}
+    {% for post in pt_posts %}
+      {% assign archive_count = archive_count | plus: 1 %}
+      {% if archive_count > 5 %}
+        <li>
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d/%m/%Y" }}</time> —
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</details>
+{% endif %}
 <h2>Sobre o Autor</h2>
 <p><strong>Eduardo Kessler Piveta</strong> é professor titular do Departamento de Linguagens e Sistemas de Computação da Universidade Federal de Santa Maria (UFSM) e Doutor em Ciência da Computação pela UFRGS.</p>
 <p>Seus temas de interesse incluem projeto e evolução de software, paradigmas de programação e projeto e implementação de linguagens de programação. Possui 25 anos de experiência no ensino superior em Computação.</p>

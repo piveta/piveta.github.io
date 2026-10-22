@@ -82,9 +82,9 @@ One final relationship, **realization**, occurs when a class declares that it im
 ## Related articles
 
 - [The original article in Portuguese: Conceitos Básicos de Orientação a Objetos](/conceitos-basicos-poo-java/)
-- [Classes in Java](/classes-em-java/) (Portuguese)
-- [Inheritance in Java](/heranca-em-java/) (Portuguese)
-- [Polymorphism in Java](/polimorfismo-em-java/) (Portuguese)
-- [Interfaces in Java](/interfaces-em-java/) (Portuguese)
-- [OOP and Java links](/links-poo-java/) (Portuguese)
-- [Object-Oriented Programming Exercises](/exercicios-poo-java/) (Portuguese)
+- [Classes in Java](/en/classes-in-java/)
+- [Inheritance in Java](/en/inheritance-in-java/)
+- [Polymorphism in Java](/en/polymorphism-in-java/)
+- [Interfaces in Java](/en/interfaces-in-java/)
+- [OOP and Java Links](/en/oop-java-links/)
+- [Object-Oriented Programming Exercises](/en/object-oriented-programming-exercises/)

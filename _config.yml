@@ -10,7 +10,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /og-default.jpg
+      image: /og-default.png
       
 author:
   name: Eduardo Kessler Piveta

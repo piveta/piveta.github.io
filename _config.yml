@@ -5,6 +5,7 @@ markdown: kramdown
 theme: minima
 lang: pt-BR
 locale: pt_BR
+image: /og-default.jpg
 
 author:
   name: Eduardo Kessler Piveta

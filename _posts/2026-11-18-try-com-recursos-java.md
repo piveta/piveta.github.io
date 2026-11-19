@@ -9,8 +9,6 @@ share_text: >-
   O artigo apresenta try com recursos e o fechamento automático de objetos AutoCloseable, usando conexão, sentença e resultado JDBC como exemplo.
 ---
 
-# try com recursos em Java
-
 Como forma de melhorar o gerenciamento de recursos, a linguagem Java permite, desde a versão 7, que sejam informados na sentença `try` os recursos passíveis de serem fechados ao término de sua execução. A especificação da linguagem diz que uma sentença `try` pode informar um ou mais recursos que implementem a interface `AutoCloseable`. Tal interface, de acordo com sua documentação, é implementada por mais de cem classes da biblioteca padrão da linguagem. A seguir, temos sua definição:
 
 ```java

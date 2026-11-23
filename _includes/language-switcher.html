@@ -7,10 +7,14 @@
       {% for entry in site.data.languages %}
         {% assign article_translation = article_translations | where: "lang", entry[0] | first %}
         {% if article_translation %}
+          {% assign language_label = entry[1].name %}
+          {% if include.compact %}
+            {% assign language_label = entry[0] | split: "-" | first | upcase %}
+          {% endif %}
           {% if article_translation.url == page.url %}
-            <span lang="{{ entry[0] }}" aria-current="page">{{ entry[1].name | escape }}</span>
+            <span lang="{{ entry[0] }}" aria-current="page">{{ language_label | escape }}</span>
           {% else %}
-            <a href="{{ article_translation.url | relative_url }}" lang="{{ entry[0] }}" hreflang="{{ entry[0] }}">{{ entry[1].name | escape }}</a>
+            <a href="{{ article_translation.url | relative_url }}" lang="{{ entry[0] }}" hreflang="{{ entry[0] }}"{% if include.compact %} aria-label="{{ entry[1].name | escape }}" title="{{ entry[1].name | escape }}"{% endif %}>{{ language_label | escape }}</a>
           {% endif %}
         {% endif %}
       {% endfor %}

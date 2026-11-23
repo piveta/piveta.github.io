@@ -8,7 +8,7 @@
         <time class="post-meta" datetime="{{ listed_post.date | date_to_xmlschema }}">{{ listed_post.date | date: listing_locale.date }}</time>
         <a href="{{ listed_post.url | relative_url }}">{{ listed_post.title | escape }}</a>
         {% if include.translations %}
-          {% include language-switcher.html article=listed_post %}
+          {% include language-switcher.html article=listed_post compact=true %}
         {% endif %}
       </li>
     {% endfor %}

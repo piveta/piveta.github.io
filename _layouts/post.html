@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+{% assign post_language = page.lang | default: site.lang %}
+{% assign post_locale = site.data.languages[post_language] %}
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
@@ -59,7 +61,7 @@ layout: default
 
     <p class="post-meta">
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {%- assign date_format = post_locale.date | default: "%Y-%m-%d" -%}
         {{ page.date | date: date_format }}
       </time>
     </p>
@@ -74,77 +76,15 @@ layout: default
 
   {% include share.html %}
 
-  {% case page.lang %}
-    {% when "pt-BR" %}
-      {% assign other_articles_title = "Outros artigos" %}
-    {% when "en" %}
-      {% assign other_articles_title = "Other articles" %}
-    {% when "es" %}
-      {% assign other_articles_title = "Otros artículos" %}
-    {% when "de" %}
-      {% assign other_articles_title = "Weitere Artikel" %}
-    {% when "fr" %}
-      {% assign other_articles_title = "Autres articles" %}
-    {% when "it" %}
-      {% assign other_articles_title = "Altri articoli" %}
-    {% when "ja" %}
-      {% assign other_articles_title = "その他の記事" %}
-    {% when "ko" %}
-      {% assign other_articles_title = "다른 글" %}
-    {% when "zh" %}
-      {% assign other_articles_title = "其他文章" %}
-    {% when "pl" %}
-      {% assign other_articles_title = "Inne artykuły" %}
-    {% when "sv" %}
-      {% assign other_articles_title = "Andra artiklar" %}
-    {% when "id" %}
-      {% assign other_articles_title = "Artikel lainnya" %}
-    {% else %}
-      {% assign other_articles_title = "Outros artigos" %}
-  {% endcase %}
-
-  <h2>{{ other_articles_title }}</h2>
-
-  {% assign shown_translations = "" %}
-  {% assign article_count = 0 %}
-
-  {% for post in site.posts %}
-    {% unless post.translation_id == page.translation_id %}
-      {% unless shown_translations contains post.translation_id %}
-
-        {% assign pt_post = site.posts
-          | where: "translation_id", post.translation_id
-          | where: "lang", "pt-BR"
-          | first %}
-
-        {% if pt_post %}
-
-          {% assign current_post = site.posts
-            | where: "translation_id", post.translation_id
-            | where: "lang", page.lang
-            | first %}
-
-          {% if current_post == nil %}
-            {% assign current_post = pt_post %}
-          {% endif %}
-
-          <h3><a href="{{ current_post.url }}">{{ current_post.title }}</a></h3>
-
-          <div class="article-languages"><a href="{{ pt_post.url }}">PT</a>{%- assign languages = "en,es,de,fr,it,ja,ko,zh,pl,sv,id" | split: "," -%}{%- for lang in languages -%}{%- assign translated_post = site.posts | where: "translation_id", pt_post.translation_id | where: "lang", lang | first -%}{%- if translated_post -%}&nbsp;·&nbsp;<a href="{{ translated_post.url }}">{{ lang | upcase }}</a>{%- endif -%}{%- endfor -%}</div>
-
-          {% assign article_count = article_count | plus: 1 %}
-        {% endif %}
-
-        {% assign shown_translations = shown_translations
-          | append: post.translation_id
-          | append: ","
-        %}
-
-      {% endunless %}
-    {% endunless %}
-
-    {% if article_count == 3 %}{% break %}{% endif %}
-  {% endfor %}
+  {% assign related_posts = site.posts | where: "lang", post_language | where_exp: "related", "related.url != page.url" %}
+  {% if related_posts.size > 0 %}
+    <h2>{{ post_locale.other | escape }}</h2>
+    <ul>
+      {% for related in related_posts limit: 3 %}
+        <li><a href="{{ related.url | relative_url }}">{{ related.title | escape }}</a></li>
+      {% endfor %}
+    </ul>
+  {% endif %}
 
   {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}

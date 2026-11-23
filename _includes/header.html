@@ -1,0 +1,10 @@
+<header class="site-header">
+  <div class="wrapper localized-header">
+    <a class="site-title" href="{{ locale.home | relative_url }}">{{ site.title | escape }}</a>
+    <nav class="localized-nav" aria-label="{{ locale.navigation | escape }}">
+      <a href="{{ locale.home | relative_url }}"{% if page.url == locale.home %} aria-current="page"{% endif %}>{{ locale.book | escape }}</a>
+      <a href="{{ locale.posts | relative_url }}"{% if page.url == locale.posts %} aria-current="page"{% endif %}>{{ locale.catalog | escape }}</a>
+      {% include site-language-menu.html %}
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,25 @@
+---
+layout: default
+---
+{% assign home_locale = site.data.languages[page.lang] %}
+<div class="localized-book">
+  <img class="localized-book-cover" src="{{ '/capaOO.jpg' | relative_url }}" alt="{{ home_locale.cover | escape }}">
+  <div>
+    <h1 lang="pt-BR">Orientação a Objetos com Java</h1>
+    <p>{{ home_locale.intro | escape }}</p>
+    <p>{{ home_locale.book_language | escape }}</p>
+    <h2>{{ home_locale.contents | escape }}</h2>
+    <ol>
+      {% for chapter in home_locale.chapters %}
+        <li>{{ chapter | escape }}</li>
+      {% endfor %}
+    </ol>
+    {% include book_buttons.html locale=home_locale %}
+  </div>
+</div>
+<h2>{{ home_locale.latest | escape }}</h2>
+{% include article-list.html limit=5 %}
+<p><a href="{{ home_locale.posts | relative_url }}">{{ home_locale.catalog | escape }}</a></p>
+<h2>{{ home_locale.author_title | escape }}</h2>
+<p>{{ home_locale.bio | escape }}</p>
+<p><a href="{{ site.author.url | escape }}">{{ home_locale.institution | escape }}</a></p>

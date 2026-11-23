@@ -1,9 +1,11 @@
 ---
 layout: home
+lang: pt-BR
+translation_id: site-home
 title: "Orientação a Objetos com Java"
 description: "O melhor e mais atualizado livro de Java nacional. Publicado em 31/10/2025, cobre até Java 25 LTS - a versão mais atual da linguagem. Por Eduardo Kessler Piveta, Professor Titular da UFSM."
 image: /og-default.jpg
-author: 
+author:
   name: Eduardo Kessler Piveta
   twitter: ekpiveta
 ---
@@ -88,47 +90,15 @@ author:
     <a href="https://kdp.amazon.com/amazon-dp-action/au/dualbookshelf.marketplacelink/6501778212">AU</a>
   </li>
 </ul>
-    <p>Publicado em 31 de outubro de 2025, cobre Java 25 LTS e está disponível para compra na Amazon em mais de 14 mercados internacionais, nas versões Kindle e impressa.</p> 
+    <p>Publicado em 31 de outubro de 2025, cobre Java 25 LTS e está disponível para compra na Amazon em mais de 14 mercados internacionais, nas versões Kindle e impressa.</p>
     </div>
   </div>
 </div>
 <h2>Últimos artigos</h2>
 
-{% assign pt_posts = site.posts | where: "lang", "pt-BR" %}
-{% assign article_count = 0 %}
+{% include article-list.html limit=5 translations=true %}
 
-{% for post in pt_posts %}
-
-    <h3>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-    </h3>
-
-    <div class="article-languages">
-        <a href="{{ post.url }}">PT</a>
-
-        {% assign languages = "en,es,de,fr,it,ja,ko,zh,pl,sv,id" | split: "," %}
-
-        {% for lang in languages %}
-            {% assign translated_post = site.posts
-                | where: "translation_id", post.translation_id
-                | where: "lang", lang
-                | first %}
-
-            {% if translated_post %}
-                &nbsp;·&nbsp;<a href="{{ translated_post.url }}">{{ lang | upcase }}</a>
-            {% endif %}
-        {% endfor %}
-    </div>
-
-    {% assign article_count = article_count | plus: 1 %}
-
-    {% if article_count == 5 %}
-        {% break %}
-    {% endif %}
-
-{% endfor %}
-
-<p><a href="{{ '/posts/' | relative_url }}">Ver todos os posts (todos os idiomas)</a></p>
+<p><a href="{{ '/posts/' | relative_url }}">Ver todos os artigos em português</a></p>
 <h2>Sobre o Autor</h2>
 <p><strong>Eduardo Kessler Piveta</strong> é professor titular do Departamento de Linguagens e Sistemas de Computação da Universidade Federal de Santa Maria (UFSM) e Doutor em Ciência da Computação pela UFRGS.</p>
 <p>Seus temas de interesse incluem projeto e evolução de software, paradigmas de programação e projeto e implementação de linguagens de programação. Possui 25 anos de experiência no ensino superior em Computação.</p>

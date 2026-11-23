@@ -2,11 +2,11 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> 
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
-  
+
   {%- seo -%}
 
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
@@ -17,30 +17,15 @@
     {%- include google-analytics.html -%}
   {%- endif -%}
 
-  {% if page.translation_id %}
-  {% assign translations = site.posts | where: "translation_id", page.translation_id %}
-
-  {% for translation in translations %}
-    {% if translation.lang == "pt-BR" %}
-      <link rel="alternate"
-            hreflang="pt-BR"
-            href="{{ site.url }}{{ translation.url }}">
-    {% else %}
-      <link rel="alternate"
-            hreflang="{{ translation.lang }}"
-            href="{{ site.url }}{{ translation.url }}">
-    {% endif %}
+  {% include alternate-pages.html %}
+  {% for alternate in alternate_pages %}
+    <link rel="alternate" hreflang="{{ alternate.lang | escape }}" href="{{ alternate.url | absolute_url }}">
   {% endfor %}
+  {% assign portuguese_page = alternate_pages | where: "lang", site.lang | first %}
+  {% if portuguese_page %}
+    <link rel="alternate" hreflang="x-default" href="{{ portuguese_page.url | absolute_url }}">
+  {% endif %}
 
-  {% for translation in translations %}
-    {% if translation.lang == "pt-BR" %}
-      <link rel="alternate"
-            hreflang="x-default"
-            href="{{ site.url }}{{ translation.url }}">
-    {% endif %}
-  {% endfor %}
-{% endif %}
-  
 {% if page.url == "/" %}
 <script type="application/ld+json">
 {

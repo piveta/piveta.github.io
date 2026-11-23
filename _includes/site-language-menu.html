@@ -1,0 +1,24 @@
+{%- include alternate-pages.html -%}
+<details class="site-language-menu">
+  <summary>{{ locale.language | escape }} · <span lang="{{ current_language | escape }}">{{ locale.name | escape }}</span></summary>
+  <ul>
+    {% for entry in site.data.languages %}
+      {% assign code = entry[0] %}
+      {% assign language = entry[1] %}
+      {% assign equivalent = alternate_pages | where: "lang", code | first %}
+      {% if page.layout == "post" %}
+        {% assign fallback = language.posts %}
+      {% else %}
+        {% assign fallback = language.home %}
+      {% endif %}
+      {% assign target = equivalent.url | default: fallback %}
+      <li>
+        {% if code == current_language %}
+          <span lang="{{ code }}" aria-current="true">{{ language.name | escape }}</span>
+        {% else %}
+          <a href="{{ target | relative_url }}" lang="{{ code }}" hreflang="{{ code }}">{{ language.name | escape }}</a>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</details>

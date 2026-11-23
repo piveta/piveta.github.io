@@ -1,40 +1,7 @@
 ---
-layout: page
+layout: catalog
 title: Todos os posts
+lang: pt-BR
+translation_id: site-catalog
 permalink: /posts/
 ---
-
-<style>
-  .language-selector {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5em 1em;
-    margin: 1em 0 2em;
-  }
-  .language-posts { margin-bottom: 2em; }
-</style>
-
-<p>Escolha um idioma para ver todos os artigos disponíveis nele:</p>
-{% assign post_languages = site.posts | map: "lang" | uniq | sort %}
-<nav class="language-selector" aria-label="Selecionar idioma">
-  {% for language in post_languages %}
-    {% assign language_anchor = language | slugify %}
-    <a href="#idioma-{{ language_anchor }}" lang="{{ language }}">{{ language | upcase }}</a>
-  {% endfor %}
-</nav>
-
-{% for language in post_languages %}
-  {% assign language_anchor = language | slugify %}
-  {% assign language_posts = site.posts | where: "lang", language %}
-  <section class="language-posts" id="idioma-{{ language_anchor }}" lang="{{ language }}">
-    <h2>{{ language | upcase }}</h2>
-    <ul class="post-list">
-      {% for post in language_posts %}
-        <li>
-          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d/%m/%Y" }}</time> —
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-  </section>
-{% endfor %}

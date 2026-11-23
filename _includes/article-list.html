@@ -1,0 +1,18 @@
+{% assign listing_language = page.lang | default: site.lang %}
+{% assign listing_locale = site.data.languages[listing_language] %}
+{% assign listing_posts = site.posts | where: "lang", listing_language %}
+{% if listing_posts.size > 0 %}
+  <ul class="post-list localized-post-list">
+    {% for listed_post in listing_posts limit: include.limit %}
+      <li>
+        <time class="post-meta" datetime="{{ listed_post.date | date_to_xmlschema }}">{{ listed_post.date | date: listing_locale.date }}</time>
+        <a href="{{ listed_post.url | relative_url }}">{{ listed_post.title | escape }}</a>
+        {% if include.translations %}
+          {% include language-switcher.html article=listed_post %}
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>{{ listing_locale.empty | escape }}</p>
+{% endif %}

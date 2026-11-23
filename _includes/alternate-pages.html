@@ -1,0 +1,8 @@
+{%- assign alternate_pages = nil -%}
+{%- if page.translation_id -%}
+  {%- if page.layout == "post" -%}
+    {%- assign alternate_pages = site.posts | where: "translation_id", page.translation_id -%}
+  {%- else -%}
+    {%- assign alternate_pages = site.pages | where: "translation_id", page.translation_id -%}
+  {%- endif -%}
+{%- endif -%}

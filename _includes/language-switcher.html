@@ -1,45 +1,19 @@
-{% assign translations = site.posts | where: "translation_id", page.translation_id %}
-
-{% if translations.size > 1 %}
-  <div class="post-translations">
-    {% for translation in translations %}
-
-      {% case translation.lang %}
-        {% when "pt-BR" %}
-          {% assign language_name = "Português" %}
-        {% when "en" %}
-          {% assign language_name = "English" %}
-        {% when "es" %}
-          {% assign language_name = "Español" %}
-        {% when "de" %}
-          {% assign language_name = "Deutsch" %}
-        {% when "fr" %}
-          {% assign language_name = "Français" %}
-        {% when "it" %}
-          {% assign language_name = "Italiano" %}
-        {% when "ja" %}
-          {% assign language_name = "日本語" %}
-        {% when "ko" %}
-          {% assign language_name = "한국어" %}
-        {% when "zh" %}
-          {% assign language_name = "中文" %}
-        {% when "pl" %}
-          {% assign language_name = "Polski" %}
-        {% when "sv" %}
-          {% assign language_name = "Svenska" %}
-        {% when "id" %}
-          {% assign language_name = "Bahasa Indonesia" %}
-        {% else %}
-          {% assign language_name = translation.lang %}
-      {% endcase %}
-
-      {% if translation.url == page.url %}
-        {{ language_name }}
-      {% else %}
-        <a href="{{ translation.url | relative_url }}">{{ language_name }}</a>
-      {% endif %}
-
-      {% unless forloop.last %} | {% endunless %}
-    {% endfor %}
-  </div>
-{% endif %}
+{%- assign article_for_switch = include.article | default: page -%}
+{%- if article_for_switch.translation_id -%}
+  {%- assign article_translations = site.posts | where: "translation_id", article_for_switch.translation_id -%}
+  {% if article_translations.size > 1 %}
+    {%- assign switch_language = page.lang | default: site.lang -%}
+    <div class="post-translations" aria-label="{{ site.data.languages[switch_language].language | escape }}">
+      {% for entry in site.data.languages %}
+        {% assign article_translation = article_translations | where: "lang", entry[0] | first %}
+        {% if article_translation %}
+          {% if article_translation.url == page.url %}
+            <span lang="{{ entry[0] }}" aria-current="page">{{ entry[1].name | escape }}</span>
+          {% else %}
+            <a href="{{ article_translation.url | relative_url }}" lang="{{ entry[0] }}" hreflang="{{ entry[0] }}">{{ entry[1].name | escape }}</a>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endif %}
+{%- endif -%}

@@ -21,7 +21,7 @@ layout: default
         {% if work.url %}<a href="{{ work.url | escape }}">{{ work.title | escape }}</a>{% else %}{{ work.title | escape }}{% endif %}
         {% if work.authors %}<br>{{ work.authors | escape }}{% endif %}
         {% if work.venue %}<br><em>{{ work.venue | escape }}</em>{% endif %}
-        {% if work.doi %}<br><small>DOI {{ work.doi | escape }}</small>{% endif %}
+        {% if work.doi %}<br><small>DOI <a href="https://doi.org/{{ work.doi | escape }}">{{ work.doi | escape }}</a></small>{% endif %}
       </li>
     {% endfor %}
     </ul>

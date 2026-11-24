@@ -19,11 +19,11 @@ Oggi la programmazione orientata agli oggetti è uno dei paradigmi più accettat
 
 Una **classe** è un meccanismo di astrazione usato per rappresentare concetti di un dominio applicativo. In un dominio bancario, per esempio, i concetti possono riguardare filiali, conti, clienti e transazioni. Potremmo definire classi come `Branch`, `Account`, `Customer` e `Transaction` per rappresentarli. La figura mostra una rappresentazione grafica di queste classi.
 
-<img src="/images/en/oopClasses.svg" alt="Le classi Branch, Account, Customer e Transaction." style="max-width: 300px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img width="484" height="274" src="/images/en/oopClasses.svg" alt="Le classi Branch, Account, Customer e Transaction." style="max-width: 300px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 Le classi fungono da *modelli* per creare esemplari concreti e manipolabili di questi concetti. Tali esemplari si chiamano **oggetti**. Un oggetto è un’**istanza** di una classe, e il processo di creazione di oggetti si chiama **istanziazione**. Potremmo, per esempio, creare oggetti che rappresentano i clienti *John*, *Peter* e *Mary*, con le rispettive informazioni personali e le funzionalità disponibili per i clienti.
 
-<img src="/images/en/oopObjects.svg" alt="Gli oggetti John, Peter e Mary sono istanze della classe Customer." style="max-width: 380px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img width="624" height="802" loading="lazy" src="/images/en/oopObjects.svg" alt="Gli oggetti John, Peter e Mary sono istanze della classe Customer." style="max-width: 380px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 Una classe viene definita per rappresentare le proprietà, le caratteristiche e il comportamento di un concetto. I due meccanismi principali sono gli attributi e i metodi.
 
@@ -41,7 +41,7 @@ L’**ereditarietà** è un meccanismo di composizione che consente alle classi 
 
 La figura 3 mostra le classi `Shape`, `Rectangle`, `Triangle` e `Circle`. `Shape` è la superclasse e `Rectangle`, `Triangle` e `Circle` sono le sue sottoclassi.
 
-<img src="/images/en/oopInheritance.png" alt="Shape è la superclasse di Rectangle, Triangle e Circle." style="max-width: 400px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img width="698" height="466" loading="lazy" src="/images/en/oopInheritance.png" alt="Shape è la superclasse di Rectangle, Triangle e Circle." style="max-width: 400px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 I meccanismi di ereditarietà variano tra i linguaggi. Le differenze riguardano spesso visibilità e molteplicità. Alcuni linguaggi, come C++, permettono di specificare l’ereditarietà come **pubblica** o **privata**. Consideriamo una classe `A` e una classe `B` che eredita da `A`. In tal caso `A` è la superclasse di `B`, e `B` è la sottoclasse di `A`. Con l’ereditarietà pubblica, `B` è un sottotipo di `A` ed eredita sia l’implementazione sia l’interfaccia di `A`. Ovunque sia richiesto un oggetto `A`, si può usare un oggetto `B` (o un’altra sottoclasse di `A`), poiché ogni istanza di `B` è considerata anche un’istanza di `A`. Questo principio si chiama **principio di sostituzione di Liskov**. Con l’ereditarietà privata, `B` non è un `A`: eredita soltanto l’implementazione di `A` e viene realizzata in termini di `A`. In questo caso il principio di sostituzione di Liskov non si applica.
 
@@ -49,7 +49,7 @@ L’ereditarietà può anche essere **singola o multipla**. Nell’ereditarietà
 
 La figura 4 mostra un esempio di ereditarietà multipla. `Mammal` e `Bird` rappresentano animali. `Horse`, `Dog` e `Bat` sono sottoclassi di `Mammal`, mentre `Ostrich` e `Duck` sono sottoclassi di `Bird`. Vogliamo anche classificare gli animali capaci di volare, quindi creiamo `Flyer`, una classe che rappresenta oggetti volanti non necessariamente animali. Con l’ereditarietà multipla, gli oggetti `Duck` e `Bat` possono essere anche oggetti volanti perché ereditano da `Flyer`.
 
-<img src="/images/en/oopMultipleInheritance.png" alt="Ereditarietà multipla tra le classi Animal, Bird, Flyer e Mammal." style="max-width: 500px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img width="1030" height="800" loading="lazy" src="/images/en/oopMultipleInheritance.png" alt="Ereditarietà multipla tra le classi Animal, Bird, Flyer e Mammal." style="max-width: 500px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 Alcune classi sono **astratte**. Come le classi **concrete**, rappresentano le caratteristiche e il comportamento di un insieme di oggetti del mondo reale, ma non possono essere istanziate direttamente. Nell’esempio di ereditarietà multipla, `Mammal`, `Bird` e `Flyer` potrebbero essere astratte, perché nel mondo reale esistono solo esemplari delle sottoclassi, come cavalli, cani e anatre.
 

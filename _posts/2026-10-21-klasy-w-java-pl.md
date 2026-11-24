@@ -138,8 +138,8 @@ Java nie ma metod destruktorów. Obiekty, do których nie ma już referencji, s�
 ## Powiązane artykuły
 
 - [Podstawowe pojęcia programowania obiektowego](/oop-basics-java-pl/)
-- [Dziedziczenie w Javie](/inheritance-in-java-pl/)
+- [Dziedziczenie w Javie](/dziedziczenie-w-java-pl/)
 - [Polimorfizm w Javie](/polymorphism-in-java-pl/)
-- [Interfejsy w Javie](/interfaces-in-java-pl/)
-- [Linki o OOP i Javie](/oop-java-links-pl/)
-- [Ćwiczenia z programowania obiektowego](/oop-exercises-pl/)
+- [Interfejsy w Javie](/interfejsy-w-java-pl/)
+- [Linki o OOP i Javie](/linki-oop-java-pl/)
+- [Ćwiczenia z programowania obiektowego](/cwiczenia-oop-pl/)

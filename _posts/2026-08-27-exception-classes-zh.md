@@ -23,7 +23,7 @@ share_text: >-
 
 `Throwable` 类有两个直接子类：`Exception` 和 `Error`。
 
-<img src="/images/descendentesThrowable.png"
+<img width="906" height="1607" src="/images/descendentesThrowable.png"
      alt="Throwable 层次结构"
      style="max-width: 250px; width: 100%; height: auto; display: block; margin: 20px auto;">
 
@@ -35,7 +35,7 @@ share_text: >-
 
 错误可以由 JVM 本身抛出，通常是操作系统或运行环境检测到某些条件的结果。程序员也可以显式地产生错误，例如使用 `assert` 或 `throw`。
 
-<img src="/images/exceptionsError.png"
+<img width="2584" height="1586" loading="lazy" src="/images/exceptionsError.png"
      alt="Error 及其子类"
      style="max-width: 600px; width: 100%; height: auto; display: block; margin: 20px auto;">
 
@@ -47,7 +47,7 @@ share_text: >-
 
 不是 `RuntimeException` 子类的 `Exception` 子类称为**受检异常**（*checked exceptions*）。编译器要求程序显式地处理这些异常。可以通过使用 `catch` 子句捕获异常，或者使用 `throws` 声明方法可能抛出该异常来实现。
 
-<img src="/images/descendentesException.png"
+<img width="2467" height="1594" loading="lazy" src="/images/descendentesException.png"
      alt="Exception 及其子类"
      style="max-width: 600px; width: 100%; height: auto; display: block; margin: 20px auto;">
 
@@ -68,7 +68,7 @@ share_text: >-
 
 实际上，许多 `RuntimeException` 实例表示本来可以由程序自身避免的问题。当这种异常发生时，通常应该调查其原因并修复问题，而不是简单地捕获异常。
 
-<img src="/images/descendentesRuntimeException.png"
+<img width="4530" height="1570" loading="lazy" src="/images/descendentesRuntimeException.png"
      alt="RuntimeException 及其子类"
      style="max-width: 800px; width: 100%; height: auto; display: block; margin: 20px auto;">
 

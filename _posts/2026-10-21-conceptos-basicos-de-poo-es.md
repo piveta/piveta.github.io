@@ -19,11 +19,11 @@ Hoy, la orientación a objetos es uno de los paradigmas más aceptados y utiliza
 
 Una **clase** es un mecanismo de abstracción que representa conceptos de un dominio de aplicación. En un dominio bancario, por ejemplo, los conceptos pueden incluir sucursales, cuentas, clientes y transacciones. Podríamos definir las clases `Branch`, `Account`, `Customer` y `Transaction` para representarlos. La figura muestra una representación gráfica de estas clases.
 
-<img src="/images/en/oopClasses.svg" alt="Clases Branch, Account, Customer y Transaction." style="max-width: 300px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img width="484" height="274" src="/images/en/oopClasses.svg" alt="Clases Branch, Account, Customer y Transaction." style="max-width: 300px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 Las clases sirven como *plantillas* para crear ejemplares concretos y manipulables de esos conceptos. Dichos ejemplares se llaman **objetos**. Un objeto es una **instancia** de una clase, y el proceso de crear objetos se denomina **instanciación**. Por ejemplo, podríamos crear objetos para representar a los clientes *John*, *Peter* y *Mary*, junto con su información personal y las funciones disponibles para los clientes.
 
-<img src="/images/en/oopObjects.svg" alt="Objetos John, Peter y Mary, cada uno una instancia de Customer." style="max-width: 380px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img width="624" height="802" loading="lazy" src="/images/en/oopObjects.svg" alt="Objetos John, Peter y Mary, cada uno una instancia de Customer." style="max-width: 380px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 Una clase se define para representar las propiedades, características y comportamiento de un concepto. Los dos mecanismos principales para ello son los atributos y los métodos.
 
@@ -41,7 +41,7 @@ La **herencia** es un mecanismo de composición que permite reutilizar la interf
 
 La figura 3 muestra las clases `Shape`, `Rectangle`, `Triangle` y `Circle`. `Shape` es la superclase, y `Rectangle`, `Triangle` y `Circle` son sus subclases.
 
-<img src="/images/en/oopInheritance.png" alt="Shape es la superclase de Rectangle, Triangle y Circle." style="max-width: 400px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img width="698" height="466" loading="lazy" src="/images/en/oopInheritance.png" alt="Shape es la superclase de Rectangle, Triangle y Circle." style="max-width: 400px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 Los mecanismos de herencia varían según el lenguaje. Algunas diferencias se refieren a la visibilidad y a la multiplicidad. Lenguajes como C++ permiten especificar la **visibilidad de la herencia** como **pública** o **privada**. Consideremos las clases `A` y `B`, donde `B` hereda de `A`. Entonces `A` es superclase de `B` y `B` es subclase de `A`. Con herencia pública, `B` es un subtipo de `A` y hereda tanto su implementación como su interfaz. Allí donde se espera un objeto `A`, se puede usar uno de `B` (o de cualquier otra subclase de `A`), porque toda instancia de `B` también se considera una instancia de `A`. Este principio se llama **principio de sustitución de Liskov**. Con herencia privada, `B` no es un `A`; solo hereda la implementación de `A` y se define en términos de ella. El principio de sustitución de Liskov no se aplica en ese caso.
 
@@ -49,7 +49,7 @@ La herencia también puede ser **simple o múltiple**, según la multiplicidad d
 
 La figura 4 muestra un ejemplo de herencia múltiple. `Mammal` y `Bird` representan animales. `Horse`, `Dog` y `Bat` son subclases de `Mammal`, mientras que `Ostrich` y `Duck` son subclases de `Bird`. También queremos clasificar los animales que pueden volar, así que creamos `Flyer`, una clase para objetos voladores que no tienen por qué ser animales. Con la herencia múltiple, tanto `Duck` como `Bat` también pueden ser objetos voladores al heredar de `Flyer`.
 
-<img src="/images/en/oopMultipleInheritance.png" alt="Herencia múltiple entre las clases Animal, Bird, Flyer y Mammal." style="max-width: 500px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img width="1030" height="800" loading="lazy" src="/images/en/oopMultipleInheritance.png" alt="Herencia múltiple entre las clases Animal, Bird, Flyer y Mammal." style="max-width: 500px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 Algunas clases son **abstractas**. Como las clases **concretas**, representan las características y el comportamiento de un conjunto de objetos del mundo real, pero no se pueden instanciar directamente. En el ejemplo anterior, `Mammal`, `Bird` y `Flyer` podrían ser abstractas, porque en el mundo real solo habría ejemplares de sus subclases, como caballos, perros y patos.
 

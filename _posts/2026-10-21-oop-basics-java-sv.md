@@ -19,11 +19,11 @@ I dag är objektorienterad programmering ett av de mest accepterade och använda
 
 En **klass** är en abstraktionsmekanism som används för att representera begrepp inom en viss tillämpningsdomän. I en bankdomän kan begreppen till exempel vara filialer, konton, kunder och transaktioner. Vi kan definiera klasserna `Branch`, `Account`, `Customer` och `Transaction` för att representera dem. Figuren visar en grafisk representation av klasserna.
 
-<img src="/images/en/oopClasses.svg" alt="Klasserna Branch, Account, Customer och Transaction." style="max-width: 300px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img width="484" height="274" src="/images/en/oopClasses.svg" alt="Klasserna Branch, Account, Customer och Transaction." style="max-width: 300px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 Klasser fungerar som *mallar* för att skapa konkreta och hanterbara exempel på begreppen. Sådana exempel kallas **objekt**. Ett objekt är en **instans** av en klass, och processen att skapa objekt kallas **instansiering**. Vi kan till exempel skapa objekt som representerar kunderna *John*, *Peter* och *Mary*, med deras personuppgifter och de funktioner som är tillgängliga för kunder.
 
-<img src="/images/en/oopObjects.svg" alt="Objekten John, Peter och Mary är instanser av klassen Customer." style="max-width: 380px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img width="624" height="802" loading="lazy" src="/images/en/oopObjects.svg" alt="Objekten John, Peter och Mary är instanser av klassen Customer." style="max-width: 380px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 En klass definieras för att representera egenskaper, kännetecken och beteende hos ett begrepp. De två huvudsakliga mekanismerna för detta är attribut och metoder.
 
@@ -41,7 +41,7 @@ Klasser abstraherar och kapslar in begrepp från den verkliga och den datorbaser
 
 Figur 3 visar klasserna `Shape`, `Rectangle`, `Triangle` och `Circle`. `Shape` är superklassen och `Rectangle`, `Triangle` och `Circle` är dess underklasser.
 
-<img src="/images/en/oopInheritance.png" alt="Shape är superklass till Rectangle, Triangle och Circle." style="max-width: 400px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img width="698" height="466" loading="lazy" src="/images/en/oopInheritance.png" alt="Shape är superklass till Rectangle, Triangle och Circle." style="max-width: 400px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 Arvsmekanismer varierar mellan programmeringsspråk. Skillnaderna gäller ofta synlighet och antal superklasser. Vissa språk, som C++, gör det möjligt att ange **publikt** eller **privat** arv. Anta att klassen `B` ärver från klassen `A`. Då är `A` superklass till `B`, och `B` underklass till `A`. Vid publikt arv är `B` en subtyp till `A` och ärver både dess implementation och dess gränssnitt. Där ett `A`-objekt förväntas kan därför ett `B`-objekt (eller ett objekt från en annan underklass till `A`) användas, eftersom varje `B`-instans även räknas som en `A`-instans. Denna princip kallas **Liskovs substitutionsprincip**. Vid privat arv är `B` inte ett `A`; den ärver bara `A`:s implementation och byggs med `A` som grund. Liskovs substitutionsprincip gäller inte i det fallet.
 
@@ -49,7 +49,7 @@ Arv kan också vara **enkelt eller multipelt**. Vid enkelarv, som används av Ja
 
 Figur 4 visar multipelt arv. `Mammal` och `Bird` representerar djur. `Horse`, `Dog` och `Bat` är underklasser till `Mammal`, medan `Ostrich` och `Duck` är underklasser till `Bird`. Vi vill också klassificera djur som kan flyga och skapar därför `Flyer`, en klass för flygande objekt som inte nödvändigtvis är djur. Med multipelt arv kan både `Duck`- och `Bat`-objekt också vara flygande objekt genom att ärva från `Flyer`.
 
-<img src="/images/en/oopMultipleInheritance.png" alt="Multipelt arv mellan klasserna Animal, Bird, Flyer och Mammal." style="max-width: 500px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img width="1030" height="800" loading="lazy" src="/images/en/oopMultipleInheritance.png" alt="Multipelt arv mellan klasserna Animal, Bird, Flyer och Mammal." style="max-width: 500px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 Vissa klasser är **abstrakta**. Precis som **konkreta** klasser representerar de egenskaper och beteende hos en grupp verkliga objekt, men de kan inte instansieras direkt. I exemplet med multipelt arv kan `Mammal`, `Bird` och `Flyer` vara abstrakta klasser eftersom det i verkligheten bara finns exempel på deras underklasser, till exempel hästar, hundar och ankor.
 
@@ -82,4 +82,4 @@ En sista relation, **realisering**, uppstår när en klass deklarerar att den im
 - [Polymorfism i Java](/polymorfism-i-java-sv/)
 - [Gränssnitt i Java](/granssnitt-i-java-sv/)
 - [Länkar om OOP och Java](/lankar-oop-java-sv/)
-- [Övningar i objektorienterad programmering](/oop-exercises-sv/)
+- [Övningar i objektorienterad programmering](/oop-ovningar-sv/)

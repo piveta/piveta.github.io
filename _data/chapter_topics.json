@@ -1,0 +1,9 @@
+[
+  ["hello-world","leitura-escrita-java","variaveis-tipos-java","operadores-java","expressoes-condicionais-java","sentencas-repeticao-java","links-introducao-java","exercicios-introducao-java"],
+  ["classes-em-java","conceitos-basicos-poo-java","construtores-java","exercicios-poo-java","heranca-em-java","links-poo-java","polimorfismo-em-java"],
+  ["criando-tabela-postgresql-java","conectando-postgresql-jdbc-java","inserindo-alunos-preparedstatement-java","consultando-alunos-resultset-java","alterando-alunos-jdbc-java","excluindo-alunos-jdbc-java","liberando-recursos-jdbc-java","exercicios-acesso-dados-java","links-acesso-dados-java"],
+  ["interfaces-em-java","interfaces-framework-colecoes","colecoes-iteradores-listas","filas-deques-java","conjuntos-java","mapas-em-java","exercicios-colecoes-java","links-colecoes-java"],
+  ["apagamento-tipos-crus-java","classes-metodos-genericos-java","exercicios-tipos-genericos-java","wildcards-limites-java","heranca-subtipos-genericos-java","links-tipos-genericos-java"],
+  ["padrao-dao-java","abstractdao-generico-java","aluno-dao-crud-java","aluno-dao-heranca-java","classe-aluno-dao-java","cliente-aluno-dao-java","cliente-dao-generico-java","dados-conexao-record-java","exercicios-dao-java","links-dao-java"],
+  ["bloco-finally-java","classes-de-excecao","try-com-recursos-java","capturando-tratando-excecoes-java","clausula-throws-java","criando-lancando-excecoes-java","exercicios-excecoes-java","links-excecoes-java"]
+]

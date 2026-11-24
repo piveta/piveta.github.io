@@ -32,4 +32,4 @@ Oto kilka materiałów dotyczących programowania obiektowego:
 - [Dziedziczenie w Javie](/dziedziczenie-w-java-pl/)
 - [Polimorfizm w Javie](/polymorphism-in-java-pl/)
 - [Interfejsy w Javie](/interfejsy-w-java-pl/)
-- [Ćwiczenia z programowania obiektowego](/oop-exercises-pl/)
+- [Ćwiczenia z programowania obiektowego](/cwiczenia-oop-pl/)

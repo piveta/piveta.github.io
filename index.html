@@ -22,6 +22,7 @@ author:
     display: block; border: 1px solid #ddd;
   }
   .book-description { flex: 1; }
+  .book-description .book-toc-title { font-size: 1.17em; }
   @media (max-width: 600px) {
     .book { flex-direction: column; align-items: center; }
     .book-description { text-align: center; }
@@ -33,22 +34,22 @@ author:
 <div class="home-content">
   <div class="book" id="livro">
     <div class="book-cover-container">
-      <img class="book-cover" src="capaOO.jpg" alt="Capa do livro Orientação a Objetos com Java">
+      <img width="1000" height="1500" class="book-cover" src="capaOO.jpg" alt="Capa do livro Orientação a Objetos com Java">
     </div>
     <div class="book-description">
-      <h2>Orientação a Objetos com Java</h2>
+      <h1 class="book-title">Orientação a Objetos com Java</h1>
       <p>por <strong>Eduardo Kessler Piveta (prof. Titular - UFSM)</strong></p>
       <p>Um livro sobre programação orientada a objetos em Java, explorando os principais conceitos da linguagem de forma detalhada e progressiva. Este é provavelmente o livro de Java nacional mais novo e atualizado em 2026. </p>
       <p style="color: #e65100;"><strong>Cobre Java 25 — a LTS mais atual da linguagem!</strong></p>
-      <h3>Sumário</h3>
+      <h2 class="book-toc-title">Sumário</h2>
       <ol>
-        <li>Introdução</li>
-        <li>Orientação a objetos</li>
-        <li>Usando classes: acesso a dados</li>
-        <li>Interfaces (e a API de coleções)</li>
-        <li>Tipos genéricos</li>
-        <li>Estendendo classes: acesso a dados</li>
-        <li>Tratamento de exceções</li>
+        <li><a href="{{ '/temas/' | relative_url }}#capitulo-1">Introdução</a></li>
+        <li><a href="{{ '/temas/' | relative_url }}#capitulo-2">Orientação a objetos</a></li>
+        <li><a href="{{ '/temas/' | relative_url }}#capitulo-3">Usando classes: acesso a dados</a></li>
+        <li><a href="{{ '/temas/' | relative_url }}#capitulo-4">Interfaces (e a API de coleções)</a></li>
+        <li><a href="{{ '/temas/' | relative_url }}#capitulo-5">Tipos genéricos</a></li>
+        <li><a href="{{ '/temas/' | relative_url }}#capitulo-6">Estendendo classes: acesso a dados</a></li>
+        <li><a href="{{ '/temas/' | relative_url }}#capitulo-7">Tratamento de exceções</a></li>
       </ol>
       {% include book_buttons.html %}
 <p>
@@ -102,5 +103,6 @@ author:
 <h2>Sobre o Autor</h2>
 <p><strong>Eduardo Kessler Piveta</strong> é professor titular do Departamento de Linguagens e Sistemas de Computação da Universidade Federal de Santa Maria (UFSM) e Doutor em Ciência da Computação pela UFRGS.</p>
 <p>Seus temas de interesse incluem projeto e evolução de software, paradigmas de programação e projeto e implementação de linguagens de programação. Possui 25 anos de experiência no ensino superior em Computação.</p>
+<p><a href="{{ '/autor/' | relative_url }}">Perfil acadêmico</a> · <a href="{{ '/publicacoes/' | relative_url }}">Publicações científicas</a></p>
 <p><strong>Site institucional</strong></p>
 <p><a href="https://www-usr.inf.ufsm.br/~piveta/">https://www-usr.inf.ufsm.br/~piveta/</a></p>

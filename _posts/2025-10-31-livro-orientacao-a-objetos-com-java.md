@@ -11,7 +11,7 @@ share_text: >-
 
 Em 31 de outubro de 2025, foi publicado o livro **Orientação a Objetos com Java**.
 
-<img src="/capaOO.jpg" alt="Capa do livro Orientação a Objetos com Java, de Eduardo Kessler Piveta" style="max-width: 350px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img width="1000" height="1500" src="/capaOO.jpg" alt="Capa do livro Orientação a Objetos com Java, de Eduardo Kessler Piveta" style="max-width: 350px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 A obra reúne a experiência acumulada ao longo de 25 anos de ensino de computação em cursos de graduação e pós-graduação, além da prática profissional no desenvolvimento de sistemas orientados a objetos. O material foi pensado para disciplinas de graduação sobre orientação a objetos e paradigmas de programação, e também para quem já conhece os fundamentos da programação e deseja estudar orientação a objetos em Java com mais profundidade.
 

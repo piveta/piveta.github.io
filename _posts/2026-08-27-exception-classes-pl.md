@@ -23,7 +23,7 @@ Do najważniejszych metod klasy `Throwable` należą `getMessage()`, która pozw
 
 Klasa `Throwable` ma dwie bezpośrednie podklasy: `Exception` i `Error`.
 
-<img src="/images/descendentesThrowable.png"
+<img width="906" height="1607" src="/images/descendentesThrowable.png"
      alt="Hierarchia Throwable"
      style="max-width: 250px; width: 100%; height: auto; display: block; margin: 20px auto;">
 
@@ -35,7 +35,7 @@ Do ważnych podklas `Error` należą `AssertionError`, `IOError` i `VirtualMachi
 
 Błędy mogą być zgłaszane przez samą JVM, często w wyniku warunków wykrytych przez system operacyjny lub środowisko uruchomieniowe. Mogą być również jawnie wywoływane przez programistę, na przykład za pomocą `assert` lub `throw`.
 
-<img src="/images/exceptionsError.png"
+<img width="2584" height="1586" loading="lazy" src="/images/exceptionsError.png"
      alt="Error i jego podklasy"
      style="max-width: 600px; width: 100%; height: auto; display: block; margin: 20px auto;">
 
@@ -47,7 +47,7 @@ Jej podklasy obejmują `IOException`, `SQLException`, `ReflectiveOperationExcept
 
 Podklasy `Exception`, które nie są podklasami `RuntimeException`, nazywamy **wyjątkami sprawdzanymi** (*checked exceptions*). Kompilator wymaga, aby program jawnie je uwzględnił. Można to zrobić, przechwytując wyjątek za pomocą klauzuli `catch` albo deklarując za pomocą `throws`, że metoda może go zgłosić.
 
-<img src="/images/descendentesException.png"
+<img width="2467" height="1594" loading="lazy" src="/images/descendentesException.png"
      alt="Exception i jego podklasy"
      style="max-width: 600px; width: 100%; height: auto; display: block; margin: 20px auto;">
 
@@ -68,7 +68,7 @@ Metoda, która może zgłosić `RuntimeException`, nie musi deklarować tej moż
 
 W praktyce wiele instancji `RuntimeException` wskazuje na problemy, którym można było zapobiec w samym programie. Gdy taki wyjątek wystąpi, zazwyczaj ważne jest zbadanie jego przyczyny i usunięcie problemu, zamiast po prostu przechwytywać wyjątek.
 
-<img src="/images/descendentesRuntimeException.png"
+<img width="4530" height="1570" loading="lazy" src="/images/descendentesRuntimeException.png"
      alt="RuntimeException i jego podklasy"
      style="max-width: 800px; width: 100%; height: auto; display: block; margin: 20px auto;">
 

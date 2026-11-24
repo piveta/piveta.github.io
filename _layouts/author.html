@@ -1,0 +1,24 @@
+---
+layout: default
+---
+{% assign person = site.data.author %}
+<article>
+  <h1>{{ person.name | escape }}</h1>
+  {% if page.lang == 'en' %}
+    <p>{{ person.bio_en | escape }}</p>
+    <p><a href="{{ '/en/publications/' | relative_url }}">Research publications</a></p>
+    <h2>Academic profiles</h2>
+  {% else %}
+    <p>{{ person.bio_pt | escape }}</p>
+    <p><a href="{{ '/publicacoes/' | relative_url }}">Publicações científicas</a></p>
+    <h2>Perfis acadêmicos</h2>
+  {% endif %}
+  <ul>
+    <li><a href="{{ person.ufsm | escape }}">UFSM · PPGCC</a></li>
+    <li><a href="{{ person.scholar | escape }}">Google Scholar</a></li>
+    <li><a href="{{ person.dblp | escape }}">DBLP</a></li>
+    <li><a href="{{ person.orcid | escape }}">ORCID</a></li>
+    <li><a href="{{ person.lattes | escape }}">Currículo Lattes</a></li>
+  </ul>
+  <p><a href="{{ site.data.book.url | relative_url }}" lang="pt-BR">{{ site.data.book.title | escape }}</a></p>
+</article>

@@ -3,64 +3,66 @@ layout: default
 ---
 {% assign post_language = page.lang | default: site.lang %}
 {% assign post_locale = site.data.languages[post_language] %}
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+{% assign author_profile = site.data.author.profile_en %}
+{% if post_language == "pt-BR" %}{% assign author_profile = site.data.author.profile %}{% endif %}
+<article class="post h-entry">
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    <h1 class="post-title p-name">{{ page.title | escape }}</h1>
 
     <p class="post-author">
       {% case page.lang %}
         {% when "en" %}
-          By <strong>Eduardo Piveta</strong><br>
+          By <strong><a href="{{ author_profile | relative_url }}">Eduardo Kessler Piveta</a></strong><br>
           <em>Full Professor - UFSM</em>
 
         {% when "es" %}
-          Por <strong>Eduardo Piveta</strong><br>
+          Por <strong><a href="{{ author_profile | relative_url }}">Eduardo Kessler Piveta</a></strong><br>
           <em>Profesor Titular - UFSM</em>
 
         {% when "fr" %}
-          Par <strong>Eduardo Piveta</strong><br>
+          Par <strong><a href="{{ author_profile | relative_url }}">Eduardo Kessler Piveta</a></strong><br>
           <em>Professeur titulaire - UFSM</em>
 
         {% when "it" %}
-          Di <strong>Eduardo Piveta</strong><br>
+          Di <strong><a href="{{ author_profile | relative_url }}">Eduardo Kessler Piveta</a></strong><br>
           <em>Professore ordinario - UFSM</em>
 
         {% when "de" %}
-          Von <strong>Eduardo Piveta</strong><br>
+          Von <strong><a href="{{ author_profile | relative_url }}">Eduardo Kessler Piveta</a></strong><br>
           <em>Ordentlicher Professor - UFSM</em>
 
         {% when "ja" %}
-          <strong>Eduardo Piveta</strong><br>
+          <strong><a href="{{ author_profile | relative_url }}">Eduardo Kessler Piveta</a></strong><br>
           <em>UFSM 正教授</em>
 
         {% when "ko" %}
-          <strong>Eduardo Piveta</strong><br>
+          <strong><a href="{{ author_profile | relative_url }}">Eduardo Kessler Piveta</a></strong><br>
           <em>UFSM 정교수</em>
 
         {% when "zh" %}
-          <strong>Eduardo Piveta</strong><br>
+          <strong><a href="{{ author_profile | relative_url }}">Eduardo Kessler Piveta</a></strong><br>
           <em>UFSM 正教授</em>
 
         {% when "pl" %}
-          <strong>Eduardo Piveta</strong><br>
+          <strong><a href="{{ author_profile | relative_url }}">Eduardo Kessler Piveta</a></strong><br>
           <em>Profesor zwyczajny - UFSM</em>
 
         {% when "sv" %}
-          <strong>Eduardo Piveta</strong><br>
+          <strong><a href="{{ author_profile | relative_url }}">Eduardo Kessler Piveta</a></strong><br>
           <em>Professor - UFSM</em>
 
         {% when "id" %}
-          <strong>Eduardo Piveta</strong><br>
+          <strong><a href="{{ author_profile | relative_url }}">Eduardo Kessler Piveta</a></strong><br>
           <em>Profesor - UFSM</em>
 
         {% else %}
-          Por <strong>Eduardo Piveta</strong><br>
+          Por <strong><a href="{{ author_profile | relative_url }}">Eduardo Kessler Piveta</a></strong><br>
           <em>Professor Titular - UFSM</em>
       {% endcase %}
     </p>
 
     <p class="post-meta">
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">
         {%- assign date_format = post_locale.date | default: "%Y-%m-%d" -%}
         {{ page.date | date: date_format }}
       </time>
@@ -70,21 +72,35 @@ layout: default
 
   </header>
 
-  <div class="post-content e-content" itemprop="articleBody">
+  <div class="post-content e-content">
     {{ content }}
   </div>
 
   {% include share.html %}
 
-  {% assign related_posts = site.posts | where: "lang", post_language | where_exp: "related", "related.url != page.url" %}
-  {% if related_posts.size > 0 %}
-    <h2>{{ post_locale.other | escape }}</h2>
-    <ul>
-      {% for related in related_posts limit: 3 %}
-        <li><a href="{{ related.url | relative_url }}">{{ related.title | escape }}</a></li>
-      {% endfor %}
-    </ul>
-  {% endif %}
+  {% for topics in site.data.chapter_topics %}
+    {% if topics contains page.translation_id %}
+      {% assign topics_info = site.data.seo_locales[post_language] %}
+      {% assign chapter_number = forloop.index %}
+      {% assign related_candidates = site.posts | where: "lang", post_language %}
+      {% assign related_count = 0 %}
+      {% capture chapter_links %}
+        {% for related in related_candidates %}
+          {% if related.url != page.url and topics contains related.translation_id %}
+            <li><a href="{{ related.url | relative_url }}">{{ related.title | escape }}</a></li>
+            {% assign related_count = related_count | plus: 1 %}
+            {% if related_count == 3 %}{% break %}{% endif %}
+          {% endif %}
+        {% endfor %}
+      {% endcapture %}
+      {% if related_count > 0 %}
+        <h2>{{ post_locale.other | escape }}</h2>
+        <ul>{{ chapter_links }}</ul>
+      {% endif %}
+      <p><a href="{{ topics_info.topics | relative_url }}#capitulo-{{ chapter_number }}">{{ topics_info.title | escape }}</a></p>
+      {% break %}
+    {% endif %}
+  {% endfor %}
 
   {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}

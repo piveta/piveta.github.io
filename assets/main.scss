@@ -163,7 +163,7 @@
 .book-button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #87ceeb;
+  background-color: #173f73;
   color: white !important;
   text-decoration: none !important;
   border-radius: 5px;
@@ -171,17 +171,17 @@
 }
 
 .book-button:hover {
-  background-color: #5fb8dc;
+  background-color: #102d55;
 }
 
 .book-button.secondary {
   background-color: white;
-  color: #5fb8dc !important;
-  border: 1px solid #87ceeb;
+  color: #173f73 !important;
+  border: 1px solid #173f73;
 }
 
 .book-button.secondary:hover {
-  background-color: #87ceeb;
+  background-color: #173f73;
   color: white !important;
 }
 
@@ -250,4 +250,12 @@
 .share-copy-status {
   color: #57606a;
   font-size: 0.9em;
+}
+
+.book-title {
+  font-size: 1.5em;
+}
+
+img {
+  height: auto;
 }

@@ -19,11 +19,11 @@ share_text: >-
 
 **クラス**は、特定のアプリケーション領域にある概念を表すための抽象化メカニズムです。たとえば銀行の領域には、支店、口座、顧客、取引などの概念があります。これらを表すために`Branch`、`Account`、`Customer`、`Transaction`などのクラスを定義できます。図はこれらのクラスを図式化したものです。
 
-<img src="/images/en/oopClasses.svg" alt="Branch、Account、Customer、Transactionの各クラス。" style="max-width: 300px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img width="484" height="274" src="/images/en/oopClasses.svg" alt="Branch、Account、Customer、Transactionの各クラス。" style="max-width: 300px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 クラスは、概念の具体的で操作可能な例を作成するための*テンプレート*として機能します。この例を**オブジェクト**と呼びます。オブジェクトはクラスの**インスタンス**であり、オブジェクトを作成する処理は**インスタンス化**と呼ばれます。たとえば、顧客の個人情報や顧客向けの機能とともに、*John*、*Peter*、*Mary*を表すオブジェクトを作成できます。
 
-<img src="/images/en/oopObjects.svg" alt="John、Peter、Maryの各オブジェクトはCustomerクラスのインスタンスです。" style="max-width: 380px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img width="624" height="802" loading="lazy" src="/images/en/oopObjects.svg" alt="John、Peter、Maryの各オブジェクトはCustomerクラスのインスタンスです。" style="max-width: 380px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 クラスは、概念の性質、特性、振る舞いを表すように定義されます。主な仕組みは属性とメソッドです。
 
@@ -41,7 +41,7 @@ share_text: >-
 
 図3は`Shape`、`Rectangle`、`Triangle`、`Circle`クラスを示しています。`Shape`がスーパークラスで、`Rectangle`、`Triangle`、`Circle`がそのサブクラスです。
 
-<img src="/images/en/oopInheritance.png" alt="ShapeはRectangle、Triangle、Circleのスーパークラスです。" style="max-width: 400px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img width="698" height="466" loading="lazy" src="/images/en/oopInheritance.png" alt="ShapeはRectangle、Triangle、Circleのスーパークラスです。" style="max-width: 400px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 継承の仕組みはプログラミング言語によって異なり、可視性や多重度に関する違いがあります。C++など一部の言語では、**公開継承**または**非公開継承**を指定できます。クラス`A`と、`A`を継承するクラス`B`を考えます。`A`は`B`のスーパークラス、`B`は`A`のサブクラスです。公開継承では、`B`は`A`のサブタイプであり、`A`の実装とインターフェースの両方を継承します。`A`型のオブジェクトが必要な場所では、`B`型のオブジェクト（または`A`の他のサブクラス）を使用できます。これは`B`のすべてのインスタンスが`A`のインスタンスでもあるためです。この原則は**リスコフの置換原則**と呼ばれます。非公開継承では、`B`は`A`ではなく、`A`の実装だけを継承して`A`を基に実装されます。この場合、リスコフの置換原則は適用されません。
 
@@ -49,7 +49,7 @@ share_text: >-
 
 図4は多重継承の例です。`Mammal`と`Bird`は動物を表します。`Horse`、`Dog`、`Bat`は`Mammal`のサブクラスで、`Ostrich`と`Duck`は`Bird`のサブクラスです。さらに、飛行できる動物も分類したいとします。そこで、動物とは限らない飛行物体を表す`Flyer`クラスを作成します。多重継承を使うと、`Duck`と`Bat`のオブジェクトは`Flyer`を継承することで飛行物体にもなります。
 
-<img src="/images/en/oopMultipleInheritance.png" alt="Animal、Bird、Flyer、Mammalクラス間の多重継承。" style="max-width: 500px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img width="1030" height="800" loading="lazy" src="/images/en/oopMultipleInheritance.png" alt="Animal、Bird、Flyer、Mammalクラス間の多重継承。" style="max-width: 500px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 **抽象クラス**もあります。**具象クラス**と同じように、現実世界のオブジェクト群の特性や振る舞いを表しますが、直接インスタンス化することはできません。多重継承の例では、`Mammal`、`Bird`、`Flyer`を抽象クラスにできます。現実世界に存在するのは、馬、犬、カモなどのサブクラスの実例だけだからです。
 

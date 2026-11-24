@@ -19,11 +19,11 @@ share_text: >-
 
 **클래스**는 특정 애플리케이션 영역의 개념을 표현하는 추상화 메커니즘입니다. 예를 들어 은행 영역에는 지점, 계좌, 고객, 거래 등의 개념이 있습니다. 이를 표현하기 위해 `Branch`, `Account`, `Customer`, `Transaction` 같은 클래스를 정의할 수 있습니다. 그림은 이 클래스들을 그래픽으로 나타냅니다.
 
-<img src="/images/en/oopClasses.svg" alt="Branch, Account, Customer, Transaction 클래스." style="max-width: 300px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img width="484" height="274" src="/images/en/oopClasses.svg" alt="Branch, Account, Customer, Transaction 클래스." style="max-width: 300px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 클래스는 이러한 개념의 구체적이고 조작 가능한 예를 만드는 *템플릿* 역할을 합니다. 그런 예를 **객체**라고 합니다. 객체는 클래스의 **인스턴스**이며 객체를 만드는 과정을 **인스턴스화**라고 합니다. 예를 들어 고객의 개인 정보와 고객에게 제공되는 기능을 포함해 *John*, *Peter*, *Mary*를 나타내는 객체를 만들 수 있습니다.
 
-<img src="/images/en/oopObjects.svg" alt="John, Peter, Mary 객체는 각각 Customer 클래스의 인스턴스입니다." style="max-width: 380px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img width="624" height="802" loading="lazy" src="/images/en/oopObjects.svg" alt="John, Peter, Mary 객체는 각각 Customer 클래스의 인스턴스입니다." style="max-width: 380px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 클래스는 개념의 속성, 특성, 동작을 표현하도록 정의됩니다. 주요 메커니즘은 속성과 메서드입니다.
 
@@ -41,7 +41,7 @@ share_text: >-
 
 그림 3은 `Shape`, `Rectangle`, `Triangle`, `Circle` 클래스를 보여 줍니다. `Shape`가 상위 클래스이고 `Rectangle`, `Triangle`, `Circle`이 하위 클래스입니다.
 
-<img src="/images/en/oopInheritance.png" alt="Shape는 Rectangle, Triangle, Circle의 상위 클래스입니다." style="max-width: 400px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img width="698" height="466" loading="lazy" src="/images/en/oopInheritance.png" alt="Shape는 Rectangle, Triangle, Circle의 상위 클래스입니다." style="max-width: 400px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 상속 메커니즘은 언어마다 다르며, 가시성과 상속의 개수에 차이가 있습니다. C++ 같은 언어는 상속 가시성을 **public** 또는 **private**으로 지정할 수 있습니다. 클래스 `A`를 상속하는 클래스 `B`를 생각해 봅시다. `A`는 `B`의 상위 클래스이고 `B`는 `A`의 하위 클래스입니다. 공개 상속에서는 `B`가 `A`의 하위 타입이며 `A`의 구현과 인터페이스를 모두 상속합니다. `A` 객체가 필요한 곳에서는 `B` 객체(또는 다른 `A` 하위 클래스 객체)를 사용할 수 있습니다. 모든 `B` 인스턴스는 `A` 인스턴스이기도 하기 때문입니다. 이를 **리스코프 치환 원칙**이라고 합니다. 비공개 상속에서 `B`는 `A`가 아니며 `A`의 구현만 상속해 `A`를 기반으로 구현됩니다. 이 경우 리스코프 치환 원칙은 적용되지 않습니다.
 
@@ -49,7 +49,7 @@ share_text: >-
 
 그림 4는 다중 상속의 예입니다. `Mammal`과 `Bird`는 동물을 나타냅니다. `Horse`, `Dog`, `Bat`은 `Mammal`의 하위 클래스이고, `Ostrich`, `Duck`은 `Bird`의 하위 클래스입니다. 날 수 있는 동물도 분류하기 위해 동물이 아닐 수도 있는 비행 물체를 나타내는 `Flyer` 클래스를 만듭니다. 다중 상속을 사용하면 `Duck`과 `Bat` 객체가 `Flyer`를 상속해 비행 물체이기도 하다고 표현할 수 있습니다.
 
-<img src="/images/en/oopMultipleInheritance.png" alt="Animal, Bird, Flyer, Mammal 클래스 간 다중 상속." style="max-width: 500px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img width="1030" height="800" loading="lazy" src="/images/en/oopMultipleInheritance.png" alt="Animal, Bird, Flyer, Mammal 클래스 간 다중 상속." style="max-width: 500px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 일부 클래스는 **추상 클래스**입니다. **구체 클래스**와 마찬가지로 현실 세계의 객체 집합에 대한 특성과 동작을 나타내지만 직접 인스턴스화할 수 없습니다. 앞의 다중 상속 예에서 `Mammal`, `Bird`, `Flyer`는 추상 클래스일 수 있습니다. 현실 세계에는 말, 개, 오리 같은 하위 클래스의 사례만 있기 때문입니다.
 

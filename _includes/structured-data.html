@@ -1,0 +1,97 @@
+{%- assign author_data = site.data.author -%}
+{%- assign book_data = site.data.book -%}
+{%- assign person_id = author_data.profile | absolute_url | append: '#pessoa' -%}
+{%- assign website_id = '/' | absolute_url | append: '#site' -%}
+{%- assign page_url = page.url | absolute_url -%}
+{%- assign page_id = page_url | append: '#pagina' -%}
+{%- assign book_id = book_data.url | absolute_url | append: '#livro' -%}
+{%- assign graph_desc = page.description | default: page.excerpt | default: site.description | markdownify | strip_html | normalize_whitespace -%}
+{%- assign graph_lang = page.lang | default: site.lang -%}
+{%- assign graph_image = page.image.path | default: page.image | absolute_url -%}
+{%- assign bio = author_data.bio_pt -%}
+{%- if graph_lang == 'en' -%}{%- assign bio = author_data.bio_en -%}{%- endif -%}
+{%- assign chapter = nil -%}
+{%- for chapter_topics in site.data.chapter_topics -%}
+  {%- if chapter_topics contains page.translation_id -%}
+    {%- assign chapter = locale.chapters[forloop.index0] -%}
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": {{ website_id | jsonify }},
+      "url": {{ '/' | absolute_url | jsonify }},
+      "name": {{ site.title | jsonify }},
+      "publisher": {"@id": {{ person_id | jsonify }}}
+    },
+    {
+      "@type": "Person",
+      "@id": {{ person_id | jsonify }},
+      "name": {{ author_data.name | jsonify }},
+      "url": {{ author_data.profile | absolute_url | jsonify }},
+      "description": {{ bio | jsonify }},
+      "jobTitle": "Professor titular",
+      "affiliation": {"@type": "CollegeOrUniversity", "name": "Universidade Federal de Santa Maria", "url": "https://www.ufsm.br/"},
+      "alumniOf": {"@type": "CollegeOrUniversity", "name": "Universidade Federal do Rio Grande do Sul", "url": "https://www.ufrgs.br/"},
+      "knowsAbout": {{ author_data.knows_about | jsonify }},
+      "sameAs": [
+        {{ author_data.ufsm | jsonify }}, {{ author_data.homepage | jsonify }},
+        {{ author_data.lattes | jsonify }}, {{ author_data.orcid | jsonify }},
+        {{ author_data.scholar | jsonify }}, {{ author_data.dblp | jsonify }},
+        {{ author_data.github | jsonify }}, {{ author_data.amazon | jsonify }}
+      ]
+    },
+    {
+      "@type": {% if page.layout == 'author' %}"ProfilePage"{% elsif page.layout == 'publications' or page.layout == 'topics' or page.layout == 'catalog' %}"CollectionPage"{% else %}"WebPage"{% endif %},
+      "@id": {{ page_id | jsonify }},
+      "url": {{ page_url | jsonify }},
+      "name": {{ page.title | default: site.title | jsonify }},
+      "description": {{ graph_desc | jsonify }},
+      "inLanguage": {{ graph_lang | jsonify }},
+      "isPartOf": {"@id": {{ website_id | jsonify }}}
+      {% if page.layout == 'author' %}, "mainEntity": {"@id": {{ person_id | jsonify }}}
+      {% elsif page.url == book_data.url %}, "mainEntity": {"@id": {{ book_id | jsonify }}}
+      {% elsif page.layout == 'publications' %}, "about": {"@id": {{ person_id | jsonify }}}{% endif %}
+    }
+    {% if page.url == book_data.url or page.translation_id == 'site-home' %},
+    {
+      "@type": "Book",
+      "@id": {{ book_id | jsonify }},
+      "url": {{ book_data.url | absolute_url | jsonify }},
+      "name": {{ book_data.title | jsonify }},
+      "description": {{ book_data.description | jsonify }},
+      "isbn": {{ book_data.isbn | jsonify }},
+      "bookEdition": {{ book_data.edition | jsonify }},
+      "datePublished": {{ book_data.published | jsonify }},
+      "inLanguage": {{ book_data.language | jsonify }},
+      "image": {{ book_data.image | absolute_url | jsonify }},
+      "author": {"@id": {{ person_id | jsonify }}},
+      "potentialAction": [
+        {"@type": "BuyAction", "target": {{ book_data.ebook | jsonify }}},
+        {"@type": "BuyAction", "target": {{ book_data.print | jsonify }}}
+      ]
+    }
+    {% elsif page.layout == 'post' %},
+    {
+      "@type": "BlogPosting",
+      "@id": {{ page_url | append: '#artigo' | jsonify }},
+      "url": {{ page_url | jsonify }},
+      "headline": {{ page.title | jsonify }},
+      "description": {{ graph_desc | jsonify }},
+      "inLanguage": {{ graph_lang | jsonify }},
+      "image": {{ graph_image | jsonify }},
+      "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+      {% if page.last_modified_at %}"dateModified": {{ page.last_modified_at | date_to_xmlschema | jsonify }},{% endif %}
+      {% if chapter %}"about": {{ chapter | jsonify }}, "isBasedOn": {"@id": {{ book_id | jsonify }}},{% endif %}
+      "author": {"@id": {{ person_id | jsonify }}},
+      "isPartOf": {"@id": {{ website_id | jsonify }}},
+      "mainEntityOfPage": {"@id": {{ page_id | jsonify }}}
+    }
+    {% endif %}
+  ]
+}
+</script>

@@ -32,4 +32,4 @@ Här är några resurser om objektorienterad programmering:
 - [Arv i Java](/arv-i-java-sv/)
 - [Polymorfism i Java](/polymorfism-i-java-sv/)
 - [Gränssnitt i Java](/granssnitt-i-java-sv/)
-- [Övningar i objektorienterad programmering](/oop-exercises-sv/)
+- [Övningar i objektorienterad programmering](/oop-ovningar-sv/)

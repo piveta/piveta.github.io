@@ -98,5 +98,5 @@ Oddzielenie interfejsu od `Account` może dać klasom większą elastyczność w
 - [Klasy w Javie](/klasy-w-java-pl/)
 - [Dziedziczenie w Javie](/dziedziczenie-w-java-pl/)
 - [Polimorfizm w Javie](/polymorphism-in-java-pl/)
-- [Linki o OOP i Javie](/oop-java-links-pl/)
-- [Ćwiczenia z programowania obiektowego](/oop-exercises-pl/)
+- [Linki o OOP i Javie](/linki-oop-java-pl/)
+- [Ćwiczenia z programowania obiektowego](/cwiczenia-oop-pl/)

@@ -23,7 +23,7 @@ Zu den wichtigsten Methoden von `Throwable` gehören `getMessage()`, mit der die
 
 Die Klasse `Throwable` besitzt zwei direkte Unterklassen: `Exception` und `Error`.
 
-<img src="/images/descendentesThrowable.png"
+<img width="906" height="1607" src="/images/descendentesThrowable.png"
      alt="Throwable-Hierarchie"
      style="max-width: 250px; width: 100%; height: auto; display: block; margin: 20px auto;">
 
@@ -35,7 +35,7 @@ Zu den wichtigen Unterklassen von `Error` gehören `AssertionError`, `IOError` u
 
 Fehler können von der JVM selbst ausgelöst werden, häufig als Folge von Bedingungen, die vom Betriebssystem oder von der Laufzeitumgebung erkannt wurden. Sie können auch explizit vom Programmierer erzeugt werden, beispielsweise durch `assert` oder `throw`.
 
-<img src="/images/exceptionsError.png"
+<img width="2584" height="1586" loading="lazy" src="/images/exceptionsError.png"
      alt="Error und seine Unterklassen"
      style="max-width: 600px; width: 100%; height: auto; display: block; margin: 20px auto;">
 
@@ -47,7 +47,7 @@ Zu ihren Unterklassen gehören `IOException`, `SQLException`, `ReflectiveOperati
 
 Die `Exception`-Unterklassen, die keine Unterklassen von `RuntimeException` sind, werden **geprüfte Ausnahmen** (*checked exceptions*) genannt. Der Compiler verlangt, dass sie vom Programm ausdrücklich berücksichtigt werden. Dies kann geschehen, indem die Ausnahme mit einer `catch`-Klausel abgefangen wird oder indem mit `throws` deklariert wird, dass die Methode sie auslösen kann.
 
-<img src="/images/descendentesException.png"
+<img width="2467" height="1594" loading="lazy" src="/images/descendentesException.png"
      alt="Exception und ihre Unterklassen"
      style="max-width: 600px; width: 100%; height: auto; display: block; margin: 20px auto;">
 
@@ -68,7 +68,7 @@ Eine Methode, die eine `RuntimeException` auslösen kann, muss diese Möglichkei
 
 In der Praxis weisen viele `RuntimeException`-Instanzen auf Probleme hin, die vom Programm selbst hätten verhindert werden können. Wenn eine solche Ausnahme auftritt, ist es normalerweise wichtig, ihre Ursache zu untersuchen und das Problem zu beheben, anstatt die Ausnahme einfach abzufangen.
 
-<img src="/images/descendentesRuntimeException.png"
+<img width="4530" height="1570" loading="lazy" src="/images/descendentesRuntimeException.png"
      alt="RuntimeException und ihre Unterklassen"
      style="max-width: 800px; width: 100%; height: auto; display: block; margin: 20px auto;">
 

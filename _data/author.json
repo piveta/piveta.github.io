@@ -1,0 +1,22 @@
+{
+  "name": "Eduardo Kessler Piveta",
+  "profile": "/autor/",
+  "profile_en": "/en/author/",
+  "ufsm": "https://www.ufsm.br/cursos/pos-graduacao/santa-maria/ppgcc/eduardo-kessler-piveta",
+  "homepage": "https://www-usr.inf.ufsm.br/~piveta/",
+  "lattes": "https://lattes.cnpq.br/8687196768910831",
+  "orcid": "https://orcid.org/0000-0002-0092-4495",
+  "scholar": "https://scholar.google.com/citations?user=aC0NGYcAAAAJ&hl=pt-BR",
+  "dblp": "https://dblp.org/pid/93/1270.html",
+  "github": "https://github.com/piveta",
+  "amazon": "https://amazon.com/author/piveta",
+  "knows_about": [
+    "Programming languages",
+    "Programming paradigms",
+    "Software design",
+    "Software evolution",
+    "Java"
+  ],
+  "bio_pt": "Eduardo Kessler Piveta é professor titular da Universidade Federal de Santa Maria (UFSM) e doutor em Ciência da Computação pela UFRGS (2009). Pesquisa linguagens de programação, paradigmas, projeto e evolução de software. É autor de Orientação a Objetos com Java.",
+  "bio_en": "Eduardo Kessler Piveta is a full professor at the Federal University of Santa Maria (UFSM) and earned a PhD in computer science from UFRGS in 2009. His research covers programming languages, programming paradigms, software design, and software evolution. He is the author of Orientação a Objetos com Java."
+}

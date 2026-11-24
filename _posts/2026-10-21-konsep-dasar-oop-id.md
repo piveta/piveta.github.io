@@ -19,11 +19,11 @@ Saat ini, pemrograman berorientasi objek merupakan salah satu paradigma yang pal
 
 **Kelas** adalah mekanisme abstraksi untuk merepresentasikan konsep dalam domain aplikasi tertentu. Dalam domain perbankan, misalnya, konsepnya dapat berupa cabang, rekening, nasabah, dan transaksi. Kita dapat mendefinisikan kelas `Branch`, `Account`, `Customer`, dan `Transaction` untuk merepresentasikannya. Gambar berikut memperlihatkan representasi grafis kelas-kelas tersebut.
 
-<img src="/images/en/oopClasses.svg" alt="Kelas Branch, Account, Customer, dan Transaction." style="max-width: 300px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img width="484" height="274" src="/images/en/oopClasses.svg" alt="Kelas Branch, Account, Customer, dan Transaction." style="max-width: 300px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 Kelas berfungsi sebagai *templat* untuk membuat contoh konkret dan dapat dimanipulasi dari konsep tersebut. Contoh itu disebut **objek**. Objek merupakan **instans** dari sebuah kelas, sedangkan proses membuat objek disebut **instansiasi**. Sebagai contoh, kita dapat membuat objek untuk merepresentasikan nasabah *John*, *Peter*, dan *Mary*, beserta informasi pribadi dan fungsi yang tersedia bagi nasabah.
 
-<img src="/images/en/oopObjects.svg" alt="Objek John, Peter, dan Mary masing-masing merupakan instans kelas Customer." style="max-width: 380px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img width="624" height="802" loading="lazy" src="/images/en/oopObjects.svg" alt="Objek John, Peter, dan Mary masing-masing merupakan instans kelas Customer." style="max-width: 380px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 Kelas didefinisikan untuk merepresentasikan properti, karakteristik, dan perilaku suatu konsep. Dua mekanisme utama untuk melakukannya adalah atribut dan metode.
 
@@ -41,7 +41,7 @@ Kelas merupakan mekanisme abstraksi yang merepresentasikan dan mengenkapsulasi k
 
 Gambar 3 memperlihatkan kelas `Shape`, `Rectangle`, `Triangle`, dan `Circle`. `Shape` adalah superkelas, sedangkan `Rectangle`, `Triangle`, dan `Circle` merupakan subkelasnya.
 
-<img src="/images/en/oopInheritance.png" alt="Shape merupakan superkelas dari Rectangle, Triangle, dan Circle." style="max-width: 400px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img width="698" height="466" loading="lazy" src="/images/en/oopInheritance.png" alt="Shape merupakan superkelas dari Rectangle, Triangle, dan Circle." style="max-width: 400px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 Mekanisme pewarisan berbeda-beda menurut bahasa pemrograman. Perbedaan tersebut biasanya berkaitan dengan visibilitas dan jumlah pewarisan. Beberapa bahasa, seperti C++, memungkinkan **visibilitas pewarisan** ditetapkan sebagai **publik** atau **privat**. Misalkan kelas `B` mewarisi kelas `A`. Dengan pewarisan publik, `B` adalah subtipe `A` dan mewarisi implementasi serta antarmuka `A`. Di mana pun objek `A` diperlukan, objek `B` (atau subkelas `A` lainnya) dapat digunakan karena setiap instans `B` juga dianggap sebagai instans `A`. Prinsip ini disebut **prinsip substitusi Liskov**. Dengan pewarisan privat, `B` bukan `A`; hanya implementasi `A` yang diwarisi dan `B` dibuat berdasarkan `A`. Prinsip substitusi Liskov tidak berlaku dalam kasus ini.
 
@@ -49,7 +49,7 @@ Pewarisan juga dapat berupa **tunggal atau berganda**. Pada pewarisan tunggal, s
 
 Gambar 4 menunjukkan contoh pewarisan berganda. `Mammal` dan `Bird` mewakili hewan. `Horse`, `Dog`, dan `Bat` adalah subkelas `Mammal`, sedangkan `Ostrich` dan `Duck` merupakan subkelas `Bird`. Kita juga ingin mengelompokkan hewan yang dapat terbang, maka dibuat kelas `Flyer` untuk objek terbang yang belum tentu hewan. Dengan pewarisan berganda, objek `Duck` dan `Bat` dapat sekaligus menjadi objek terbang dengan mewarisi `Flyer`.
 
-<img src="/images/en/oopMultipleInheritance.png" alt="Pewarisan berganda antara kelas Animal, Bird, Flyer, dan Mammal." style="max-width: 500px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img width="1030" height="800" loading="lazy" src="/images/en/oopMultipleInheritance.png" alt="Pewarisan berganda antara kelas Animal, Bird, Flyer, dan Mammal." style="max-width: 500px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 Beberapa kelas bersifat **abstrak**. Seperti kelas **konkret**, kelas abstrak merepresentasikan karakteristik dan perilaku sekumpulan objek dunia nyata, tetapi tidak dapat diinstansiasi secara langsung. Dalam contoh pewarisan berganda tadi, `Mammal`, `Bird`, dan `Flyer` dapat didefinisikan sebagai kelas abstrak karena yang ada di dunia nyata hanya contoh dari subkelasnya, seperti kuda, anjing, dan bebek.
 

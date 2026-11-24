@@ -23,7 +23,7 @@ Tra i principali metodi di `Throwable` ci sono `getMessage()`, che permette di o
 
 La classe `Throwable` ha due sottoclassi dirette: `Exception` e `Error`.
 
-<img src="/images/descendentesThrowable.png"
+<img width="906" height="1607" src="/images/descendentesThrowable.png"
      alt="Gerarchia di Throwable"
      style="max-width: 250px; width: 100%; height: auto; display: block; margin: 20px auto;">
 
@@ -35,7 +35,7 @@ Tra le sottoclassi importanti di `Error` ci sono `AssertionError`, `IOError` e `
 
 Gli errori possono essere lanciati dalla JVM stessa, spesso come conseguenza di condizioni rilevate dal sistema operativo o dall’ambiente di esecuzione. Possono anche essere prodotti esplicitamente dal programmatore, per esempio tramite `assert` o `throw`.
 
-<img src="/images/exceptionsError.png"
+<img width="2584" height="1586" loading="lazy" src="/images/exceptionsError.png"
      alt="Error e le sue sottoclassi"
      style="max-width: 600px; width: 100%; height: auto; display: block; margin: 20px auto;">
 
@@ -47,7 +47,7 @@ Le sue sottoclassi includono `IOException`, `SQLException`, `ReflectiveOperation
 
 Le sottoclassi di `Exception` che non sono sottoclassi di `RuntimeException` sono chiamate **eccezioni controllate** (*checked exceptions*). Il compilatore richiede che siano esplicitamente considerate dal programma. Questo può essere fatto intercettando l’eccezione con una clausola `catch` oppure dichiarando, tramite `throws`, che il metodo può lanciarla.
 
-<img src="/images/descendentesException.png"
+<img width="2467" height="1594" loading="lazy" src="/images/descendentesException.png"
      alt="Exception e le sue sottoclassi"
      style="max-width: 600px; width: 100%; height: auto; display: block; margin: 20px auto;">
 
@@ -68,7 +68,7 @@ Un metodo che può lanciare una `RuntimeException` non deve dichiarare questa po
 
 In pratica, molte istanze di `RuntimeException` indicano problemi che avrebbero potuto essere evitati dal programma stesso. Quando se ne verifica una, è generalmente importante individuarne la causa e correggere il problema anziché limitarsi a intercettare l’eccezione.
 
-<img src="/images/descendentesRuntimeException.png"
+<img width="4530" height="1570" loading="lazy" src="/images/descendentesRuntimeException.png"
      alt="RuntimeException e le sue sottoclassi"
      style="max-width: 800px; width: 100%; height: auto; display: block; margin: 20px auto;">
 

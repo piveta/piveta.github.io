@@ -23,7 +23,7 @@ Javaでは、例外は`Throwable`クラスまたはそのサブクラスのい�
 
 `Throwable`クラスには、`Exception`と`Error`という2つの直接のサブクラスがあります。
 
-<img src="/images/descendentesThrowable.png"
+<img width="906" height="1607" src="/images/descendentesThrowable.png"
      alt="Throwableの階層"
      style="max-width: 250px; width: 100%; height: auto; display: block; margin: 20px auto;">
 
@@ -35,7 +35,7 @@ Javaでは、例外は`Throwable`クラスまたはそのサブクラスのい�
 
 エラーはJVM自身によってスローされることがあり、オペレーティングシステムや実行環境によって検出された状態が原因となる場合があります。また、プログラマが`assert`や`throw`などを使用して明示的に発生させることもできます。
 
-<img src="/images/exceptionsError.png"
+<img width="2584" height="1586" loading="lazy" src="/images/exceptionsError.png"
      alt="Errorとそのサブクラス"
      style="max-width: 600px; width: 100%; height: auto; display: block; margin: 20px auto;">
 
@@ -47,7 +47,7 @@ Javaでは、例外は`Throwable`クラスまたはそのサブクラスのい�
 
 `RuntimeException`のサブクラスではない`Exception`のサブクラスを**検査例外**（*checked exceptions*）と呼びます。コンパイラは、プログラムがこれらを明示的に扱うことを要求します。これは、`catch`節で例外を捕捉するか、`throws`を使用してメソッドがその例外をスローする可能性があることを宣言することで行えます。
 
-<img src="/images/descendentesException.png"
+<img width="2467" height="1594" loading="lazy" src="/images/descendentesException.png"
      alt="Exceptionとそのサブクラス"
      style="max-width: 600px; width: 100%; height: auto; display: block; margin: 20px auto;">
 
@@ -68,7 +68,7 @@ Javaでは、例外は`Throwable`クラスまたはそのサブクラスのい�
 
 実際には、多くの`RuntimeException`インスタンスは、プログラム自体によって防ぐことができた問題を示しています。このような例外が発生した場合は、単に例外を捕捉するのではなく、その原因を調査して問題を修正することが通常重要です。
 
-<img src="/images/descendentesRuntimeException.png"
+<img width="4530" height="1570" loading="lazy" src="/images/descendentesRuntimeException.png"
      alt="RuntimeExceptionとそのサブクラス"
      style="max-width: 800px; width: 100%; height: auto; display: block; margin: 20px auto;">
 

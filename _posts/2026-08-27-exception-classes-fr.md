@@ -23,7 +23,7 @@ Parmi les principales méthodes de `Throwable` figurent `getMessage()`, qui perm
 
 La classe `Throwable` possède deux sous-classes directes : `Exception` et `Error`.
 
-<img src="/images/descendentesThrowable.png"
+<img width="906" height="1607" src="/images/descendentesThrowable.png"
      alt="Hiérarchie de Throwable"
      style="max-width: 250px; width: 100%; height: auto; display: block; margin: 20px auto;">
 
@@ -35,7 +35,7 @@ Parmi les sous-classes importantes de `Error` figurent `AssertionError`, `IOErro
 
 Les erreurs peuvent être levées par la JVM elle-même, souvent à la suite de conditions détectées par le système d’exploitation ou l’environnement d’exécution. Elles peuvent également être produites explicitement par le programmeur, par exemple au moyen de `assert` ou de `throw`.
 
-<img src="/images/exceptionsError.png"
+<img width="2584" height="1586" loading="lazy" src="/images/exceptionsError.png"
      alt="Error et ses sous-classes"
      style="max-width: 600px; width: 100%; height: auto; display: block; margin: 20px auto;">
 
@@ -47,7 +47,7 @@ Ses sous-classes comprennent `IOException`, `SQLException`, `ReflectiveOperation
 
 Les sous-classes de `Exception` qui ne sont pas des sous-classes de `RuntimeException` sont appelées **exceptions vérifiées** (*checked exceptions*). Le compilateur exige qu’elles soient explicitement prises en compte par le programme. Cela peut être fait en interceptant l’exception avec une clause `catch` ou en déclarant, avec `throws`, que la méthode peut la lever.
 
-<img src="/images/descendentesException.png"
+<img width="2467" height="1594" loading="lazy" src="/images/descendentesException.png"
      alt="Exception et ses sous-classes"
      style="max-width: 600px; width: 100%; height: auto; display: block; margin: 20px auto;">
 
@@ -68,7 +68,7 @@ Une méthode susceptible de lever une `RuntimeException` n’a pas besoin de dé
 
 En pratique, de nombreuses instances de `RuntimeException` indiquent des problèmes qui auraient pu être évités par le programme lui-même. Lorsqu’une telle exception se produit, il est généralement important d’en rechercher la cause et de corriger le problème plutôt que de simplement intercepter l’exception.
 
-<img src="/images/descendentesRuntimeException.png"
+<img width="4530" height="1570" loading="lazy" src="/images/descendentesRuntimeException.png"
      alt="RuntimeException et ses sous-classes"
      style="max-width: 800px; width: 100%; height: auto; display: block; margin: 20px auto;">
 

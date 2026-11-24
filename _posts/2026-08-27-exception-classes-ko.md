@@ -23,7 +23,7 @@ Java에서 예외는 `Throwable` 클래스 또는 그 하위 클래스에 속하
 
 `Throwable` 클래스에는 `Exception`과 `Error`라는 두 개의 직접적인 하위 클래스가 있습니다.
 
-<img src="/images/descendentesThrowable.png"
+<img width="906" height="1607" src="/images/descendentesThrowable.png"
      alt="Throwable 계층 구조"
      style="max-width: 250px; width: 100%; height: auto; display: block; margin: 20px auto;">
 
@@ -35,7 +35,7 @@ Java에서 예외는 `Throwable` 클래스 또는 그 하위 클래스에 속하
 
 오류는 JVM 자체에서 발생시킬 수 있으며, 운영 체제나 실행 환경에서 감지한 조건의 결과인 경우가 많습니다. 또한 프로그래머가 `assert`나 `throw` 등을 사용하여 명시적으로 발생시킬 수도 있습니다.
 
-<img src="/images/exceptionsError.png"
+<img width="2584" height="1586" loading="lazy" src="/images/exceptionsError.png"
      alt="Error와 그 하위 클래스"
      style="max-width: 600px; width: 100%; height: auto; display: block; margin: 20px auto;">
 
@@ -47,7 +47,7 @@ Java에서 예외는 `Throwable` 클래스 또는 그 하위 클래스에 속하
 
 `RuntimeException`의 하위 클래스가 아닌 `Exception`의 하위 클래스를 **검사 예외(checked exception)**라고 합니다. 컴파일러는 프로그램이 이러한 예외를 명시적으로 처리하도록 요구합니다. 이는 `catch` 절로 예외를 포착하거나 `throws`를 사용하여 메서드가 해당 예외를 발생시킬 수 있음을 선언하는 방식으로 수행할 수 있습니다.
 
-<img src="/images/descendentesException.png"
+<img width="2467" height="1594" loading="lazy" src="/images/descendentesException.png"
      alt="Exception과 그 하위 클래스"
      style="max-width: 600px; width: 100%; height: auto; display: block; margin: 20px auto;">
 
@@ -68,7 +68,7 @@ Java에서 예외는 `Throwable` 클래스 또는 그 하위 클래스에 속하
 
 실제로 많은 `RuntimeException` 인스턴스는 프로그램 자체에서 예방할 수 있었던 문제를 나타냅니다. 이러한 예외가 발생하면 단순히 예외를 포착하기보다는 원인을 조사하고 문제를 수정하는 것이 일반적으로 중요합니다.
 
-<img src="/images/descendentesRuntimeException.png"
+<img width="4530" height="1570" loading="lazy" src="/images/descendentesRuntimeException.png"
      alt="RuntimeException과 그 하위 클래스"
      style="max-width: 800px; width: 100%; height: auto; display: block; margin: 20px auto;">
 

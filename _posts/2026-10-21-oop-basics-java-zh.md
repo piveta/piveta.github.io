@@ -19,11 +19,11 @@ share_text: >-
 
 **类**是一种抽象机制，用于表示特定应用领域中的概念。例如，在银行领域中，概念可能包括分行、账户、客户和交易。我们可以定义 `Branch`、`Account`、`Customer` 和 `Transaction` 等类来表示它们。图中展示了这些类的图形化表示。
 
-<img src="/images/en/oopClasses.svg" alt="Branch、Account、Customer 和 Transaction 类。" style="max-width: 300px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img width="484" height="274" src="/images/en/oopClasses.svg" alt="Branch、Account、Customer 和 Transaction 类。" style="max-width: 300px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 类充当*模板*，用于创建这些概念的具体、可操作实例。这些实例称为**对象**。对象是类的一个**实例**，创建对象的过程称为**实例化**。例如，我们可以创建表示客户 *John*、*Peter* 和 *Mary* 的对象，并包含他们的个人信息和客户可用的功能。
 
-<img src="/images/en/oopObjects.svg" alt="John、Peter 和 Mary 对象分别是 Customer 类的实例。" style="max-width: 380px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img width="624" height="802" loading="lazy" src="/images/en/oopObjects.svg" alt="John、Peter 和 Mary 对象分别是 Customer 类的实例。" style="max-width: 380px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 类的定义用于表示某个概念的属性、特征和行为。主要机制是属性和方法。
 
@@ -41,7 +41,7 @@ share_text: >-
 
 图 3 展示了 `Shape`、`Rectangle`、`Triangle` 和 `Circle` 类。`Shape` 是超类，`Rectangle`、`Triangle` 和 `Circle` 是其子类。
 
-<img src="/images/en/oopInheritance.png" alt="Shape 是 Rectangle、Triangle 和 Circle 的超类。" style="max-width: 400px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img width="698" height="466" loading="lazy" src="/images/en/oopInheritance.png" alt="Shape 是 Rectangle、Triangle 和 Circle 的超类。" style="max-width: 400px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 不同编程语言的继承机制有所不同，差异通常涉及可见性和继承的数量。一些语言（例如 C++）允许指定**公有继承**或**私有继承**。假设类 `B` 继承类 `A`。那么 `A` 是 `B` 的超类，`B` 是 `A` 的子类。采用公有继承时，`B` 是 `A` 的子类型，并继承 `A` 的实现和接口。在需要 `A` 对象的任何位置，都可以使用 `B` 对象（或 `A` 的其他子类对象），因为每个 `B` 实例也被视为 `A` 的实例。这一原则称为**里氏替换原则**。采用私有继承时，`B` 并不是 `A`；它只继承 `A` 的实现，并以 `A` 为基础构建。此时里氏替换原则不适用。
 
@@ -49,7 +49,7 @@ share_text: >-
 
 图 4 展示了多继承的例子。`Mammal` 和 `Bird` 表示动物。`Horse`、`Dog` 和 `Bat` 是 `Mammal` 的子类，`Ostrich` 和 `Duck` 是 `Bird` 的子类。我们还希望分类能够飞行的动物，因此创建 `Flyer` 类来表示不一定是动物的飞行对象。通过多继承，`Duck` 和 `Bat` 对象也可以继承 `Flyer`，成为飞行对象。
 
-<img src="/images/en/oopMultipleInheritance.png" alt="Animal、Bird、Flyer 和 Mammal 类之间的多继承。" style="max-width: 500px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img width="1030" height="800" loading="lazy" src="/images/en/oopMultipleInheritance.png" alt="Animal、Bird、Flyer 和 Mammal 类之间的多继承。" style="max-width: 500px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 有些类是**抽象类**。它们与**具体类**一样，表示一组现实世界对象的特征和行为，但不能直接实例化。在多继承示例中，`Mammal`、`Bird` 和 `Flyer` 可以是抽象类，因为现实世界中只有它们子类的实例，例如马、狗和鸭子。
 

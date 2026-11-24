@@ -5,6 +5,7 @@ markdown: kramdown
 theme: minima
 lang: pt-BR
 locale: pt_BR
+timezone: America/Sao_Paulo
 
 defaults:
   - scope:
@@ -14,13 +15,16 @@ defaults:
       
 author:
   name: Eduardo Kessler Piveta
-  url: "https://www-usr.inf.ufsm.br/~piveta/"
+  url: "https://oocomjava.com.br/autor/"
   twitter: ekpiveta
 
 twitter:
   username: ekpiveta
 
 google_analytics: G-BBQ1ZBPY2S
+
+exclude:
+  - scripts
 
 plugins:
   - jekyll-sitemap

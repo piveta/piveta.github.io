@@ -1,0 +1,524 @@
+[
+  {
+    "title": "Um processo para buscas não estruturadas em código fonte",
+    "year": "2025",
+    "authors": "Rodrigo de Castro Gil, Eduardo Kessler Piveta, Cristiano De Faveri, Deise de Brum Saccol, Lisandra Manzoni Fontoura",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:orDZ08hpP44C",
+    "url": "https://doi.org/10.5335/rbca.v17i3.16482",
+    "venue": "Revista Brasileira de Computação Aplicada 17 (3), 84-99",
+    "id": "trabalho-5507b73938af",
+    "doi": "10.5335/rbca.v17i3.16482"
+  },
+  {
+    "title": "UniChat: Arquitetura e Avaliação de um Agente RAG de Baixo Custo para o Contexto Universitário",
+    "year": "2025",
+    "venue": "SBBD",
+    "dblp": "https://dblp.org/rec/conf/sbbd/BordinLPE25",
+    "doi": "10.5753/SBBD.2025.247790",
+    "url": "https://doi.org/10.5753/SBBD.2025.247790",
+    "authors": "Ana Clara Boniatti Bordin, Gabriel Machado Lunardi, Eduardo Kessler Piveta, Leonardo Emmendorfer",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:QsKbpXNoaWkC",
+    "id": "trabalho-8cfb9be52093"
+  },
+  {
+    "title": "Search Mechanism for Encapsulate Classes with Factory Refactoring Opportunities",
+    "year": "2023",
+    "venue": "SBCARS",
+    "dblp": "https://dblp.org/rec/conf/sbcars/KrugP23",
+    "doi": "10.1145/3622748.3622752",
+    "url": "https://doi.org/10.1145/3622748.3622752",
+    "authors": "Thiago Cassio Krug, Eduardo Kessler Piveta",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:Vr2j17o0sqMC",
+    "id": "trabalho-600c01603957"
+  },
+  {
+    "title": "A Text Similarity-based Process for Extracting JSON Conceptual Schemas",
+    "year": "2021",
+    "venue": "ICEIS (1)",
+    "dblp": "https://dblp.org/rec/conf/iceis/MachadoSPPR21",
+    "doi": "10.5220/0010475102640271",
+    "url": "https://doi.org/10.5220/0010475102640271",
+    "authors": "Fhabiana T. Machado, Deise de Brum Saccol, Eduardo Piveta, Renata Padilha, Ezequiel Ribeiro",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:N4u4nq0IxgcC",
+    "id": "trabalho-d6624add03a7"
+  },
+  {
+    "title": "A monadic semantics for quantum computing in an object oriented language",
+    "year": "2019",
+    "venue": "Sci. Comput. Program.",
+    "dblp": "https://dblp.org/rec/journals/scp/FeitosaVPB19",
+    "doi": "10.1016/J.SCICO.2018.03.003",
+    "url": "https://doi.org/10.1016/J.SCICO.2018.03.003",
+    "authors": "Samuel da Silva Feitosa, Juliana Kaizer Vizzotto, Eduardo Kessler Piveta, André Rauber Du Bois",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:jlhcAiayVhoC",
+    "id": "trabalho-ca607a13ff8c"
+  },
+  {
+    "title": "A Refactoring Catalog for Lambda Expressions in Java",
+    "year": "2019",
+    "venue": "Int. J. Softw. Eng. Knowl. Eng.",
+    "dblp": "https://dblp.org/rec/journals/ijseke/JuniorNFSVP19",
+    "doi": "10.1142/S021819401950027X",
+    "url": "https://doi.org/10.1142/S021819401950027X",
+    "authors": "Jânio Elias Teixeira Júnior, Heres Edison Valdivieso Tobar Neto, Cristiano De Faveri, Deise de Brum Saccol, Juliana Kaizer Vizzotto, Eduardo Kessler Piveta",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:pYKElYtJMmwC",
+    "id": "trabalho-c4309dd4e049"
+  },
+  {
+    "title": "AsyncRFJ: an asynchronous approach to reactive object-oriented programming",
+    "year": "2018",
+    "venue": "SBLP",
+    "dblp": "https://dblp.org/rec/conf/sblp/CardosoVP18",
+    "doi": "10.1145/3264637.3264642",
+    "url": "https://doi.org/10.1145/3264637.3264642",
+    "authors": "Diogo J. Cardoso, Juliana Kaizer Vizzotto, Eduardo Kessler Piveta",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:nPTYJWkExTIC",
+    "id": "trabalho-9a424be3d944"
+  },
+  {
+    "title": "A Monadic Semantics for Quantum Computing in Featherweight Java",
+    "year": "2016",
+    "venue": "SBLP",
+    "dblp": "https://dblp.org/rec/conf/sblp/FeitosaVPB16",
+    "doi": "10.1007/978-3-319-45279-1_3",
+    "url": "https://doi.org/10.1007/978-3-319-45279-1_3",
+    "authors": "Samuel da Silva Feitosa, Juliana Kaizer Vizzotto, Eduardo Kessler Piveta, André Rauber Du Bois",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:1r-w4gtu6w8C",
+    "id": "trabalho-4811aa883af1"
+  },
+  {
+    "title": "A set of refactorings for the evolution of Fortran programs",
+    "year": "2016",
+    "venue": "Int. J. High Perform. Syst. Archit.",
+    "dblp": "https://dblp.org/rec/journals/ijhpsa/RissettiCP16",
+    "doi": "10.1504/IJHPSA.2016.078809",
+    "url": "https://doi.org/10.1504/IJHPSA.2016.078809",
+    "authors": "Gustavo Rissetti, Andrea Schwertner Charão, Eduardo Kessler Piveta",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:m92CDrhVnKEC",
+    "id": "trabalho-6ec8dd3192af"
+  },
+  {
+    "title": "Erratum to: A Monadic Semantics for Quantum Computing in Featherweight Java",
+    "year": "2016",
+    "authors": "S da Silva Feitosa, JK Vizzotto, EK Piveta, AR Du Bois",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:WwIwg2wKZ0QC",
+    "url": "https://doi.org/10.1007/978-3-319-45279-1_13",
+    "venue": "Brazilian Symposium on Programming Languages, E1-E1",
+    "id": "trabalho-8ae4762bdb5b",
+    "doi": "10.1007/978-3-319-45279-1_13"
+  },
+  {
+    "title": "FJQuantum - A Quantum Object Oriented Language",
+    "year": "2016",
+    "venue": "WEIT",
+    "dblp": "https://dblp.org/rec/journals/entcs/FeitosaVPB16",
+    "doi": "10.1016/J.ENTCS.2016.09.007",
+    "url": "https://doi.org/10.1016/J.ENTCS.2016.09.007",
+    "authors": "Samuel da Silva Feitosa, Juliana Kaizer Vizzotto, Eduardo Kessler Piveta, André Rauber Du Bois",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:sfnaS5RM6jYC",
+    "id": "trabalho-882de3b2f35b"
+  },
+  {
+    "title": "Representação do Conhecimento de forma a Buscar Oportunidades de Refatoração através de uma Ontologia",
+    "year": "2016",
+    "authors": "FQ Campagnolo, EK Piveta",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:4e5Qn2KL_jwC",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:4e5Qn2KL_jwC",
+    "venue": "Revista ComInG-Communications and Innovations Gazette 1 (2), 74-86",
+    "id": "trabalho-e01884a9fc0a"
+  },
+  {
+    "title": "A tool for searching in unstructured code aspectj",
+    "year": "2015",
+    "authors": "RC Gil, EK Piveta, DB Saccol",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:eI34FqJmdUoC",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:eI34FqJmdUoC",
+    "venue": "",
+    "id": "trabalho-bc19f380a50b"
+  },
+  {
+    "title": "Typed context awareness Ambient Calculus for pervasive applications",
+    "year": "2015",
+    "venue": "Formal Aspects Comput.",
+    "dblp": "https://dblp.org/rec/journals/fac/PasqualinVP15",
+    "doi": "10.1007/S00165-015-0339-X",
+    "url": "https://doi.org/10.1007/S00165-015-0339-X",
+    "authors": "Douglas Pereira Pasqualin, Juliana Kaizer Vizzotto, Eduardo Kessler Piveta",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:iyewoVqAXLQC",
+    "id": "trabalho-14d2abc20cef"
+  },
+  {
+    "title": "Uma Ferramenta para Busca Não Estruturada em Código AspectJ",
+    "year": "2015",
+    "authors": "R Gil, E Piveta, D Saccol, C Faveri",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:hNSvKAmkeYkC",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:hNSvKAmkeYkC",
+    "venue": "Simpósio Brasileiro de Sistemas de Informação (SBSI), 39-46",
+    "id": "trabalho-733c18ffece1"
+  },
+  {
+    "title": "Uma Ferramenta para Busca Não Estruturada em Código AspectJ [A Tool for Searching in Unstructured Code AspectJ]",
+    "year": "2015",
+    "venue": "SBSI",
+    "dblp": "https://dblp.org/rec/conf/sbsi/GilPSF15",
+    "doi": "10.5753/SBSI.2015.5799",
+    "url": "https://doi.org/10.5753/SBSI.2015.5799",
+    "authors": "Rodrigo Castro Gil, Eduardo Kessler Piveta, Deise de Brum Saccol, Cristiano De Faveri",
+    "id": "trabalho-5fd9cb867e14"
+  },
+  {
+    "title": "Searching for Refactoring Opportunities to apply the Strategy Pattern",
+    "year": "2014",
+    "venue": "SBSI",
+    "dblp": "https://dblp.org/rec/conf/sbsi/PauliP14",
+    "doi": "10.5753/SBSI.2014.6127",
+    "url": "https://doi.org/10.5753/SBSI.2014.6127",
+    "authors": "Guinther de B. Pauli, Eduardo Kessler Piveta",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:M0leSnx2MbUC",
+    "id": "trabalho-12dbb9b144d9"
+  },
+  {
+    "title": "A Double Effect X-calculus for Quantum Computation",
+    "year": "2013",
+    "authors": "JK Vizzotto, BC Calegaro, EK Piveta",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:_tF6a-HnqWAC",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:_tF6a-HnqWAC",
+    "id": "trabalho-a22f3e5e8416"
+  },
+  {
+    "title": "A Double Effect λ-calculus for Quantum Computation",
+    "year": "2013",
+    "venue": "SBLP",
+    "dblp": "https://dblp.org/rec/conf/sblp/VizzottoCP13",
+    "doi": "10.1007/978-3-642-40922-6_5",
+    "url": "https://doi.org/10.1007/978-3-642-40922-6_5",
+    "authors": "Juliana Kaizer Vizzotto, Bruno Crestani Calegaro, Eduardo Kessler Piveta",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:ji7lAbPyDbYC",
+    "id": "trabalho-df8cbbdeadb9"
+  },
+  {
+    "title": "Inference rules for generic code migration of aspect-oriented programs",
+    "year": "2013",
+    "venue": "Sci. Comput. Program.",
+    "dblp": "https://dblp.org/rec/journals/scp/RubboPN13",
+    "doi": "10.1016/J.SCICO.2012.09.004",
+    "url": "https://doi.org/10.1016/J.SCICO.2012.09.004",
+    "authors": "Fernando Barden Rubbo, Eduardo Kessler Piveta, Daltro José Nunes",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:ULOm3_A8WrAC",
+    "id": "trabalho-00c12a33f521"
+  },
+  {
+    "title": "The crosscutting impact of the AOSD Brazilian research community",
+    "year": "2013",
+    "venue": "J. Syst. Softw.",
+    "dblp": "https://dblp.org/rec/journals/jss/KuleszaSCCBLMSFACFPDPSCBLLMBBCSSSVACRPR13",
+    "doi": "10.1016/J.JSS.2012.08.031",
+    "url": "https://doi.org/10.1016/J.JSS.2012.08.031",
+    "authors": "Uirá Kulesza, Sérgio Soares, Christina Chavez, Fernando Castor, Paulo Borba, Carlos José Pereira de Lucena, Paulo César Masiero, Cláudio Sant'Anna, Fabiano Cutigi Ferrari, Vander Alves, Roberta Coelho, Eduardo Figueiredo 0001, Paulo F. Pires, Flávia Coimbra Delicato, Eduardo Piveta, Carla T. L. L. Silva, Valter Vieira de Camargo, Rosana T. V. Braga, Julio C. S. P. Leite, Otávio Lemos, Nabor C. Mendonça, Thaís Vasconcelos Batista, Rodrigo Bonifácio, Nélio Cacho, Lyrene Fernandes da Silva, Arndt von Staa, Fábio Fagundes Silveira, Marco Túlio Valente, Fernanda M. R. Alencar, Jaelson Castro, Ricardo Argenton Ramos, Rosângela A. D. Penteado, Cecília M. F. Rubira",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:8k81kl-MbHgC",
+    "id": "trabalho-c8595dd4e302"
+  },
+  {
+    "title": "Um Processo para o uso de Linguagens de Consulta em Código Fonte",
+    "year": "2013",
+    "venue": "SBSI",
+    "dblp": "https://dblp.org/rec/conf/sbsi/CantarelliFP13",
+    "doi": "10.5753/SBSI.2013.5707",
+    "url": "https://doi.org/10.5753/SBSI.2013.5707",
+    "authors": "Gustavo Cantarelli, Cristiano De Faveri, Eduardo Piveta",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:4TOpqqG69KYC",
+    "id": "trabalho-2da4c40a1a01"
+  },
+  {
+    "title": "An empirical study of aspect-oriented metrics",
+    "year": "2012",
+    "venue": "Sci. Comput. Program.",
+    "dblp": "https://dblp.org/rec/journals/scp/PivetaMPAGP12",
+    "doi": "10.1016/J.SCICO.2012.02.003",
+    "url": "https://doi.org/10.1016/J.SCICO.2012.02.003",
+    "authors": "Eduardo Kessler Piveta, Ana Moreira 0001, Marcelo Soares Pimenta, João Araújo 0001, Pedro Guerreiro, Roberto Tom Price",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:Se3iqnhoufwC",
+    "id": "trabalho-e6d581c87a19"
+  },
+  {
+    "title": "An Ontology-based Approach for Storing XML Data Into Relational Databases",
+    "year": "2012",
+    "venue": "SEKE",
+    "dblp": "https://dblp.org/rec/conf/seke/AvelarSP12",
+    "url": "https://dblp.org/rec/conf/seke/AvelarSP12",
+    "authors": "Francisco Tiago Machado de Avelar, Deise de Brum Saccol, Eduardo Kessler Piveta",
+    "id": "trabalho-349e9b5e681a"
+  },
+  {
+    "title": "CMAP: Tracking equivalences from XML documents to relational schemas",
+    "year": "2012",
+    "venue": "IRI",
+    "dblp": "https://dblp.org/rec/conf/iri/NegriniSAP12",
+    "doi": "10.1109/IRI.2012.6303028",
+    "url": "https://doi.org/10.1109/IRI.2012.6303028",
+    "authors": "Douglas Negrini, Deise de Brum Saccol, Francisco Tiago Machado de Avelar, Eduardo Kessler Piveta",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:kNdYIx-mwKoC",
+    "id": "trabalho-a842855260a9"
+  },
+  {
+    "title": "Automated refactorings for high performance Fortran programmes",
+    "year": "2011",
+    "venue": "Int. J. High Perform. Syst. Archit.",
+    "dblp": "https://dblp.org/rec/journals/ijhpsa/BoniatiCSRP11",
+    "doi": "10.1504/IJHPSA.2011.040463",
+    "url": "https://doi.org/10.1504/IJHPSA.2011.040463",
+    "authors": "Bruno Batista Boniati, Andrea Schwertner Charão, Benhur de Oliveira Stein, Gustavo Rissetti, Eduardo Kessler Piveta",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:4DMP91E08xMC",
+    "id": "trabalho-cfefb99245db"
+  },
+  {
+    "title": "Mapping OWL ontologies to relational schemas",
+    "year": "2011",
+    "venue": "IRI",
+    "dblp": "https://dblp.org/rec/conf/iri/SaccolAP11",
+    "doi": "10.1109/IRI.2011.6009523",
+    "url": "https://doi.org/10.1109/IRI.2011.6009523",
+    "authors": "Deise de Brum Saccol, Tobias de Campos Andrade, Eduardo Kessler Piveta",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:UebtZRa9Y70C",
+    "id": "trabalho-654a4dbcf83d"
+  },
+  {
+    "title": "The AOSD Research Community in Brazil and Its Crosscutting Impact",
+    "year": "2011",
+    "venue": "SBES",
+    "dblp": "https://dblp.org/rec/conf/sbes/ChavezKSBLMSPFCCSAMFCSPBCSLSLPDBVRBAC11",
+    "doi": "10.1109/SBES.2011.10",
+    "url": "https://doi.org/10.1109/SBES.2011.10",
+    "authors": "Christina Chavez, Uirá Kulesza, Sérgio Soares, Paulo Borba, Carlos José Pereira de Lucena, Paulo César Masiero, Cláudio Sant'Anna, Eduardo Piveta, Fabiano Cutigi Ferrari, Fernando Castor, Roberta Coelho, Lyrene Fernandes da Silva, Vander Alves, Nabor C. Mendonça, Eduardo Figueiredo 0001, Valter Vieira de Camargo, Carla T. L. L. Silva, Paulo F. Pires, Thaís Vasconcelos Batista, Nélio Cacho, Arndt von Staa, Julio César Sampaio do Prado Leite, Fábio Fagundes Silveira, Otávio Augusto Lazzarini Lemos, Rosângela A. D. Penteado, Flávia Coimbra Delicato, Rosana T. V. Braga, Marco Túlio Valente, Ricardo Argenton Ramos, Rodrigo Bonifácio, Fernanda M. R. Alencar, Jaelson Castro",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:_FxGoFyzp5QC",
+    "id": "trabalho-de70d72142ba"
+  },
+  {
+    "title": "Refatorações para Melhoria da Legibilidade de Código Fortran",
+    "year": "2011",
+    "venue": "WSL’11 – Workshop de Software Livre",
+    "authors": "Dionatan Kitzmann Tietzmann, Gustavo Rissetti, Andrea Schwertner Charão, Eduardo Kessler Piveta, Adriano Petry, J. R. Souza",
+    "url": "https://www.ufsmpublica.ufsm.br/docente/14886/producao",
+    "id": "trabalho-842ee614a0a1"
+  },
+  {
+    "title": "Priorização de Classes para Testes Unitários Utilizando o Analytical Hierarchy Process",
+    "year": "2010",
+    "venue": "XXXVI Conferência Latino-Americana de Informática (CLEI’10)",
+    "authors": "Rafael Baldiati Parizi, Vanessa Gindri Vieira, Eduardo Kessler Piveta",
+    "url": "https://www.ufsmpublica.ufsm.br/docente/14886/producao",
+    "id": "trabalho-e0b390511e96"
+  },
+  {
+    "title": "Improving the search for refactoring opportunities on object-oriented and aspect-oriented software",
+    "year": "2009",
+    "authors": "EK Piveta",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:MXK_kJrjxJIC",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:MXK_kJrjxJIC",
+    "venue": "",
+    "id": "trabalho-35dd983cf9b7"
+  },
+  {
+    "title": "Representing refactoring opportunities",
+    "year": "2009",
+    "venue": "SAC",
+    "dblp": "https://dblp.org/rec/conf/sac/PivetaPAMGP09",
+    "doi": "10.1145/1529282.1529701",
+    "url": "https://doi.org/10.1145/1529282.1529701",
+    "authors": "Eduardo Kessler Piveta, Marcelo Soares Pimenta, João Araújo 0001, Ana Moreira 0001, Pedro Guerreiro, Roberto Tom Price",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:ufrVoPGSRksC",
+    "id": "trabalho-f13ab5f2b4fd"
+  },
+  {
+    "title": "Ranking Refactoring Patterns Using the Analytical Hierarchy Process",
+    "year": "2008",
+    "venue": "ICEIS (3-2)",
+    "dblp": "https://dblp.org/rec/conf/iceis/PivetaMPAGP08",
+    "url": "https://dblp.org/rec/conf/iceis/PivetaMPAGP08",
+    "authors": "Eduardo Kessler Piveta, Ana Moreira 0001, Marcelo Soares Pimenta, João Araújo 0001, Pedro Guerreiro, Roberto Tom Price",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:hqOjcs7Dif8C",
+    "id": "trabalho-4a3494c70678"
+  },
+  {
+    "title": "Searching for Opportunities of Refactoring Sequences: Reducing the Search Space",
+    "year": "2008",
+    "venue": "COMPSAC",
+    "dblp": "https://dblp.org/rec/conf/compsac/PivetaAPMGP08",
+    "doi": "10.1109/COMPSAC.2008.119",
+    "url": "https://doi.org/10.1109/COMPSAC.2008.119",
+    "authors": "Eduardo Kessler Piveta, João Araújo 0001, Marcelo Soares Pimenta, Ana Moreira 0001, Pedro Guerreiro, Roberto Tom Price",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:eQOLeE2rZwMC",
+    "id": "trabalho-345976cf44f0"
+  },
+  {
+    "title": "Avoiding Bad Smells in Aspect-Oriented Software",
+    "year": "2007",
+    "venue": "SEKE",
+    "dblp": "https://dblp.org/rec/conf/seke/PivetaHMPAGP07",
+    "url": "https://dblp.org/rec/conf/seke/PivetaHMPAGP07",
+    "authors": "Eduardo Kessler Piveta, Marcelo Victora Hecht, Ana Moreira 0001, Marcelo Soares Pimenta, João Araújo 0001, Pedro Guerreiro, Roberto Tom Price",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:W7OEmFMy1HYC",
+    "id": "trabalho-2a21d3d928ac"
+  },
+  {
+    "title": "Improving the Quality of Requirements with Refactoring",
+    "year": "2007",
+    "venue": "SBQS",
+    "dblp": "https://dblp.org/rec/conf/sbqs/RamosPC00GPP07",
+    "doi": "10.5753/SBQS.2007.15573",
+    "url": "https://doi.org/10.5753/SBQS.2007.15573",
+    "authors": "Ricardo Argenton Ramos, Eduardo Kessler Piveta, Jaelson Castro, João Araújo 0001, Ana Moreira 0001, Pedro Guerreiro, Marcelo Soares Pimenta, R. Tom Price",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:IjCSPb-OGe4C",
+    "id": "trabalho-ca019486eda1"
+  },
+  {
+    "title": "Aspect-oriented Code Generation",
+    "year": "2006",
+    "venue": "SBES",
+    "dblp": "https://dblp.org/rec/conf/sbes/HechtPPP06",
+    "doi": "10.5753/SBES.2006.21214",
+    "url": "https://doi.org/10.5753/SBES.2006.21214",
+    "authors": "Marcelo Victora Hecht, Eduardo Kessler Piveta, Marcelo Soares Pimenta, R. Tom Price",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:YsMSGLbcyi4C",
+    "id": "trabalho-e8d9b855bbec"
+  },
+  {
+    "title": "Detecting Bad Smells in AspectJ",
+    "year": "2006",
+    "venue": "J. Univers. Comput. Sci.",
+    "dblp": "https://dblp.org/rec/journals/jucs/PivetaHPP06",
+    "doi": "10.3217/JUCS-012-07-0811",
+    "url": "https://doi.org/10.3217/JUCS-012-07-0811",
+    "authors": "Eduardo Kessler Piveta, Marcelo Victora Hecht, Marcelo Soares Pimenta, Roberto Tom Price",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:d1gkVwhDpl0C",
+    "id": "trabalho-a23d3d0a250b"
+  },
+  {
+    "title": "Bad Smells em Sistemas Orientados a Aspectos",
+    "year": "2005",
+    "venue": "SBES",
+    "dblp": "https://dblp.org/rec/conf/sbes/PivetaHPP05",
+    "doi": "10.5753/SBES.2005.23819",
+    "url": "https://doi.org/10.5753/SBES.2005.23819",
+    "authors": "Eduardo Kessler Piveta, Marcelo Victora Hecht, Marcelo Soares Pimenta, Roberto Tom Price",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:2osOgNQ5qMEC",
+    "id": "trabalho-547902e0369d"
+  },
+  {
+    "title": "Em direçao a uma abordagem para separaçao de interesses por meio de Mineraçao de Aspectos e Refactoring",
+    "year": "2004",
+    "authors": "VC Garcia, EK Piveta, D Lucrédio, A Alvaro, ES de Almeida, ...",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:LkGwnXOMwfcC",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:LkGwnXOMwfcC",
+    "venue": "XXX Latin American Center of Studies in Computer Science",
+    "id": "trabalho-5ba401cea2bd"
+  },
+  {
+    "title": "Manipulating crosscutting concerns",
+    "year": "2004",
+    "authors": "VC Garcia, EK Piveta, D Lucrédio, A Alvaro, ES de Almeida, AF do Prado, ...",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:u-x6o8ySG0sC",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:u-x6o8ySG0sC",
+    "id": "trabalho-f7a71ade5e67"
+  },
+  {
+    "title": "RUP Based Analysis and Design with Aspects",
+    "year": "2004",
+    "venue": "SBES",
+    "dblp": "https://dblp.org/rec/conf/sbes/ColePS04",
+    "doi": "10.5753/SBES.2004.23843",
+    "url": "https://doi.org/10.5753/SBES.2004.23843",
+    "authors": "Leonardo Cole, Eduardo Kessler Piveta, Augusto Sampaio 0001",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:Y0pCki6q_DkC",
+    "id": "trabalho-9481200678fb"
+  },
+  {
+    "title": "Termos em português para Desenvolvimento de Software Orientado a Aspectos",
+    "year": "2004",
+    "authors": "EK Piveta, VC Garcia, LC Zancanella, AF do Prado",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:WF5omc3nYNoC",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:WF5omc3nYNoC",
+    "venue": "I Workshop Brasileiro de Desenvolvimento Orientado a Aspectos",
+    "id": "trabalho-aee8e0ced4df"
+  },
+  {
+    "title": "Architecture of an XML-based Aspect Weaver",
+    "year": "2003",
+    "authors": "EK Piveta, LC Zancanella",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:Tyk-4Ss8FVUC",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:Tyk-4Ss8FVUC",
+    "venue": "ECOOP 2003 Workshop on Correctness of Model-based Software Composition (CMC)",
+    "id": "trabalho-6f3946b54bd9"
+  },
+  {
+    "title": "Aspect Weaving Strategies",
+    "year": "2003",
+    "venue": "J. Univers. Comput. Sci.",
+    "dblp": "https://dblp.org/rec/journals/jucs/PivetaZ03",
+    "url": "https://dblp.org/rec/journals/jucs/PivetaZ03",
+    "authors": "Eduardo Kessler Piveta, Luiz Carlos Zancanella",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:u5HHmVD_uO8C",
+    "id": "trabalho-2bb4e0b7afe2"
+  },
+  {
+    "title": "Aspect-oriented principles applied to architectural styles",
+    "year": "2003",
+    "authors": "EK Piveta, LC Zancanella",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:0EnyYjriUFMC",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:0EnyYjriUFMC",
+    "id": "trabalho-f498df8ce1b6"
+  },
+  {
+    "title": "IonoSoft–Software Para Análise de Ionogramas",
+    "year": "2003",
+    "authors": "DM Silveira, WLC Lima, EK Piveta",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:KlAtU1dfN6UC",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:KlAtU1dfN6UC",
+    "venue": "ENCOINFO-Congresso de Computação e Tecnologias da Informação, 281-290",
+    "id": "trabalho-89d8312e8644"
+  },
+  {
+    "title": "Observer pattern using aspect-oriented programming",
+    "year": "2003",
+    "authors": "EK Piveta, LC Zancanella",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:9yKSN-GCB0IC",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:9yKSN-GCB0IC",
+    "venue": "Scientific Literature Digital Library",
+    "id": "trabalho-27e989ef8e7d"
+  },
+  {
+    "title": "Programação orientada a Aspectos em AspectJ",
+    "year": "2003",
+    "authors": "ES Monteiro, EK Piveta",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:roLk4NBRz8UC",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:ymY9cBF3mdcC",
+    "venue": "ENCOINFO-Congresso de Computação e Tecnologias da Informação, 313-322",
+    "id": "trabalho-eda6e04d7515"
+  },
+  {
+    "title": "Aspects in the rational unified process’ analysis and design workflow",
+    "year": "2002",
+    "authors": "EK Piveta, AJ Devegili",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:qjMakFHDy7sC",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:qjMakFHDy7sC",
+    "venue": "Proceedings of the Aspect Oriented Design Workshop at AOSD'02",
+    "id": "trabalho-53eb3cd2a48d"
+  },
+  {
+    "title": "Aurelia: Aspect oriented programming using reflective approach",
+    "year": "2001",
+    "authors": "E Piveta, L Zancanela",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:UeHWp8X0CEIC",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:UeHWp8X0CEIC",
+    "venue": "Workshop on Advanced Separation of Concers ECOOP 2",
+    "id": "trabalho-8dcd93c9f336"
+  },
+  {
+    "title": "Um modelo de suporte à programação orientada a aspectos",
+    "year": "2001",
+    "authors": "EK Piveta",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:zYLM7Y9cAGgC",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=pt-BR&user=aC0NGYcAAAAJ&pagesize=100&citation_for_view=aC0NGYcAAAAJ:zYLM7Y9cAGgC",
+    "id": "trabalho-03fee7509faf"
+  }
+]

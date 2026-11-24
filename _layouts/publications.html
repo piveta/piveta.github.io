@@ -1,0 +1,29 @@
+---
+layout: default
+---
+{% assign person = site.data.author %}
+{% assign publications_by_year = site.data.publications | group_by: "year" %}
+<h1>{{ page.title | escape }}</h1>
+{% if page.lang == 'en' %}
+  <p>Research by <a href="{{ person.profile_en | relative_url }}">{{ person.name | escape }}</a>. Titles appear in their original language.</p>
+  <p>{{ site.data.publication_sources.coverage_en | escape }}</p>
+{% else %}
+  <p>Produção científica de <a href="{{ person.profile | relative_url }}">{{ person.name | escape }}</a>. Os títulos estão no idioma original.</p>
+  <p>{{ site.data.publication_sources.coverage_pt | escape }}</p>
+{% endif %}
+<p><a href="{{ person.dblp | escape }}">DBLP</a> · <a href="{{ person.scholar | escape }}">Google Scholar</a> · <a href="{{ person.orcid | escape }}">ORCID</a> · <a href="{{ site.data.publication_sources.ufsm | escape }}">UFSM</a></p>
+{% for annual in publications_by_year %}
+  <section>
+    <h2>{{ annual.name | escape }}</h2>
+    <ul>
+    {% for work in annual.items %}
+      <li id="{{ work.id | escape }}">
+        {% if work.url %}<a href="{{ work.url | escape }}">{{ work.title | escape }}</a>{% else %}{{ work.title | escape }}{% endif %}
+        {% if work.authors %}<br>{{ work.authors | escape }}{% endif %}
+        {% if work.venue %}<br><em>{{ work.venue | escape }}</em>{% endif %}
+        {% if work.doi %}<br><small>DOI {{ work.doi | escape }}</small>{% endif %}
+      </li>
+    {% endfor %}
+    </ul>
+  </section>
+{% endfor %}

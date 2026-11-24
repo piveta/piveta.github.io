@@ -19,11 +19,11 @@ Obecnie programowanie obiektowe jest jednym z najczęściej akceptowanych i stos
 
 **Klasa** to mechanizm abstrakcji służący do reprezentowania pojęć z określonej dziedziny. W dziedzinie bankowości mogą to być na przykład oddziały, konta, klienci i transakcje. Możemy zdefiniować klasy `Branch`, `Account`, `Customer` i `Transaction`, aby je reprezentować. Rysunek przedstawia graficzną reprezentację tych klas.
 
-<img src="/images/en/oopClasses.svg" alt="Klasy Branch, Account, Customer i Transaction." style="max-width: 300px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img width="484" height="274" src="/images/en/oopClasses.svg" alt="Klasy Branch, Account, Customer i Transaction." style="max-width: 300px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 Klasy służą jako *szablony* do tworzenia konkretnych, możliwych do manipulowania przykładów tych pojęć. Takie przykłady nazywają się **obiektami**. Obiekt jest **instancją** klasy, a proces tworzenia obiektów to **instancjowanie**. Możemy na przykład utworzyć obiekty reprezentujące klientów *John*, *Peter* i *Mary*, wraz z ich danymi osobowymi oraz funkcjami dostępnymi dla klientów.
 
-<img src="/images/en/oopObjects.svg" alt="Obiekty John, Peter i Mary są instancjami klasy Customer." style="max-width: 380px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img width="624" height="802" loading="lazy" src="/images/en/oopObjects.svg" alt="Obiekty John, Peter i Mary są instancjami klasy Customer." style="max-width: 380px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 Klasa jest definiowana tak, aby reprezentować właściwości, cechy i zachowanie danego pojęcia. Dwa główne mechanizmy to atrybuty i metody.
 
@@ -41,7 +41,7 @@ Klasy abstrakcyjnie przedstawiają i enkapsulują pojęcia ze świata rzeczywist
 
 Rysunek 3 przedstawia klasy `Shape`, `Rectangle`, `Triangle` i `Circle`. `Shape` jest nadklasą, a `Rectangle`, `Triangle` i `Circle` są jej podklasami.
 
-<img src="/images/en/oopInheritance.png" alt="Shape jest nadklasą Rectangle, Triangle i Circle." style="max-width: 400px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img width="698" height="466" loading="lazy" src="/images/en/oopInheritance.png" alt="Shape jest nadklasą Rectangle, Triangle i Circle." style="max-width: 400px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 Mechanizmy dziedziczenia różnią się między językami. Różnice dotyczą zwykle widoczności i liczby nadklas. Niektóre języki, takie jak C++, pozwalają określić dziedziczenie jako **publiczne** lub **prywatne**. Rozważmy klasę `A` i klasę `B`, która dziedziczy po `A`. `A` jest nadklasą `B`, a `B` podklasą `A`. Przy dziedziczeniu publicznym `B` jest podtypem `A` i dziedziczy zarówno implementację, jak i interfejs `A`. Wszędzie tam, gdzie oczekiwany jest obiekt `A`, można użyć obiektu `B` (lub innej podklasy `A`), ponieważ każda instancja `B` jest również instancją `A`. Zasadę tę nazywa się **zasadą podstawienia Liskov**. Przy dziedziczeniu prywatnym `B` nie jest `A`; dziedziczy tylko implementację `A` i jest zbudowana na jej podstawie. Zasada podstawienia Liskov nie ma tu zastosowania.
 
@@ -49,7 +49,7 @@ Dziedziczenie może być też **pojedyncze lub wielokrotne**. W dziedziczeniu po
 
 Rysunek 4 pokazuje przykład dziedziczenia wielokrotnego. `Mammal` i `Bird` reprezentują zwierzęta. `Horse`, `Dog` i `Bat` są podklasami `Mammal`, a `Ostrich` i `Duck` — podklasami `Bird`. Chcemy też sklasyfikować zwierzęta potrafiące latać, więc tworzymy `Flyer`, klasę reprezentującą obiekty latające, które nie muszą być zwierzętami. Dzięki dziedziczeniu wielokrotnemu obiekty `Duck` i `Bat` mogą być również obiektami latającymi, dziedzicząc po `Flyer`.
 
-<img src="/images/en/oopMultipleInheritance.png" alt="Dziedziczenie wielokrotne między klasami Animal, Bird, Flyer i Mammal." style="max-width: 500px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img width="1030" height="800" loading="lazy" src="/images/en/oopMultipleInheritance.png" alt="Dziedziczenie wielokrotne między klasami Animal, Bird, Flyer i Mammal." style="max-width: 500px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 Niektóre klasy są **abstrakcyjne**. Podobnie jak klasy **konkretne**, reprezentują cechy i zachowanie zbioru rzeczywistych obiektów, ale nie można ich bezpośrednio instancjować. W przykładzie dziedziczenia wielokrotnego `Mammal`, `Bird` i `Flyer` mogłyby być klasami abstrakcyjnymi, ponieważ w świecie rzeczywistym występują tylko przykłady ich podklas, takie jak konie, psy i kaczki.
 
@@ -82,4 +82,4 @@ Ostatnia relacja, **realizacja**, występuje, gdy klasa deklaruje, że implement
 - [Polimorfizm w Javie](/polymorphism-in-java-pl/)
 - [Interfejsy w Javie](/interfejsy-w-java-pl/)
 - [Linki o OOP i Javie](/linki-oop-java-pl/)
-- [Ćwiczenia z programowania obiektowego](/oop-exercises-pl/)
+- [Ćwiczenia z programowania obiektowego](/cwiczenia-oop-pl/)

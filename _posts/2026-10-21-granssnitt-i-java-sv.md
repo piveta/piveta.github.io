@@ -98,5 +98,5 @@ Att frikoppla gränssnittet från `Account` kan ge klasser större flexibilitet 
 - [Klasser i Java](/klasser-i-java-sv/)
 - [Arv i Java](/arv-i-java-sv/)
 - [Polymorfism i Java](/polymorfism-i-java-sv/)
-- [Länkar om OOP och Java](/oop-java-links-sv/)
-- [Övningar i objektorienterad programmering](/oop-exercises-sv/)
+- [Länkar om OOP och Java](/lankar-oop-java-sv/)
+- [Övningar i objektorienterad programmering](/oop-ovningar-sv/)

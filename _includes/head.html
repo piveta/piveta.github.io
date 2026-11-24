@@ -7,7 +7,14 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
 
-  {%- seo -%}
+  {% capture seo_metadata %}{% seo %}{% endcapture %}
+  {% comment %}SEO Tag 2.8 emits its JSON-LD last. Keep the metadata and use our shared graph.{% endcomment %}
+  {% assign seo_tags = seo_metadata | split: '<script type="application/ld+json">' | first %}
+  {% assign og_locale = site.data.seo_locales[current_language].locale | default: 'pt_BR' %}
+  {% assign og_tag = '<meta property="og:locale" content="' | append: og_locale | append: '"' %}
+  {{ seo_tags | replace: '<meta property="og:locale" content="pt_BR"', og_tag }}
+  {% if page.robots %}<meta name="robots" content="{{ page.robots | escape }}">{% endif %}
+  {% include structured-data.html %}
 
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
 
@@ -26,19 +33,4 @@
     <link rel="alternate" hreflang="x-default" href="{{ portuguese_page.url | absolute_url }}">
   {% endif %}
 
-{% if page.url == "/" %}
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"Book",
-  "name":"Orientação a Objetos com Java",
-  "isbn":"6501778212",
-  "datePublished":"2025-10-31",
-  "inLanguage":"pt-BR",
-  "author":{"@type":"Person","name":"Eduardo Kessler Piveta","url":"https://www-usr.inf.ufsm.br/~piveta/"},
-  "image":"https://oocomjava.com.br/capaOO.jpg",
-  "description":"Livro nacional mais atualizado, cobrindo Java 25 LTS de setembro de 2025"
-}
-</script>
-{% endif %}
 </head>

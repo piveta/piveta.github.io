@@ -23,7 +23,7 @@ Among the main methods of `Throwable` are `getMessage()`, which allows the messa
 
 The `Throwable` class has two direct subclasses: `Exception` and `Error`.
 
-<img src="/images/descendentesThrowable.png"
+<img width="906" height="1607" src="/images/descendentesThrowable.png"
      alt="Throwable hierarchy"
      style="max-width: 250px; width: 100%; height: auto; display: block; margin: 20px auto;">
 
@@ -35,7 +35,7 @@ Some important subclasses of `Error` are `AssertionError`, `IOError`, and `Virtu
 
 Errors can be thrown by the JVM itself, often as a consequence of conditions detected by the operating system or the runtime environment. They can also be explicitly produced by the programmer, for example, through `assert` or `throw`.
 
-<img src="/images/exceptionsError.png"
+<img width="2584" height="1586" loading="lazy" src="/images/exceptionsError.png"
      alt="Error and its subclasses"
      style="max-width: 600px; width: 100%; height: auto; display: block; margin: 20px auto;">
 
@@ -47,7 +47,7 @@ Its subclasses include `IOException`, `SQLException`, `ReflectiveOperationExcept
 
 The `Exception` subclasses that are not subclasses of `RuntimeException` are called **checked exceptions**. The compiler requires them to be explicitly accounted for by the program. This can be done by catching the exception with a `catch` clause or by declaring, using `throws`, that the method may throw it.
 
-<img src="/images/descendentesException.png"
+<img width="2467" height="1594" loading="lazy" src="/images/descendentesException.png"
      alt="Exception and its subclasses"
      style="max-width: 600px; width: 100%; height: auto; display: block; margin: 20px auto;">
 
@@ -68,7 +68,7 @@ A method that may throw a `RuntimeException` does not need to declare this possi
 
 In practice, many `RuntimeException` instances indicate problems that could have been prevented by the program itself. When one occurs, it is usually important to investigate its cause and fix the problem rather than simply catch the exception.
 
-<img src="/images/descendentesRuntimeException.png"
+<img width="4530" height="1570" loading="lazy" src="/images/descendentesRuntimeException.png"
      alt="RuntimeException and its subclasses"
      style="max-width: 800px; width: 100%; height: auto; display: block; margin: 20px auto;">
      

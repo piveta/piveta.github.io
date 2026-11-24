@@ -138,8 +138,8 @@ Java har inga destruktormetoder. Objekt som inte längre refereras till samlas a
 ## Relaterade artiklar
 
 - [Grundläggande begrepp inom objektorienterad programmering](/oop-basics-java-sv/)
-- [Arv i Java](/inheritance-in-java-sv/)
-- [Polymorfism i Java](/polymorphism-in-java-sv/)
-- [Gränssnitt i Java](/interfaces-in-java-sv/)
-- [Länkar om OOP och Java](/oop-java-links-sv/)
-- [Övningar i objektorienterad programmering](/oop-exercises-sv/)
+- [Arv i Java](/arv-i-java-sv/)
+- [Polymorfism i Java](/polymorfism-i-java-sv/)
+- [Gränssnitt i Java](/granssnitt-i-java-sv/)
+- [Länkar om OOP och Java](/lankar-oop-java-sv/)
+- [Övningar i objektorienterad programmering](/oop-ovningar-sv/)

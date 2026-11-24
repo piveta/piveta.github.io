@@ -1,0 +1,74 @@
+{
+  "pt-BR": {
+    "locale": "pt_BR",
+    "title": "Artigos por tema",
+    "description": "Artigos em português sobre Java, orientação a objetos, coleções, JDBC e exceções.",
+    "topics": "/temas/"
+  },
+  "en": {
+    "locale": "en_US",
+    "title": "Articles by topic",
+    "description": "English-language articles on Java, object-oriented programming, collections, JDBC, and exceptions.",
+    "topics": "/en/topics/"
+  },
+  "es": {
+    "locale": "es_ES",
+    "title": "Artículos por tema",
+    "description": "Artículos en español sobre Java, programación orientada a objetos, colecciones, JDBC y excepciones.",
+    "topics": "/es/topics/"
+  },
+  "de": {
+    "locale": "de_DE",
+    "title": "Artikel nach Themen",
+    "description": "Deutschsprachige Artikel über Java, objektorientierte Programmierung, Collections, JDBC und Ausnahmen.",
+    "topics": "/de/topics/"
+  },
+  "fr": {
+    "locale": "fr_FR",
+    "title": "Articles par thème",
+    "description": "Articles en français sur Java, la programmation orientée objet, les collections, JDBC et les exceptions.",
+    "topics": "/fr/topics/"
+  },
+  "it": {
+    "locale": "it_IT",
+    "title": "Articoli per argomento",
+    "description": "Articoli in italiano su Java, programmazione orientata agli oggetti, collezioni, JDBC ed eccezioni.",
+    "topics": "/it/topics/"
+  },
+  "ja": {
+    "locale": "ja_JP",
+    "title": "テーマ別の記事",
+    "description": "Java、オブジェクト指向プログラミング、コレクション、JDBC、例外処理に関する日本語の記事。",
+    "topics": "/ja/topics/"
+  },
+  "ko": {
+    "locale": "ko_KR",
+    "title": "주제별 글",
+    "description": "Java, 객체 지향 프로그래밍, 컬렉션, JDBC, 예외 처리에 관한 한국어 글입니다.",
+    "topics": "/ko/topics/"
+  },
+  "zh": {
+    "locale": "zh_CN",
+    "title": "按主题浏览文章",
+    "description": "关于 Java、面向对象编程、集合、JDBC 和异常处理的中文文章。",
+    "topics": "/zh/topics/"
+  },
+  "pl": {
+    "locale": "pl_PL",
+    "title": "Artykuły według tematów",
+    "description": "Polskojęzyczne artykuły o Javie, programowaniu obiektowym, kolekcjach, JDBC i wyjątkach.",
+    "topics": "/pl/topics/"
+  },
+  "sv": {
+    "locale": "sv_SE",
+    "title": "Artiklar efter ämne",
+    "description": "Artiklar på svenska om Java, objektorienterad programmering, samlingar, JDBC och undantag.",
+    "topics": "/sv/topics/"
+  },
+  "id": {
+    "locale": "id_ID",
+    "title": "Artikel menurut topik",
+    "description": "Artikel berbahasa Indonesia tentang Java, pemrograman berorientasi objek, koleksi, JDBC, dan eksepsi.",
+    "topics": "/id/topics/"
+  }
+}

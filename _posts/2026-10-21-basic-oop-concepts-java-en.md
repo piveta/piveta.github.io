@@ -19,11 +19,11 @@ Today, object-oriented programming is one of the most widely accepted and used p
 
 A **class** is an abstraction mechanism used to represent concepts from a particular application domain. In a banking domain, for example, the concepts might include branches, accounts, customers, and transactions. We could therefore define classes such as `Branch`, `Account`, `Customer`, and `Transaction` to represent them. The figure shows a graphical representation of these classes.
 
-<img src="/images/en/oopClasses.svg" alt="Classes Branch, Account, Customer, and Transaction." style="max-width: 300px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img width="484" height="274" src="/images/en/oopClasses.svg" alt="Classes Branch, Account, Customer, and Transaction." style="max-width: 300px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 Classes serve as *templates* for creating concrete, manipulable examples of these concepts. Such examples are called **objects**. An object is said to be an **instance** of a class, and the process of creating objects is called **instantiation**. For example, we could create objects to represent customers *John*, *Peter*, and *Mary*, together with their personal information and the functionality available to customers.
 
-<img src="/images/en/oopObjects.svg" alt="Objects John, Peter, and Mary, each an instance of the Customer class." style="max-width: 380px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img width="624" height="802" loading="lazy" src="/images/en/oopObjects.svg" alt="Objects John, Peter, and Mary, each an instance of the Customer class." style="max-width: 380px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 A class is defined to represent the properties, characteristics, and behavior of a concept. The two main mechanisms for doing so are attributes and methods.
 
@@ -41,7 +41,7 @@ Classes are abstraction mechanisms in which concepts from the real and computati
 
 Figure 3 shows the classes `Shape`, `Rectangle`, `Triangle`, and `Circle`. In this figure, `Shape` is the superclass, and `Rectangle`, `Triangle`, and `Circle` are its subclasses.
 
-<img src="/images/en/oopInheritance.png" alt="The Shape class is the superclass of Rectangle, Triangle, and Circle." style="max-width: 400px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img width="698" height="466" loading="lazy" src="/images/en/oopInheritance.png" alt="The Shape class is the superclass of Rectangle, Triangle, and Circle." style="max-width: 400px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 Inheritance mechanisms vary across programming languages. These variations usually concern inheritance visibility and multiplicity. Some languages, such as C++, allow **inheritance visibility** to be specified as **public** or **private**. Consider a class `A` and a class `B` that inherits from (or extends) `A`. Then `A` is a superclass of `B`, and `B` is a subclass of `A`. With public inheritance, if `B` inherits from `A`, then `B` is an `A` (that is, `B` is a subtype of `A`), and `B` inherits both the implementation and the interface of `A`. Wherever an object of class `A` is required, an object of class `B` (or any other subclass of `A`) can be used, because every instance of `B` is also considered an instance of `A`. This principle is called the **Liskov substitution principle**. With private inheritance, `B` is not an `A`; only `A`'s implementation is inherited. In this case, `B` is implemented in terms of `A`, and the Liskov substitution principle does not apply.
 
@@ -49,7 +49,7 @@ Inheritance can also be **single or multiple**, depending on the multiplicity of
 
 Figure 4 shows an example of multiple inheritance. Here, `Mammal` and `Bird` represent animals, and each has subclasses: `Horse`, `Dog`, and `Bat` are subclasses of `Mammal`, while `Ostrich` and `Duck` are subclasses of `Bird`. We also want to classify animals that can fly. To do so, we create a `Flyer` class, which represents flying objects that are not necessarily animals. With multiple inheritance, we can say that objects of both `Duck` and `Bat` are also flying objects (they inherit from `Flyer`).
 
-<img src="/images/en/oopMultipleInheritance.png" alt="Multiple inheritance among Animal, Bird, Flyer, and Mammal classes." style="max-width: 500px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img width="1030" height="800" loading="lazy" src="/images/en/oopMultipleInheritance.png" alt="Multiple inheritance among Animal, Bird, Flyer, and Mammal classes." style="max-width: 500px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 Some classes are **abstract**. Like other classes (called **concrete**), they represent the characteristics and behavior of a set of real-world objects. However, abstract classes cannot be instantiated directly. For example, in the multiple-inheritance diagram, `Mammal`, `Bird`, and `Flyer` could be abstract classes because there are no direct examples of these classes in the real world—only examples of their subclasses, such as horses, dogs, and ducks.
 

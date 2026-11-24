@@ -19,11 +19,11 @@ Heute gehört die objektorientierte Programmierung zu den am weitesten verbreite
 
 Eine **Klasse** ist ein Abstraktionsmechanismus zur Darstellung von Konzepten einer Anwendungsdomäne. In einer Bankdomäne gehören dazu beispielsweise Filialen, Konten, Kunden und Transaktionen. Wir könnten Klassen wie `Branch`, `Account`, `Customer` und `Transaction` definieren, um diese Konzepte abzubilden. Die Abbildung zeigt eine grafische Darstellung dieser Klassen.
 
-<img src="/images/en/oopClasses.svg" alt="Die Klassen Branch, Account, Customer und Transaction." style="max-width: 300px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img width="484" height="274" src="/images/en/oopClasses.svg" alt="Die Klassen Branch, Account, Customer und Transaction." style="max-width: 300px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 Klassen dienen als *Vorlagen*, um konkrete, manipulierbare Exemplare dieser Konzepte zu erzeugen. Solche Exemplare heißen **Objekte**. Ein Objekt ist eine **Instanz** einer Klasse; der Vorgang, Objekte zu erzeugen, heißt **Instanziierung**. Beispielsweise könnten wir Objekte für die Kunden *John*, *Peter* und *Mary* erzeugen, einschließlich ihrer persönlichen Daten und der für Kunden verfügbaren Funktionen.
 
-<img src="/images/en/oopObjects.svg" alt="Die Objekte John, Peter und Mary sind Instanzen der Klasse Customer." style="max-width: 380px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img width="624" height="802" loading="lazy" src="/images/en/oopObjects.svg" alt="Die Objekte John, Peter und Mary sind Instanzen der Klasse Customer." style="max-width: 380px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 Eine Klasse wird so definiert, dass sie Eigenschaften und Verhalten eines Konzepts darstellt. Die wichtigsten Mechanismen dafür sind Attribute und Methoden.
 
@@ -41,7 +41,7 @@ Klassen abstrahieren und kapseln Konzepte aus der realen und der computerbasiert
 
 Abbildung 3 zeigt die Klassen `Shape`, `Rectangle`, `Triangle` und `Circle`. `Shape` ist die Oberklasse; `Rectangle`, `Triangle` und `Circle` sind ihre Unterklassen.
 
-<img src="/images/en/oopInheritance.png" alt="Shape ist die Oberklasse von Rectangle, Triangle und Circle." style="max-width: 400px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img width="698" height="466" loading="lazy" src="/images/en/oopInheritance.png" alt="Shape ist die Oberklasse von Rectangle, Triangle und Circle." style="max-width: 400px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 Vererbungsmechanismen unterscheiden sich je nach Programmiersprache. Unterschiede betreffen häufig Sichtbarkeit und Mehrfachvererbung. In Sprachen wie C++ kann die **Sichtbarkeit der Vererbung** als **öffentlich** oder **privat** festgelegt werden. Betrachten wir eine Klasse `A` und eine Klasse `B`, die von `A` erbt. Dann ist `A` eine Oberklasse von `B` und `B` eine Unterklasse von `A`. Bei öffentlicher Vererbung ist `B` ein Subtyp von `A` und erbt sowohl deren Implementierung als auch ihre Schnittstelle. Überall dort, wo ein Objekt der Klasse `A` erwartet wird, kann daher ein Objekt der Klasse `B` (oder einer anderen Unterklasse von `A`) verwendet werden, denn jede Instanz von `B` gilt auch als Instanz von `A`. Dieses Prinzip heißt **Liskovsches Substitutionsprinzip**. Bei privater Vererbung ist `B` kein `A`; sie erbt lediglich die Implementierung von `A` und wird auf Basis von `A` implementiert. Das Liskovsche Substitutionsprinzip gilt hier nicht.
 
@@ -49,7 +49,7 @@ Vererbung kann außerdem **einfach oder mehrfach** sein. Bei einfacher Vererbung
 
 Abbildung 4 zeigt Mehrfachvererbung. `Mammal` und `Bird` stehen für Tiere. `Horse`, `Dog` und `Bat` sind Unterklassen von `Mammal`; `Ostrich` und `Duck` sind Unterklassen von `Bird`. Zusätzlich wollen wir flugfähige Tiere klassifizieren. Dazu definieren wir `Flyer` für fliegende Objekte, die nicht unbedingt Tiere sein müssen. Mit Mehrfachvererbung können sowohl Objekte von `Duck` als auch von `Bat` zugleich fliegende Objekte sein, indem sie von `Flyer` erben.
 
-<img src="/images/en/oopMultipleInheritance.png" alt="Mehrfachvererbung zwischen den Klassen Animal, Bird, Flyer und Mammal." style="max-width: 500px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
+<img width="1030" height="800" loading="lazy" src="/images/en/oopMultipleInheritance.png" alt="Mehrfachvererbung zwischen den Klassen Animal, Bird, Flyer und Mammal." style="max-width: 500px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 
 Manche Klassen sind **abstrakt**. Wie **konkrete** Klassen stellen sie Eigenschaften und Verhalten einer Gruppe realer Objekte dar, können aber nicht direkt instanziiert werden. Im Mehrfachvererbungsbeispiel könnten `Mammal`, `Bird` und `Flyer` abstrakte Klassen sein, da es in der realen Welt nur Exemplare ihrer Unterklassen gibt, etwa Pferde, Hunde und Enten.
 

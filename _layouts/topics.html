@@ -1,0 +1,19 @@
+---
+layout: default
+---
+{% assign topics_locale = site.data.languages[page.lang] %}
+{% assign topics_posts = site.posts | where: "lang", page.lang %}
+<h1>{{ page.title | escape }}</h1>
+{% for chapter_topics in site.data.chapter_topics %}
+  {% assign chapter_name = topics_locale.chapters[forloop.index0] %}
+  <section id="capitulo-{{ forloop.index }}">
+    <h2>{{ chapter_name | escape }}</h2>
+    <ul>
+    {% for item in topics_posts %}
+      {% if chapter_topics contains item.translation_id %}
+        <li><a href="{{ item.url | relative_url }}">{{ item.title | escape }}</a></li>
+      {% endif %}
+    {% endfor %}
+    </ul>
+  </section>
+{% endfor %}

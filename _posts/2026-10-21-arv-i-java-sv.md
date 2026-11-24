@@ -106,7 +106,7 @@ void main() {
 
 - [Grundläggande begrepp inom objektorienterad programmering](/oop-basics-java-sv/)
 - [Klasser i Java](/klasser-i-java-sv/)
-- [Polymorfism i Java](/polymorphism-in-java-sv/)
-- [Gränssnitt i Java](/interfaces-in-java-sv/)
-- [Länkar om OOP och Java](/oop-java-links-sv/)
-- [Övningar i objektorienterad programmering](/oop-exercises-sv/)
+- [Polymorfism i Java](/polymorfism-i-java-sv/)
+- [Gränssnitt i Java](/granssnitt-i-java-sv/)
+- [Länkar om OOP och Java](/lankar-oop-java-sv/)
+- [Övningar i objektorienterad programmering](/oop-ovningar-sv/)

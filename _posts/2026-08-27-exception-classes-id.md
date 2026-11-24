@@ -23,7 +23,7 @@ Metode utama dalam `Throwable` antara lain `getMessage()`, yang digunakan untuk 
 
 Kelas `Throwable` memiliki dua subkelas langsung: `Exception` dan `Error`.
 
-<img src="/images/descendentesThrowable.png"
+<img width="906" height="1607" src="/images/descendentesThrowable.png"
      alt="Hierarki Throwable"
      style="max-width: 250px; width: 100%; height: auto; display: block; margin: 20px auto;">
 
@@ -35,7 +35,7 @@ Beberapa subkelas penting dari `Error` adalah `AssertionError`, `IOError`, dan `
 
 Error dapat dilempar oleh JVM itu sendiri, sering kali sebagai akibat dari kondisi yang terdeteksi oleh sistem operasi atau lingkungan runtime. Error juga dapat dihasilkan secara eksplisit oleh programmer, misalnya melalui `assert` atau `throw`.
 
-<img src="/images/exceptionsError.png"
+<img width="2584" height="1586" loading="lazy" src="/images/exceptionsError.png"
      alt="Error dan subkelasnya"
      style="max-width: 600px; width: 100%; height: auto; display: block; margin: 20px auto;">
 
@@ -47,7 +47,7 @@ Subkelasnya mencakup `IOException`, `SQLException`, `ReflectiveOperationExceptio
 
 Subkelas `Exception` yang bukan merupakan subkelas `RuntimeException` disebut **pengecualian terperiksa** (*checked exceptions*). Kompiler mengharuskan program memperhitungkannya secara eksplisit. Hal ini dapat dilakukan dengan menangkap pengecualian menggunakan klausa `catch` atau dengan mendeklarasikan menggunakan `throws` bahwa metode tersebut dapat melemparkannya.
 
-<img src="/images/descendentesException.png"
+<img width="2467" height="1594" loading="lazy" src="/images/descendentesException.png"
      alt="Exception dan subkelasnya"
      style="max-width: 600px; width: 100%; height: auto; display: block; margin: 20px auto;">
 
@@ -68,7 +68,7 @@ Metode yang dapat melempar `RuntimeException` tidak perlu mendeklarasikan kemung
 
 Dalam praktiknya, banyak instance `RuntimeException` menunjukkan masalah yang sebenarnya dapat dicegah oleh program itu sendiri. Ketika pengecualian seperti ini terjadi, biasanya penting untuk menyelidiki penyebabnya dan memperbaiki masalah tersebut, bukan sekadar menangkap pengecualiannya.
 
-<img src="/images/descendentesRuntimeException.png"
+<img width="4530" height="1570" loading="lazy" src="/images/descendentesRuntimeException.png"
      alt="RuntimeException dan subkelasnya"
      style="max-width: 800px; width: 100%; height: auto; display: block; margin: 20px auto;">
 

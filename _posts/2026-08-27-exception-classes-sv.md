@@ -23,7 +23,7 @@ Bland de viktigaste metoderna i `Throwable` finns `getMessage()`, som gör det m
 
 Klassen `Throwable` har två direkta underklasser: `Exception` och `Error`.
 
-<img src="/images/descendentesThrowable.png"
+<img width="906" height="1607" src="/images/descendentesThrowable.png"
      alt="Throwable-hierarkin"
      style="max-width: 250px; width: 100%; height: auto; display: block; margin: 20px auto;">
 
@@ -35,7 +35,7 @@ Några viktiga underklasser till `Error` är `AssertionError`, `IOError` och `Vi
 
 Fel kan kastas av JVM själv, ofta som en följd av tillstånd som upptäckts av operativsystemet eller körmiljön. De kan också uttryckligen skapas av programmeraren, till exempel med `assert` eller `throw`.
 
-<img src="/images/exceptionsError.png"
+<img width="2584" height="1586" loading="lazy" src="/images/exceptionsError.png"
      alt="Error och dess underklasser"
      style="max-width: 600px; width: 100%; height: auto; display: block; margin: 20px auto;">
 
@@ -47,7 +47,7 @@ Dess underklasser omfattar `IOException`, `SQLException`, `ReflectiveOperationEx
 
 De underklasser till `Exception` som inte är underklasser till `RuntimeException` kallas **kontrollerade undantag** (*checked exceptions*). Kompilatorn kräver att programmet uttryckligen tar hänsyn till dem. Detta kan göras genom att fånga undantaget med en `catch`-sats eller genom att med `throws` deklarera att metoden kan kasta det.
 
-<img src="/images/descendentesException.png"
+<img width="2467" height="1594" loading="lazy" src="/images/descendentesException.png"
      alt="Exception och dess underklasser"
      style="max-width: 600px; width: 100%; height: auto; display: block; margin: 20px auto;">
 
@@ -68,7 +68,7 @@ En metod som kan kasta en `RuntimeException` behöver inte deklarera denna möjl
 
 I praktiken indikerar många `RuntimeException`-instanser problem som hade kunnat förhindras av själva programmet. När ett sådant undantag uppstår är det vanligtvis viktigt att undersöka orsaken och åtgärda problemet i stället för att bara fånga undantaget.
 
-<img src="/images/descendentesRuntimeException.png"
+<img width="4530" height="1570" loading="lazy" src="/images/descendentesRuntimeException.png"
      alt="RuntimeException och dess underklasser"
      style="max-width: 800px; width: 100%; height: auto; display: block; margin: 20px auto;">
 

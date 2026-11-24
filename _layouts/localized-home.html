@@ -3,15 +3,16 @@ layout: default
 ---
 {% assign home_locale = site.data.languages[page.lang] %}
 <div class="localized-book">
-  <img class="localized-book-cover" src="{{ '/capaOO.jpg' | relative_url }}" alt="{{ home_locale.cover | escape }}">
+  <img width="1000" height="1500" class="localized-book-cover" src="{{ '/capaOO.jpg' | relative_url }}" alt="{{ home_locale.cover | escape }}">
   <div>
     <h1 lang="pt-BR">Orientação a Objetos com Java</h1>
     <p>{{ home_locale.intro | escape }}</p>
     <p>{{ home_locale.book_language | escape }}</p>
     <h2>{{ home_locale.contents | escape }}</h2>
     <ol>
+      {% assign localized_topics = site.data.seo_locales[page.lang].topics %}
       {% for chapter in home_locale.chapters %}
-        <li>{{ chapter | escape }}</li>
+        <li><a href="{{ localized_topics | relative_url }}#capitulo-{{ forloop.index }}">{{ chapter | escape }}</a></li>
       {% endfor %}
     </ol>
     {% include book_buttons.html locale=home_locale %}
@@ -22,4 +23,4 @@ layout: default
 <p><a href="{{ home_locale.posts | relative_url }}">{{ home_locale.catalog | escape }}</a></p>
 <h2>{{ home_locale.author_title | escape }}</h2>
 <p>{{ home_locale.bio | escape }}</p>
-<p><a href="{{ site.author.url | escape }}">{{ home_locale.institution | escape }}</a></p>
+<p><a href="{{ site.data.author.homepage | escape }}">{{ home_locale.institution | escape }}</a>{% if page.lang == "en" %} · <a href="{{ '/en/author/' | relative_url }}">Academic profile</a>{% endif %}</p>

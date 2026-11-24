@@ -1,0 +1,37 @@
+name: SEO audit
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-audit:
+    runs-on: ubuntu-latest
+    env:
+      JEKYLL_ENV: production
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+      - name: Install GitHub Pages dependencies
+        run: |
+          printf '%s\n' 'source "https://rubygems.org"' 'gem "github-pages", "232"' > "$RUNNER_TEMP/Gemfile"
+          echo "BUNDLE_GEMFILE=$RUNNER_TEMP/Gemfile" >> "$GITHUB_ENV"
+          BUNDLE_GEMFILE="$RUNNER_TEMP/Gemfile" bundle install
+      - name: Build
+        run: bundle exec jekyll build
+      - name: Audit rendered HTML
+        run: python3 scripts/auditar_seo.py _site --json "$RUNNER_TEMP/seo-audit.json"
+      - name: Save audit report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: seo-audit
+          path: ${{ runner.temp }}/seo-audit.json
+          if-no-files-found: ignore

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Variabler och typer i Java"
-date: 2026-11-20
+date: 2026-11-24
 lang: sv
 translation_id: variaveis-tipos-java
 permalink: /sv/variables-and-types-in-java/

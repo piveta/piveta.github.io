@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "使用 PreparedStatement 插入学生"
-date: 2026-11-19
+date: 2026-11-24
 lang: zh
 translation_id: inserindo-alunos-preparedstatement-java
 permalink: /zh/inserting-students-with-preparedstatement-in-java/

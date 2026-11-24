@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Javaの変数と型"
-date: 2026-11-20
+date: 2026-11-24
 lang: ja
 translation_id: variaveis-tipos-java
 permalink: /ja/variables-and-types-in-java/

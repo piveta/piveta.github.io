@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Java 컬렉션 참고 자료"
-date: 2026-11-09
+date: 2026-11-24
 lang: ko
 translation_id: links-colecoes-java
 permalink: /ko/java-collections-references/

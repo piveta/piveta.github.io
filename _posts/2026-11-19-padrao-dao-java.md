@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "O padrão DAO no acesso a dados com Java"
-date: 2026-11-19
+date: 2026-11-24
 lang: pt-BR
 translation_id: padrao-dao-java
 permalink: /padrao-dao-java/

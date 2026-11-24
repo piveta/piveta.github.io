@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Referenser om samlingar i Java"
-date: 2026-11-09
+date: 2026-11-24
 lang: sv
 translation_id: links-colecoes-java
 permalink: /sv/java-collections-references/

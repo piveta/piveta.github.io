@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Java 集合参考资料"
-date: 2026-11-09
+date: 2026-11-24
 lang: zh
 translation_id: links-colecoes-java
 permalink: /zh/java-collections-references/

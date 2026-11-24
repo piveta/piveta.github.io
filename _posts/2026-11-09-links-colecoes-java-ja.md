@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Javaのコレクションに関する参考資料"
-date: 2026-11-09
+date: 2026-11-24
 lang: ja
 translation_id: links-colecoes-java
 permalink: /ja/java-collections-references/

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Materiały o kolekcjach w Javie"
-date: 2026-11-09
+date: 2026-11-24
 lang: pl
 translation_id: links-colecoes-java
 permalink: /pl/java-collections-references/

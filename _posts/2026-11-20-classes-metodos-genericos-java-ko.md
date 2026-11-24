@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Java의 제네릭 클래스와 메서드"
-date: 2026-11-20
+date: 2026-11-24
 lang: ko
 translation_id: classes-metodos-genericos-java
 permalink: /ko/generic-classes-and-methods-in-java/

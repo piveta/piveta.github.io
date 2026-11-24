@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Wstawianie studentów przez PreparedStatement"
-date: 2026-11-19
+date: 2026-11-24
 lang: pl
 translation_id: inserindo-alunos-preparedstatement-java
 permalink: /pl/inserting-students-with-preparedstatement-in-java/

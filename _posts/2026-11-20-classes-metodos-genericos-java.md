@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Classes e métodos genéricos em Java"
-date: 2026-11-20
+date: 2026-11-24
 lang: pt-BR
 translation_id: classes-metodos-genericos-java
 permalink: /classes-metodos-genericos-java/

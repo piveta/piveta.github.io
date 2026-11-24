@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Infoga studenter med PreparedStatement"
-date: 2026-11-19
+date: 2026-11-24
 lang: sv
 translation_id: inserindo-alunos-preparedstatement-java
 permalink: /sv/inserting-students-with-preparedstatement-in-java/

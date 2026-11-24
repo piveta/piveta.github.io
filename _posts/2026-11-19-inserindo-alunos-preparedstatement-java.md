@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Inserindo alunos com PreparedStatement em Java"
-date: 2026-11-19
+date: 2026-11-24
 lang: pt-BR
 translation_id: inserindo-alunos-preparedstatement-java
 permalink: /inserindo-alunos-preparedstatement-java/

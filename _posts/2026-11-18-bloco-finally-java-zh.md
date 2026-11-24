@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Java 中的 finally 块"
-date: 2026-11-18
+date: 2026-11-24
 lang: zh
 translation_id: bloco-finally-java
 permalink: /zh/finally-block-in-java/

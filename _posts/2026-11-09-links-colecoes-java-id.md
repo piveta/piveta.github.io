@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Referensi koleksi Java"
-date: 2026-11-09
+date: 2026-11-24
 lang: id
 translation_id: links-colecoes-java
 permalink: /id/java-collections-references/

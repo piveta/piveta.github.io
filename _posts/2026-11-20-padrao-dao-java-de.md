@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Das DAO-Muster für Datenzugriff in Java"
-date: 2026-11-20
+date: 2026-11-24
 lang: de
 translation_id: padrao-dao-java
 permalink: /de/the-dao-pattern-for-data-access-in-java/

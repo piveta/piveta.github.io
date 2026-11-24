@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Java 中的泛型类与泛型方法"
-date: 2026-11-20
+date: 2026-11-24
 lang: zh
 translation_id: classes-metodos-genericos-java
 permalink: /zh/generic-classes-and-methods-in-java/

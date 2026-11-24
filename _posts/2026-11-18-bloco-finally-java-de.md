@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Der finally-Block in Java"
-date: 2026-11-18
+date: 2026-11-24
 lang: de
 translation_id: bloco-finally-java
 permalink: /de/finally-block-in-java/

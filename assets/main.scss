@@ -3,6 +3,37 @@
 
 @import "minima";
 
+.mobile-book-cta {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .mobile-book-cta {
+    display: block;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background: #173f73;
+    text-align: center;
+  }
+
+  .mobile-book-cta a {
+    display: block;
+    padding: .65rem 1rem;
+    color: #fff;
+    font-weight: 600;
+  }
+
+  .mobile-book-cta a:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: -4px;
+  }
+
+  #livro {
+    scroll-margin-top: 3rem;
+  }
+}
+
 .localized-header,
 .localized-nav {
   display: flex;

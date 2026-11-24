@@ -4,6 +4,9 @@
 <html lang="{{ current_language | escape }}">
   {%- include head.html -%}
   <body>
+    <aside class="mobile-book-cta">
+      <a href="https://www.amazon.com.br/dp/B0FWZ6HYVP">{{ locale.ebook | escape }}</a>
+    </aside>
     {%- include header.html -%}
     <main class="page-content" aria-label="{{ page.title | default: site.title | escape }}">
       <div class="wrapper">

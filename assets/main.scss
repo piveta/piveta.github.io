@@ -145,6 +145,7 @@
 
 .social-media-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 15px;
   align-items: center;
   list-style: none;

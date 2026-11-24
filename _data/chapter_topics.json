@@ -1,6 +1,6 @@
 [
-  ["hello-world","leitura-escrita-java","variaveis-tipos-java","operadores-java","expressoes-condicionais-java","sentencas-repeticao-java","links-introducao-java","exercicios-introducao-java"],
-  ["classes-em-java","conceitos-basicos-poo-java","construtores-java","exercicios-poo-java","heranca-em-java","links-poo-java","polimorfismo-em-java"],
+  ["hello-world","leitura-escrita-java","variaveis-tipos-java","operadores-java","expressoes-condicionais-java","sentencas-repeticao-java","links-introducao-java","exercicios-introducao-java","respostas-exercicios-introducao-java"],
+  ["classes-em-java","conceitos-basicos-poo-java","construtores-java","exercicios-poo-java","heranca-em-java","links-poo-java","polimorfismo-em-java","relacionamentos-entre-classes-java"],
   ["criando-tabela-postgresql-java","conectando-postgresql-jdbc-java","inserindo-alunos-preparedstatement-java","consultando-alunos-resultset-java","alterando-alunos-jdbc-java","excluindo-alunos-jdbc-java","liberando-recursos-jdbc-java","exercicios-acesso-dados-java","links-acesso-dados-java"],
   ["interfaces-em-java","interfaces-framework-colecoes","colecoes-iteradores-listas","filas-deques-java","conjuntos-java","mapas-em-java","exercicios-colecoes-java","links-colecoes-java"],
   ["apagamento-tipos-crus-java","classes-metodos-genericos-java","exercicios-tipos-genericos-java","wildcards-limites-java","heranca-subtipos-genericos-java","links-tipos-genericos-java"],

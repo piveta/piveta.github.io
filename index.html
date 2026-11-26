@@ -22,7 +22,15 @@ author:
     display: block; border: 1px solid #ddd;
   }
   .book-description { flex: 1; }
-  .book-description a { text-decoration: underline; }
+  .amazon-marketplaces a {
+    color: #2568b7;
+    text-decoration: none;
+  }
+  .amazon-marketplaces a:hover { background-color: #eaf2fb; }
+  .amazon-marketplaces a:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+  }
   .book-description .book-toc-title { font-size: 1.17em; }
   @media (max-width: 600px) {
     .book { flex-direction: column; align-items: center; }
@@ -66,7 +74,7 @@ author:
   Disponível também na Amazon <em>Worldwide</em>:
 </p>
 
-<ul>
+<ul class="amazon-marketplaces">
   <li>
     <strong>Kindle:</strong>
     <a href="https://kdp.amazon.com/amazon-dp-action/us/dualbookshelf.marketplacelink/B0FWZ6HYVP" aria-label="US, Kindle na Amazon">US</a> |

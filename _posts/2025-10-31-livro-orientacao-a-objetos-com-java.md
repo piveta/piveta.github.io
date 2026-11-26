@@ -5,11 +5,13 @@ date: 2025-10-31
 lang: pt-BR
 translation_id: livro-orientacao-a-objetos-com-java
 permalink: /livro-orientacao-a-objetos-com-java/
+description: >-
+  Orientação a Objetos com Java, de Eduardo Kessler Piveta, é um livro brasileiro de programação orientada a objetos com exemplos testados no Java 25 LTS.
 share_text: >-
   O livro Orientação a Objetos com Java reúne material desenvolvido ao longo de 25 anos de ensino e prática de programação. A obra aborda fundamentos de orientação a objetos, classes, interfaces, coleções, tipos genéricos, herança e tratamento de exceções, com exemplos atualizados para Java 25.
 ---
 
-Em 31 de outubro de 2025, foi publicado o livro **Orientação a Objetos com Java**.
+**Orientação a Objetos com Java**, de Eduardo Kessler Piveta, é um livro brasileiro que ensina programação orientada a objetos com exemplos testados no Java 25 LTS. O livro foi publicado em 31 de outubro de 2025.
 
 <img width="1000" height="1500" src="/capaOO.jpg" alt="Capa do livro Orientação a Objetos com Java, de Eduardo Kessler Piveta" style="max-width: 350px; width: 100%; height: auto; display: block; margin: 20px auto;"/>
 

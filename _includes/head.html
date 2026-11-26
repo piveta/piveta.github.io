@@ -16,7 +16,11 @@
   {% if page.robots %}<meta name="robots" content="{{ page.robots | escape }}">{% endif %}
   {% include structured-data.html %}
 
+  {% if page.url == "/" %}
+    <style>{{ '@import "site-styles";' | scssify }}</style>
+  {% else %}
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  {% endif %}
 
   {%- feed_meta -%}
 

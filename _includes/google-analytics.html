@@ -9,11 +9,34 @@
   gtag('config', {{ site.google_analytics | jsonify }});
 
   {% if page.url == "/" %}
-  window.addEventListener('load', function () {
-    var tag = document.createElement('script');
-    tag.async = true;
-    tag.src = 'https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics | url_encode }}';
-    document.head.appendChild(tag);
-  }, { once: true });
+  (function () {
+    var interactions = ['pointerdown', 'keydown', 'scroll'];
+    var fallback;
+    var started = false;
+
+    function loadAnalytics() {
+      if (started) return;
+      started = true;
+      window.clearTimeout(fallback);
+      window.removeEventListener('load', scheduleAnalytics);
+      interactions.forEach(function (event) {
+        window.removeEventListener(event, loadAnalytics);
+      });
+
+      var tag = document.createElement('script');
+      tag.async = true;
+      tag.src = 'https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics | url_encode }}';
+      document.head.appendChild(tag);
+    }
+
+    function scheduleAnalytics() {
+      fallback = window.setTimeout(loadAnalytics, 10000);
+    }
+
+    interactions.forEach(function (event) {
+      window.addEventListener(event, loadAnalytics, { passive: true });
+    });
+    window.addEventListener('load', scheduleAnalytics, { once: true });
+  })();
   {% endif %}
 </script>

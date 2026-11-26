@@ -34,13 +34,22 @@ author:
 <div class="home-content">
   <div class="book" id="livro">
     <div class="book-cover-container">
-      <img width="1000" height="1500" class="book-cover" src="capaOO.jpg" alt="Capa do livro Orientação a Objetos com Java">
+      <picture>
+        <source type="image/webp"
+                srcset="{{ '/assets/capa-oo-320.webp' | relative_url }} 320w,
+                        {{ '/assets/capa-oo-560.webp' | relative_url }} 560w,
+                        {{ '/assets/capa-oo-900.webp' | relative_url }} 900w"
+                sizes="(max-width: 375px) 80vw, 300px">
+        <img width="1000" height="1500" class="book-cover"
+             src="{{ '/capaOO.jpg' | relative_url }}"
+             fetchpriority="high" alt="Capa do livro Orientação a Objetos com Java">
+      </picture>
     </div>
     <div class="book-description">
       <h1 class="book-title">Orientação a Objetos com Java</h1>
       <p>por <strong>Eduardo Kessler Piveta (prof. Titular - UFSM)</strong></p>
       <p>Um livro sobre programação orientada a objetos em Java, explorando os principais conceitos da linguagem de forma detalhada e progressiva. Este é provavelmente o livro de Java nacional mais novo e atualizado em 2026. </p>
-      <p style="color: #e65100;"><strong>Cobre Java 25 — a LTS mais atual da linguagem!</strong></p>
+      <p style="color: #b43e00;"><strong>Cobre Java 25 — a LTS mais atual da linguagem!</strong></p>
       <h2 class="book-toc-title">Sumário</h2>
       <ol>
         <li><a href="{{ '/temas/' | relative_url }}#capitulo-1">Introdução</a></li>
@@ -59,36 +68,36 @@ author:
 <ul>
   <li>
     <strong>Kindle:</strong>
-    <a href="https://kdp.amazon.com/amazon-dp-action/us/dualbookshelf.marketplacelink/B0FWZ6HYVP">US</a> |
-    <a href="https://kdp.amazon.com/amazon-dp-action/uk/dualbookshelf.marketplacelink/B0FWZ6HYVP">UK</a> |
-    <a href="https://kdp.amazon.com/amazon-dp-action/de/dualbookshelf.marketplacelink/B0FWZ6HYVP">DE</a> |
-    <a href="https://kdp.amazon.com/amazon-dp-action/fr/dualbookshelf.marketplacelink/B0FWZ6HYVP">FR</a> |
-    <a href="https://kdp.amazon.com/amazon-dp-action/es/dualbookshelf.marketplacelink/B0FWZ6HYVP">ES</a> |
-    <a href="https://kdp.amazon.com/amazon-dp-action/it/dualbookshelf.marketplacelink/B0FWZ6HYVP">IT</a> |
-    <a href="https://kdp.amazon.com/amazon-dp-action/nl/dualbookshelf.marketplacelink/B0FWZ6HYVP">NL</a> |
-    <a href="https://kdp.amazon.com/amazon-dp-action/jp/dualbookshelf.marketplacelink/B0FWZ6HYVP">JP</a> |
-    <a href="https://kdp.amazon.com/amazon-dp-action/ca/dualbookshelf.marketplacelink/B0FWZ6HYVP">CA</a> |
-    <a href="https://kdp.amazon.com/amazon-dp-action/mx/dualbookshelf.marketplacelink/B0FWZ6HYVP">MX</a> |
-    <a href="https://kdp.amazon.com/amazon-dp-action/au/dualbookshelf.marketplacelink/B0FWZ6HYVP">AU</a> |
-    <a href="https://kdp.amazon.com/amazon-dp-action/in/dualbookshelf.marketplacelink/B0FWZ6HYVP">IN</a>
+    <a href="https://kdp.amazon.com/amazon-dp-action/us/dualbookshelf.marketplacelink/B0FWZ6HYVP" aria-label="US, Kindle na Amazon">US</a> |
+    <a href="https://kdp.amazon.com/amazon-dp-action/uk/dualbookshelf.marketplacelink/B0FWZ6HYVP" aria-label="UK, Kindle na Amazon">UK</a> |
+    <a href="https://kdp.amazon.com/amazon-dp-action/de/dualbookshelf.marketplacelink/B0FWZ6HYVP" aria-label="DE, Kindle na Amazon">DE</a> |
+    <a href="https://kdp.amazon.com/amazon-dp-action/fr/dualbookshelf.marketplacelink/B0FWZ6HYVP" aria-label="FR, Kindle na Amazon">FR</a> |
+    <a href="https://kdp.amazon.com/amazon-dp-action/es/dualbookshelf.marketplacelink/B0FWZ6HYVP" aria-label="ES, Kindle na Amazon">ES</a> |
+    <a href="https://kdp.amazon.com/amazon-dp-action/it/dualbookshelf.marketplacelink/B0FWZ6HYVP" aria-label="IT, Kindle na Amazon">IT</a> |
+    <a href="https://kdp.amazon.com/amazon-dp-action/nl/dualbookshelf.marketplacelink/B0FWZ6HYVP" aria-label="NL, Kindle na Amazon">NL</a> |
+    <a href="https://kdp.amazon.com/amazon-dp-action/jp/dualbookshelf.marketplacelink/B0FWZ6HYVP" aria-label="JP, Kindle na Amazon">JP</a> |
+    <a href="https://kdp.amazon.com/amazon-dp-action/ca/dualbookshelf.marketplacelink/B0FWZ6HYVP" aria-label="CA, Kindle na Amazon">CA</a> |
+    <a href="https://kdp.amazon.com/amazon-dp-action/mx/dualbookshelf.marketplacelink/B0FWZ6HYVP" aria-label="MX, Kindle na Amazon">MX</a> |
+    <a href="https://kdp.amazon.com/amazon-dp-action/au/dualbookshelf.marketplacelink/B0FWZ6HYVP" aria-label="AU, Kindle na Amazon">AU</a> |
+    <a href="https://kdp.amazon.com/amazon-dp-action/in/dualbookshelf.marketplacelink/B0FWZ6HYVP" aria-label="IN, Kindle na Amazon">IN</a>
   </li>
 
   <li>
     <strong>Impresso Colorido:</strong>
-    <a href="https://kdp.amazon.com/amazon-dp-action/us/dualbookshelf.marketplacelink/6501778212">US</a> |
-    <a href="https://kdp.amazon.com/amazon-dp-action/uk/dualbookshelf.marketplacelink/6501778212">UK</a> |
-    <a href="https://kdp.amazon.com/amazon-dp-action/de/dualbookshelf.marketplacelink/6501778212">DE</a> |
-    <a href="https://kdp.amazon.com/amazon-dp-action/fr/dualbookshelf.marketplacelink/6501778212">FR</a> |
-    <a href="https://kdp.amazon.com/amazon-dp-action/es/dualbookshelf.marketplacelink/6501778212">ES</a> |
-    <a href="https://kdp.amazon.com/amazon-dp-action/it/dualbookshelf.marketplacelink/6501778212">IT</a> |
-    <a href="https://kdp.amazon.com/amazon-dp-action/nl/dualbookshelf.marketplacelink/6501778212">NL</a> |
-    <a href="https://kdp.amazon.com/amazon-dp-action/pl/dualbookshelf.marketplacelink/6501778212">PL</a> |
-    <a href="https://kdp.amazon.com/amazon-dp-action/se/dualbookshelf.marketplacelink/6501778212">SE</a> |
-    <a href="https://kdp.amazon.com/amazon-dp-action/be/dualbookshelf.marketplacelink/6501778212">BE</a> |
-    <a href="https://kdp.amazon.com/amazon-dp-action/ie/dualbookshelf.marketplacelink/6501778212">IE</a> |
-    <a href="https://kdp.amazon.com/amazon-dp-action/jp/dualbookshelf.marketplacelink/6501778212">JP</a> |
-    <a href="https://kdp.amazon.com/amazon-dp-action/ca/dualbookshelf.marketplacelink/6501778212">CA</a> |
-    <a href="https://kdp.amazon.com/amazon-dp-action/au/dualbookshelf.marketplacelink/6501778212">AU</a>
+    <a href="https://kdp.amazon.com/amazon-dp-action/us/dualbookshelf.marketplacelink/6501778212" aria-label="US, Livro impresso colorido na Amazon">US</a> |
+    <a href="https://kdp.amazon.com/amazon-dp-action/uk/dualbookshelf.marketplacelink/6501778212" aria-label="UK, Livro impresso colorido na Amazon">UK</a> |
+    <a href="https://kdp.amazon.com/amazon-dp-action/de/dualbookshelf.marketplacelink/6501778212" aria-label="DE, Livro impresso colorido na Amazon">DE</a> |
+    <a href="https://kdp.amazon.com/amazon-dp-action/fr/dualbookshelf.marketplacelink/6501778212" aria-label="FR, Livro impresso colorido na Amazon">FR</a> |
+    <a href="https://kdp.amazon.com/amazon-dp-action/es/dualbookshelf.marketplacelink/6501778212" aria-label="ES, Livro impresso colorido na Amazon">ES</a> |
+    <a href="https://kdp.amazon.com/amazon-dp-action/it/dualbookshelf.marketplacelink/6501778212" aria-label="IT, Livro impresso colorido na Amazon">IT</a> |
+    <a href="https://kdp.amazon.com/amazon-dp-action/nl/dualbookshelf.marketplacelink/6501778212" aria-label="NL, Livro impresso colorido na Amazon">NL</a> |
+    <a href="https://kdp.amazon.com/amazon-dp-action/pl/dualbookshelf.marketplacelink/6501778212" aria-label="PL, Livro impresso colorido na Amazon">PL</a> |
+    <a href="https://kdp.amazon.com/amazon-dp-action/se/dualbookshelf.marketplacelink/6501778212" aria-label="SE, Livro impresso colorido na Amazon">SE</a> |
+    <a href="https://kdp.amazon.com/amazon-dp-action/be/dualbookshelf.marketplacelink/6501778212" aria-label="BE, Livro impresso colorido na Amazon">BE</a> |
+    <a href="https://kdp.amazon.com/amazon-dp-action/ie/dualbookshelf.marketplacelink/6501778212" aria-label="IE, Livro impresso colorido na Amazon">IE</a> |
+    <a href="https://kdp.amazon.com/amazon-dp-action/jp/dualbookshelf.marketplacelink/6501778212" aria-label="JP, Livro impresso colorido na Amazon">JP</a> |
+    <a href="https://kdp.amazon.com/amazon-dp-action/ca/dualbookshelf.marketplacelink/6501778212" aria-label="CA, Livro impresso colorido na Amazon">CA</a> |
+    <a href="https://kdp.amazon.com/amazon-dp-action/au/dualbookshelf.marketplacelink/6501778212" aria-label="AU, Livro impresso colorido na Amazon">AU</a>
   </li>
 </ul>
     <p>Publicado em 31 de outubro de 2025, cobre Java 25 LTS e está disponível para compra na Amazon em mais de 14 mercados internacionais, nas versões Kindle e impressa.</p>

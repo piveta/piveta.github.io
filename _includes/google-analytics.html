@@ -1,9 +1,19 @@
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BBQ1ZBPY2S"></script>
+{% if page.url != "/" %}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics | url_encode }}"></script>
+{% endif %}
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
+  gtag('config', {{ site.google_analytics | jsonify }});
 
-  gtag('config', 'G-BBQ1ZBPY2S');
+  {% if page.url == "/" %}
+  window.addEventListener('load', function () {
+    var tag = document.createElement('script');
+    tag.async = true;
+    tag.src = 'https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics | url_encode }}';
+    document.head.appendChild(tag);
+  }, { once: true });
+  {% endif %}
 </script>

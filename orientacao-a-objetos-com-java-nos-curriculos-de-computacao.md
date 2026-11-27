@@ -5,12 +5,12 @@ lang: pt-BR
 translation_id: orientacao-a-objetos-com-java-nos-curriculos-de-computacao
 permalink: /orientacao-a-objetos-com-java-nos-curriculos-de-computacao/
 share_text: >-
-  Um guia para relacionar os sete capítulos do livro a competências, disciplinas e bibliografias em 15 cursos de Computação.
+  Um guia para relacionar os sete capítulos do livro a competências, disciplinas e bibliografias em 16 cursos de Computação.
 ---
 
 *Orientação a Objetos com Java* tem seu encaixe mais direto como **bibliografia básica de Programação Orientada a Objetos em Java**. Os sete capítulos também oferecem leituras para Paradigmas de Programação, Estruturas de Dados, Banco de Dados, Projeto de Software e laboratórios de desenvolvimento. O que muda entre os cursos é o objetivo da disciplina. Em Ciência da Computação, por exemplo, interfaces e tipos genéricos permitem discutir abstração. Em Sistemas de Informação, o cadastro com JDBC e DAO aproxima a modelagem da implementação de uma solução com dados persistentes.
 
-O levantamento reúne **15 cursos**. Parte da 1ª edição e cruza os capítulos com competências nacionais, perfis de conclusão e ementas públicas. As ementas são exemplos de como os componentes podem ser organizados. A indicação de bibliografia básica ou complementar vale para a unidade curricular correspondente.
+O levantamento reúne **16 cursos**. Parte da 1ª edição e cruza os capítulos com competências nacionais, perfis de conclusão e ementas públicas. As ementas são exemplos de como os componentes podem ser organizados. A indicação de bibliografia básica ou complementar vale para a unidade curricular correspondente.
 
 ## Diretrizes, catálogos e projetos pedagógicos
 
@@ -48,6 +48,7 @@ Os **capítulos principais** têm aplicação direta no recorte de programação
 | Bacharelado em Inteligência Artificial | **Principais** 2, 4, 5, 7 · **Apoio** 1, 3, 6 | Linguagem de POO, Estruturas de Dados e Programação Avançada. **Básica** em POO se a linguagem da turma for Java. **Complementar** quando a prática usar outra linguagem. |
 | Tecnólogo em Análise e Desenvolvimento de Sistemas | **Principais** 1 a 7 | POO, Programação II, Persistência e Projeto Integrador. **Básica** em POO e em construção de aplicações Java com JDBC e DAO. **Complementar** em banco e projeto integrador. |
 | Tecnólogo em Sistemas para Internet | **Principais** 2, 3, 4, 6, 7 · **Apoio** 1, 5 | POO, Desenvolvimento Back-end e Banco de Dados. **Básica** em POO em Java. **Complementar** em back-end e banco de dados. |
+| Tecnólogo em Redes de Computadores | **Principais** 1, 2, 4 e 7 · **Apoio** 3, 5 e 6 | Algoritmos e Programação, POO e Projeto Integrador. **Básica** em POO em Java. **Complementar** em Algoritmos e ferramentas de apoio. |
 | Tecnólogo em Banco de Dados | **Principais** 3, 6, 7 · **Apoio** 1, 2, 4, 5 | Persistência com Java, Banco de Dados e POO. **Básica** em laboratório de persistência centrado em JDBC ou em POO em Java. **Complementar** em Banco de Dados. |
 | Tecnólogo em Jogos Digitais | **Principais** 2, 4 · **Apoio** 1, 5, 7 | POO para Jogos, Programação para Jogos e Estruturas de Dados. **Básica** em POO para jogos com Java. **Complementar** em programação para jogos e uso de motores. |
 | Técnico em Desenvolvimento de Sistemas | **Principais** 1, 2, 3, 4, 6, 7 · **Apoio** 5 | Lógica, POO, Banco de Dados e Projeto Integrador. **Básica** em POO em Java. **Complementar** em lógica, banco e projeto integrador. |
@@ -102,6 +103,8 @@ PIVETA, Eduardo Kessler. **Orientação a Objetos com Java**. 1. ed. Santa Maria
 - [Tecnólogo em Sistemas para Internet]({% link _posts/2026-11-26-orientacao-a-objetos-com-java-tecnologo-em-sistemas-para-internet.md %})
 - [Tecnólogo em Banco de Dados]({% link _posts/2026-11-26-orientacao-a-objetos-com-java-tecnologo-em-banco-de-dados.md %})
 - [Tecnólogo em Jogos Digitais]({% link _posts/2026-11-26-orientacao-a-objetos-com-java-tecnologo-em-jogos-digitais.md %})
+
+- [Tecnólogo em Redes de Computadores]({% link _posts/2026-11-27-orientacao-a-objetos-com-java-tecnologo-em-redes-de-computadores.md %})
 
 ### Cursos técnicos de nível médio
 

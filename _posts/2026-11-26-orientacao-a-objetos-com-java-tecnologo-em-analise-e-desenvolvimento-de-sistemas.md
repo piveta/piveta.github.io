@@ -63,4 +63,4 @@ A primeira edição usa Java 25. Em laboratório, testar previamente os exemplos
 
 PIVETA, Eduardo Kessler. **Orientação a Objetos com Java**. 1. ed. Santa Maria, RS: Ed. do Autor, 2025. ISBN da edição impressa 978-65-01-77821-1. ISBN do livro eletrônico em PDF 978-65-01-74605-0. [Sumário e acesso à amostra](/)
 
-[Leia também o artigo geral com os 15 cursos]({% link orientacao-a-objetos-com-java-nos-curriculos-de-computacao.md %})
+[Leia também o artigo geral sobre os cursos]({% link orientacao-a-objetos-com-java-nos-curriculos-de-computacao.md %})
